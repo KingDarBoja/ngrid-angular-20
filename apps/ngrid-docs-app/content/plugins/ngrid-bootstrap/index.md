@@ -1,5 +1,5 @@
 ---
-title: "@pebula/ngrid-bootstrap"
+title: "@perbula/ngrid-bootstrap"
 path: plugins/ngrid-bootstrap
 parent: plugins
 ordinal: 1

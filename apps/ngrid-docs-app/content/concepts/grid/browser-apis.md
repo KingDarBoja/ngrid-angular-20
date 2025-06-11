@@ -18,7 +18,7 @@ ordinal: 5
 
 The [ResizeObserver API](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver) is used to detect resize in column width's and react to them by re-calculating the new widths.
 
-The **ResizeObserver API** is supported in all major browsers, however it is not supported by **Internet Explorer**  
+The **ResizeObserver API** is supported in all major browsers, however it is not supported by **Internet Explorer**
 If you require full support or want a polyfill just in case you can use one of the following polyfills:
 
 - [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill) - The most used polyfill (performs auto-detect)
@@ -64,8 +64,8 @@ I> **nGrid** makes minimal use of the API so changes in the final spec should ha
 
 The [IntersectionObserver API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) is used for performance.
 
-It allows **nGrid** to get notified when a row is visible and when it is not.  
-With this API **nGrid** can skip a lot of layout reflows and recalculations because it does not need to check if a row is out of view.  
+It allows **nGrid** to get notified when a row is visible and when it is not.
+With this API **nGrid** can skip a lot of layout reflows and recalculations because it does not need to check if a row is out of view.
 This is very important for performance, especially when using virtual scroll.
 
 The **IntersectionObserver API** is a more mature API compared to the `ResizeObserver API`, it is shipped with all major browsers for a long time now
@@ -80,7 +80,7 @@ depends on the use case, **nGrid** instance configuration and features used toge
 To disable the use of **IntersectionObserver** apply the following provider in your application root module:
 
 ```typescript
-import { DISABLE_INTERSECTION_OBSERVABLE } from '@pebula/ngrid';
+import { DISABLE_INTERSECTION_OBSERVABLE } from '@perbula/ngrid';
 
 @NgModule({
   providers: [

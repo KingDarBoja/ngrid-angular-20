@@ -11,7 +11,7 @@ A collection of context menu's built using material components.
 ## Setup
 
 ```ts
-import { PblNgridContextMenuModule } from '@pebula/ngrid-material/context-menu';
+import { PblNgridContextMenuModule } from '@perbula/ngrid-material/context-menu';
 
 @NgModule({
   imports: [
@@ -23,7 +23,7 @@ import { PblNgridContextMenuModule } from '@pebula/ngrid-material/context-menu';
 export class MyAppModule { }
 ```
 
-I> `PblNgridContextMenuModule` internally imports `@pebula/ngrid/overlay-panel` and additional modules from `@angular/material`.
+I> `PblNgridContextMenuModule` internally imports `@perbula/ngrid/overlay-panel` and additional modules from `@angular/material`.
 
 ## Header Context Menu
 

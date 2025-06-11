@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { MatRadioModule } from '@angular/material/radio';
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridDragModule } from '@pebula/ngrid/drag/';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridDragModule } from '@perbula/ngrid/drag/';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { SpacingExample } from './spacing.component';
 
 @NgModule({

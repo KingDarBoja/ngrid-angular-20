@@ -1,5 +1,5 @@
-import { DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import WindowStoreAdapter from '@pebula/apps/docs-app-lib/client-api/lib/client-adapters/window';
+import { DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import WindowStoreAdapter from '@perbula/apps/docs-app-lib/client-api/lib/client-adapters/window';
 
 class TestDynamicClientApi extends DynamicClientApi {
   protected createAdapter() {

@@ -8,7 +8,7 @@ ordinal: 4
 ---
 # NGrid's Extensibility Model
 
-One of the core architecture goals in NGrid is extensibility.  
+One of the core architecture goals in NGrid is extensibility.
 Extensions (i.e. plugins) are the powerful engine that allows adding
 features on-demand without overloading the core of the grid in terms of code complexity & maintenance and in terms pf core performance.
 
@@ -23,22 +23,22 @@ A plugin will add / extend:
 
 ## Built-In Plugins
 
-A lot of the features offered by the core package (`@pebula/ngrid`) are plugins.
+A lot of the features offered by the core package (`@perbula/ngrid`) are plugins.
 
-You can easily identify built-in plugins through their import namespace, which is a secondary namespace to `@pebula/ngrid`.
+You can easily identify built-in plugins through their import namespace, which is a secondary namespace to `@perbula/ngrid`.
 
 Some examples:
 
-- `@pebula/ngrid/target-events` - Support for input device events
-- `@pebula/ngrid/detail-row` - Support for master / detail row structure
-- `@pebula/ngrid/drag` - Support for drag and drop
-- `@pebula/ngrid/state` - Saving and restoring state from and to the grid
+- `@perbula/ngrid/target-events` - Support for input device events
+- `@perbula/ngrid/detail-row` - Support for master / detail row structure
+- `@perbula/ngrid/drag` - Support for drag and drop
+- `@perbula/ngrid/state` - Saving and restoring state from and to the grid
 - And more...
 
 The rule of thumb is to prefer built in plugins over internal implementation when introducing new features.
 
 For example, the virtual scrolling is heavily bound to the grid's behavior so it is an internal feature but
-saving and restoring grid state (`@pebula/ngrid/state`) is not.
+saving and restoring grid state (`@perbula/ngrid/state`) is not.
 
 ## Extensibility APIs
 
@@ -62,7 +62,7 @@ You can get `PblNgridExtensionApi` through DI using the token `EXT_API_TOKEN` or
 
 ### Grid Events
 
-The Grid events are a stream of life-cycle events fired by the grid, which plugins can use in order to react and create behaviors.  
+The Grid events are a stream of life-cycle events fired by the grid, which plugins can use in order to react and create behaviors.
 The events can be accessed through: `PblNgridExtensionApi.events` or `PblNgridPluginController.events`.
 
 Here are some of the events:
@@ -89,7 +89,7 @@ There 2 ways to create a plugin and bind the plugin instance and a grid instance
 - Angular Directives
 - Grid Extension Registry
 
-The main difference between the 2 is the way the plugin instantiate and bind with the grid instance.  
+The main difference between the 2 is the way the plugin instantiate and bind with the grid instance.
 With a **directive** the process is driven by the template, when the directive is set on the template, the plugin will bind to the grid and run.
 Otherwise, registration is programmatic, driven by other (dependant) plugins or through grid instantiation events.
 
@@ -152,7 +152,7 @@ We need to refactor our code:
 
 ```typescript
 // id (PLUGIN_KEY) is unique and typed so we must augment it:
-declare module '@pebula/ngrid/lib/ext/types' {
+declare module '@perbula/ngrid/lib/ext/types' {
   interface PblNgridPluginExtension {
     clipboard?: PblNgridClipboardPlugin;
   }
@@ -186,7 +186,7 @@ that we can use as a factory for creating new instances of the plugin.
 
 The factory method must accept 2 parameters, the grid and an angular `Injector` and in it can create a new instance and return it.
 
-Depending on the plugin's need we can get access to all sorts of things.  
+Depending on the plugin's need we can get access to all sorts of things.
 We did not make use of the `Injector` in this case, but you can use it to get everything available in the DI tree.
 
 I> Note that directive plugins can also use the extension registry, in fact this is the recommended approach so they are visible to other plugins.
@@ -209,13 +209,13 @@ I> We will be using the `Clipboard` service from `@angular/cdk/clipboard` to han
 
 ### Creating a unique key
 
-First, we need a unique id/key/name for our plugin so it can be registered and accessed.  
-To enforce uniqueness, the key is typed and can not be used if not present in the type system.  
+First, we need a unique id/key/name for our plugin so it can be registered and accessed.
+To enforce uniqueness, the key is typed and can not be used if not present in the type system.
 
 To add a new key to the type system we will use typescript's augmentation feature:
 
 ```typescript
-declare module '@pebula/ngrid/lib/ext/types' {
+declare module '@perbula/ngrid/lib/ext/types' {
   interface PblNgridPluginExtension {
     clipboard?: PblNgridClipboardPlugin;
   }
@@ -265,7 +265,7 @@ Our plugin is ready to work but it does nothing, let's spice it up.
   }
 ```
 
-In the constructor we use the injector to get the `Clipboard` service, which we will use to set value into the clipboard.  
+In the constructor we use the injector to get the `Clipboard` service, which we will use to set value into the clipboard.
 Next, we call the `init()` method:
 
 ```typescript
@@ -309,8 +309,8 @@ That's it, the plugin is ready. To be used as directive we need to add a module 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PblNgridModule, PblNgridConfigService, PblNgridPluginController } from '@pebula/ngrid';
-import { PblNgridTargetEventsModule } from '@pebula/ngrid/target-events';
+import { PblNgridModule, PblNgridConfigService, PblNgridPluginController } from '@perbula/ngrid';
+import { PblNgridTargetEventsModule } from '@perbula/ngrid/target-events';
 
 @NgModule({
   imports: [ CommonModule, PblNgridModule, PblNgridTargetEventsModule ],
@@ -328,7 +328,7 @@ And, be-hold, a copy functionality:
 
 ### Auto Enable
 
-Our clipboard plugin works, but it will only work when we apply it on the template.  
+Our clipboard plugin works, but it will only work when we apply it on the template.
 Copy to clipboard is a basic feature, how would we enable it on all grids?
 
 The answer is using the grid created event, which fires every time a new grid instance is created.
@@ -337,9 +337,9 @@ The answer is using the grid created event, which fires every time a new grid in
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ON_INIT, PblNgridConfigService } from '@pebula/ngrid/core';
-import { PblNgridModule, PblNgridPluginController } from '@pebula/ngrid';
-import { PblNgridTargetEventsModule } from '@pebula/ngrid/target-events';
+import { ON_INIT, PblNgridConfigService } from '@perbula/ngrid/core';
+import { PblNgridModule, PblNgridPluginController } from '@perbula/ngrid';
+import { PblNgridTargetEventsModule } from '@perbula/ngrid/target-events';
 
 import { PLUGIN_KEY, PblNgridClipboardPlugin } from './clipboard.plugin';
 
@@ -361,8 +361,8 @@ export class PblNgridClipboardPluginModule {
 }
 ```
 
-We subscribed to `PblNgridPluginController.created` to get notifications when a new grid is created.  
-The event contains the plugin controller for the grid, with which we start listening to the `onInit` event.  
+We subscribed to `PblNgridPluginController.created` to get notifications when a new grid is created.
+The event contains the plugin controller for the grid, with which we start listening to the `onInit` event.
 When `onInit` fires, we check if our plugin is registered, if not, we register it.
 
 W> We check if the plugin is already registered because it might be, if the user also applied the directive.
@@ -386,13 +386,13 @@ To solve the 1st issue, we will simply apply some guards to make sure we only ru
   }
 ```
 
-To solve the 2st issue, we will make use if the [Global Settings](../features/grid/global-settings).  
+To solve the 2st issue, we will make use if the [Global Settings](../features/grid/global-settings).
 We will add a new settings group, specific to our plugin, allowing the user to toggle the feature.
 
 The first step is enrich the global settings type with the new settings:
 
 ```typescript
-declare module '@pebula/ngrid/lib/grid/services/config' {
+declare module '@perbula/ngrid/lib/grid/services/config' {
   interface PblNgridConfig {
     clipboard?: {
       /** When set to true will enable the clipboard plugin on all grid instances by default. */

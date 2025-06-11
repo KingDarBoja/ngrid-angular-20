@@ -1,5 +1,5 @@
 ---
-title: "@pebula/ngrid-material"
+title: "@perbula/ngrid-material"
 path: plugins/ngrid-material
 parent: plugins
 ordinal: 0

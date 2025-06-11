@@ -1,8 +1,8 @@
 // tslint:disable:use-host-property-decorator
 import { Directive, TemplateRef } from '@angular/core';
-import { PblNgridComponent, PblNgridRegistryService, PblNgridSingleTemplateRegistry } from '@pebula/ngrid';
+import { PblNgridComponent, PblNgridRegistryService, PblNgridSingleTemplateRegistry } from '@perbula/ngrid';
 
-declare module '@pebula/ngrid/core/lib/registry/types' {
+declare module '@perbula/ngrid/core/lib/registry/types' {
   interface PblNgridSingleRegistryMap {
     blocker?: PblNgridBlockUiDefDirective;
   }

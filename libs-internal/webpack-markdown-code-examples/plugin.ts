@@ -7,12 +7,12 @@ const remarkPrismJs = require('gatsby-remark-prismjs');
 
 const { util: { createHash } } = webpack as any;
 
-import { PebulaDynamicDictionaryWebpackPlugin } from '@pebula-internal/webpack-dynamic-dictionary';
-import { PebulaNoCleanIfAnyWebpackPlugin } from '@pebula-internal/webpack-no-clean-if-any';
+import { PebulaDynamicDictionaryWebpackPlugin } from '@perbula-internal/webpack-dynamic-dictionary';
+import { PebulaNoCleanIfAnyWebpackPlugin } from '@perbula-internal/webpack-no-clean-if-any';
 import { ParsedExampleMetadata, ExampleFileAsset } from './models';
 import { createInitialExampleFileAssets, parseExampleTsFile } from './utils';
 
-declare module '@pebula-internal/webpack-dynamic-dictionary/plugin' {
+declare module '@perbula-internal/webpack-dynamic-dictionary/plugin' {
   interface DynamicExportedObject {
     markdownCodeExamples: string;
   }

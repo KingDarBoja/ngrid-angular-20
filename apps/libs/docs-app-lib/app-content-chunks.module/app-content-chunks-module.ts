@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexModule } from '@angular/flex-layout/flex';
 import { ExtendedModule } from '@angular/flex-layout/extended';
-import { LiveExample } from '@pebula/apps/docs-app-lib';
+import { LiveExample } from '@perbula/apps/docs-app-lib';
 
 import { ExampleMaterialModule } from './material-module';
-import { PblNgridModule } from '@pebula/ngrid';
+import { PblNgridModule } from '@perbula/ngrid';
 
 import { GridLayout1ContentChunk } from './grid/layout-1/layout-1.component';
 import { ColumnsAppContentChunk } from './columns/columns-content.component';

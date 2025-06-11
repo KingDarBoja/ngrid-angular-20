@@ -3,7 +3,7 @@ import {
   DataSourceColumnPredicate, PblNgridSorter,
   PblColumnDefinition, PblColumnTypeDefinition,
   getValue, deepPathSet,
-} from '@pebula/ngrid/core';
+} from '@perbula/ngrid/core';
 
 import { PblNgridMetaCellContext, PblNgridCellContext } from '../../context/types';
 import { PblNgridColumnDef } from '../directives/column-def';

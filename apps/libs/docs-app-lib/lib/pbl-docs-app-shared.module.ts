@@ -20,8 +20,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexModule } from '@angular/flex-layout/flex';
 import { ExtendedModule } from '@angular/flex-layout/extended';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblTocModule } from '@pebula/apps/docs-app-lib/toc.module';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblTocModule } from '@perbula/apps/docs-app-lib/toc.module';
 
 import {
   MarkdownPageContainerComponent,

@@ -1,6 +1,6 @@
 import { Input, ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { createDS, columnFactory } from '@pebula/ngrid';
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
+import { createDS, columnFactory } from '@perbula/ngrid';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
 
 @Component({
   selector: 'pbl-grid-layout-1',

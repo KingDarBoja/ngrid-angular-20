@@ -10,11 +10,11 @@ import {
 import { BooleanInput, coerceBooleanProperty, NumberInput } from '@angular/cdk/coercion';
 import { TooltipPosition, MatTooltip } from '@angular/material/tooltip';
 
-import { unrx, PblNgridConfigService } from '@pebula/ngrid/core';
-import { PblNgridComponent, PblNgridPluginController } from '@pebula/ngrid';
-import { PblNgridCellEvent } from '@pebula/ngrid/target-events';
+import { unrx, PblNgridConfigService } from '@perbula/ngrid/core';
+import { PblNgridComponent, PblNgridPluginController } from '@perbula/ngrid';
+import { PblNgridCellEvent } from '@perbula/ngrid/target-events';
 
-declare module '@pebula/ngrid/core/lib/configuration/type' {
+declare module '@perbula/ngrid/core/lib/configuration/type' {
   interface PblNgridConfig {
     cellTooltip?: CellTooltipOptions & {
       /** When set to true will apply the default cell tooltip to ALL tables */
@@ -23,7 +23,7 @@ declare module '@pebula/ngrid/core/lib/configuration/type' {
   }
 }
 
-declare module '@pebula/ngrid/lib/ext/types' {
+declare module '@perbula/ngrid/lib/ext/types' {
   interface PblNgridPluginExtension {
     cellTooltip?: PblNgridCellTooltipDirective<any>;
   }

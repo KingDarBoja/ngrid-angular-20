@@ -1,6 +1,6 @@
 
 import { ComponentRef, Type, Injector } from '@angular/core';
-import { PblNgridMultiComponentRegistry } from '@pebula/ngrid';
+import { PblNgridMultiComponentRegistry } from '@perbula/ngrid';
 
 export class PblNgridOverlayPanelComponentExtension<T> extends PblNgridMultiComponentRegistry<T, 'overlayPanels'> {
   readonly name: string;

@@ -1,10 +1,10 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, ViewChild, TemplateRef, AfterViewInit } from '@angular/core';
 import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion';
 
-import { createDS, columnFactory, PblNgridComponent } from '@pebula/ngrid';
+import { createDS, columnFactory, PblNgridComponent } from '@perbula/ngrid';
 
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 @Component({
   selector: 'pbl-action-row-example',

@@ -1,5 +1,5 @@
 import { from, isObservable, Observable, of } from 'rxjs';
-import { PblDataSourceTriggerChangeHandler } from '@pebula/ngrid';
+import { PblDataSourceTriggerChangeHandler } from '@perbula/ngrid';
 import { PblInfiniteScrollTriggerChangedEvent } from '../infinite-scroll-datasource.types';
 import { TriggerExecutionProxyObservable } from './execution-proxy-observer';
 

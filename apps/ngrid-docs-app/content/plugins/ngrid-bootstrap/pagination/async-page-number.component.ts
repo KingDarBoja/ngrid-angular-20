@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { createDS, columnFactory } from '@pebula/ngrid';
+import { createDS, columnFactory } from '@perbula/ngrid';
 
-import { Person, DynamicRestClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Person, DynamicRestClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 @Component({
   selector: 'pbl-bs-async-page-number-example',

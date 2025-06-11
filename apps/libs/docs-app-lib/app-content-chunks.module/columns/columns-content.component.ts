@@ -1,6 +1,6 @@
 import { Input, ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { createDS, columnFactory, PblNgridColumnDefinitionSet } from '@pebula/ngrid';
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
+import { createDS, columnFactory, PblNgridColumnDefinitionSet } from '@perbula/ngrid';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
 
 @Component({
   selector: 'pbl-columns-app-content-chunk',

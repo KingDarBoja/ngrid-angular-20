@@ -1,4 +1,4 @@
-import { Person, Customer, Seller, BaseClientApi } from '@pebula/apps/client-api';
+import { Person, Customer, Seller, BaseClientApi } from '@perbula/apps/client-api';
 import { PaginationQuery, Response, Request } from './types';
 
 export abstract class BaseRestClientApi {

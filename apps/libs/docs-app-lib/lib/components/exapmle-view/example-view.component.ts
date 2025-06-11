@@ -10,8 +10,8 @@ import {
 import { trigger, transition, animate, style } from '@angular/animations'
 import { Angulartics2 } from 'angulartics2';
 
-import { unrx } from '@pebula/ngrid/core';
-import type { ExampleFileAsset } from '@pebula-internal/webpack-markdown-code-examples';
+import { unrx } from '@perbula/ngrid/core';
+import type { ExampleFileAsset } from '@perbula-internal/webpack-markdown-code-examples';
 
 import { MarkdownDynamicComponentPortal } from '../markdown-dynamic-component-portal';
 import { MarkdownCodeExamplesService } from '../../services/markdown-code-examples.service';

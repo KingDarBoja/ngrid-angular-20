@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DATA_TYPES, Customer, Person, Seller, BaseClientApi } from '@pebula/apps/client-api';
+import { DATA_TYPES, Customer, Person, Seller, BaseClientApi } from '@perbula/apps/client-api';
 import WindowStoreAdapter from './client-adapters/window';
 import WorkerStoreAdapter from './client-adapters/worker';
 

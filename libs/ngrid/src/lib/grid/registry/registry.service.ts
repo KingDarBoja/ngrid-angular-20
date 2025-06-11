@@ -6,7 +6,7 @@ import {
   PblNgridMultiRegistryMap,
   PblNgridSingleRegistryMap,
   RegistryChangedEvent,
-}  from '@pebula/ngrid/core';
+}  from '@perbula/ngrid/core';
 
 /**
  * A Registry for templates of table parts.

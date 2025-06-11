@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { createDS, columnFactory, PblNgridComponent, GridDataPoint } from '@pebula/ngrid';
+import { createDS, columnFactory, PblNgridComponent, GridDataPoint } from '@perbula/ngrid';
 
-import { Seller, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Seller, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 @Component({
   selector: 'pbl-focus-and-selection-example',

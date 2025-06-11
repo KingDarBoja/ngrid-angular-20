@@ -1,7 +1,7 @@
 import * as webpack from 'webpack';
 export interface DynamicExportedObject { }; //tslint:disable-line
 
-const pluginName = 'pebula-dynamic-dictionary-webpack-plugin';
+const pluginName = 'perbula-dynamic-dictionary-webpack-plugin';
 const store = new WeakMap<webpack.Compiler, PebulaDynamicDictionaryWebpackPlugin>();
 
 class LazySource {

@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { columnFactory, PblNgridCellContext } from '@pebula/ngrid';
-import { createInfiniteScrollDS } from '@pebula/ngrid/infinite-scroll';
+import { columnFactory, PblNgridCellContext } from '@perbula/ngrid';
+import { createInfiniteScrollDS } from '@perbula/ngrid/infinite-scroll';
 
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 @Component({
   selector: 'pbl-cell-edit-global-trigger-example',

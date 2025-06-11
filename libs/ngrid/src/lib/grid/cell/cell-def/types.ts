@@ -1,4 +1,4 @@
-import { PblColumnTypeDefinitionDataMap } from '@pebula/ngrid/core';
+import { PblColumnTypeDefinitionDataMap } from '@perbula/ngrid/core';
 
 export interface PblNgridCellDefDirectiveBase {
   name: string;

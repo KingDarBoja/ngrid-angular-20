@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CdkTableModule } from '@angular/cdk/table';
-import { PblNgridConfigService } from '@pebula/ngrid/core';
-import { PblNgridModule, PblNgridPluginController, ngridPlugin } from '@pebula/ngrid';
+import { PblNgridConfigService } from '@perbula/ngrid/core';
+import { PblNgridModule, PblNgridPluginController, ngridPlugin } from '@perbula/ngrid';
 import { PblNgridTargetEventsPlugin, PblNgridTargetEventsPluginDirective, PLUGIN_KEY, runOnce } from './target-events/target-events-plugin';
 import { PblNgridCellEditDirective } from './target-events/cell-edit.directive';
 

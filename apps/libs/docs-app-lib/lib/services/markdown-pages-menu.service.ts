@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import type { PageNavigationMetadata, PageAssetNavEntry } from '@pebula-internal/webpack-markdown-pages';
+import type { PageNavigationMetadata, PageAssetNavEntry } from '@perbula-internal/webpack-markdown-pages';
 
 import { MarkdownPagesService } from './markdown-pages.service';
 

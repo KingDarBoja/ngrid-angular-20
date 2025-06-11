@@ -4,7 +4,7 @@ import {
   PblDataSource,
   PblDataSourceConfigurableTriggers,
   PblDataSourceOptions
-} from '@pebula/ngrid';
+} from '@perbula/ngrid';
 import { PblNgridCacheAdaptersMap } from './caching';
 import { PblNgridCacheAdapter } from './caching/cache-adapter';
 

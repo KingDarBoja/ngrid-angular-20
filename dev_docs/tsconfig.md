@@ -1,6 +1,6 @@
 # TSConfig Paths setup
 
-The `paths` in this project are set to reflect the real life usage of the library with the `@pebula` scope.
+The `paths` in this project are set to reflect the real life usage of the library with the `@perbula` scope.
 
 The basic structure for all libraries is:
 
@@ -27,13 +27,13 @@ Each library has it's own dedicated folder and all source code is inside the `sr
 The most basic `paths` entry is:
 
 ```
-  "@pebula/*": [
+  "@perbula/*": [
     "libs/*/src/index.ts",
     "libs/*"
   ]
 ```
 
-The above should catch most imports, including secondary routs (e.g. `@pebula/ngrid/drag`).
+The above should catch most imports, including secondary routs (e.g. `@perbula/ngrid/drag`).
 
 This is set last because it is very generic and used as last resort. More specific
 path mappings are set before this one.
@@ -50,7 +50,7 @@ we need to point to the exact location (file) that the type is declared in.
 For example:
 
 ```ts
-declare module '@pebula/ngrid/lib/grid/column/model/types' {
+declare module '@perbula/ngrid/lib/grid/column/model/types' {
   interface PblColumnTypeDefinitionDataMap {
     currencyFn: (row: Person) => string;
     countryNameDynamic: (row: Person) => string;
@@ -58,19 +58,19 @@ declare module '@pebula/ngrid/lib/grid/column/model/types' {
 }
 ```
 
-Notice the path we reference: `declare module '@pebula/ngrid/lib/grid/columns/types'`
+Notice the path we reference: `declare module '@perbula/ngrid/lib/grid/columns/types'`
 
-We point to `@pebula/ngrid/lib` but the file is actually in `@pebula/ngrid/src/lib`.
+We point to `@perbula/ngrid/lib` but the file is actually in `@perbula/ngrid/src/lib`.
 
 This is required because the `dist` output structure is without the `src` folder and we need to make sure our code will work locally and with the `dist` version.
 
 To make this work we add additional path mappings:
 
 ```
-  "@pebula/ngrid/lib/*": [
+  "@perbula/ngrid/lib/*": [
     "libs/ngrid/src/lib/*"
   ],
-  "@pebula/ngrid-material/lib/*": [
+  "@perbula/ngrid-material/lib/*": [
     "libs/ngrid-material/src/lib/*"
   ]
 ```
@@ -93,7 +93,7 @@ This means that packages must be built in order (dependency tree).
 This file has different mappings, more simple:
 
 ```
-  "@pebula/*": [
-    "dist/@pebula/*"
+  "@perbula/*": [
+    "dist/@perbula/*"
   ]
 ```

@@ -48,7 +48,7 @@ entries which are used to render a UI element.
 
 The slot has a kind, a unique name/id, which describes what is role of the UI element that should be rendered.
 
-For example, the `tableCell` slot is a multi-entry slot that holds entries that will be rendered as **cell items** in the grid.  
+For example, the `tableCell` slot is a multi-entry slot that holds entries that will be rendered as **cell items** in the grid.
 The `headerCell` slot is a multi-entry slot that holds entries that will be rendered as **cell header items** in the grid.
 
 NGrid comes with a pre-defined list of slots, ready to be defined by the developer, allowing the creation of a completely custom UI.
@@ -115,7 +115,7 @@ This structure is very flexible:
 <pbl-ngrid></pbl-ngrid>
 ```
 
-The example above is the template of a component, which render 2 grid's.  
+The example above is the template of a component, which render 2 grid's.
 There are 2 type cell templates, an orphan one, outside of any grid (rendering `ABC`) and one inside a grid (rendering `123`).
 
 The first grid:
@@ -152,7 +152,7 @@ In the previous example, we had a template defined in the component:
 <pbl-ngrid></pbl-ngrid>
 ```
 
-Now, the registry is not unique, it might be the root or some other registry we defined in between.  
+Now, the registry is not unique, it might be the root or some other registry we defined in between.
 However, when the component is destroyed the template is also destroyed and removed from the registry.
 
 ### Real global templates
@@ -217,7 +217,7 @@ registry.addMulti('headerCell', this);
 
 ### Component Based Registry Entries
 
-A component based entry is used for rendering UI elements based on angular components.  
+A component based entry is used for rendering UI elements based on angular components.
 It serves as a close unit for creating, rendering and updating the component it encapsulates.
 
 Because it is a bit more complex to define, n most cases, the implementation and use of these entries are hidden from the end-user.
@@ -225,12 +225,12 @@ Because it is a bit more complex to define, n most cases, the implementation and
 Component based entries are good in cases where the UI implementation already exists as a component or when the rendered content
 should wrap (project content) an existing, already rendered content.
 
-A good example is the `MatSort` component from the `@angular/material/sort` package.  
+A good example is the `MatSort` component from the `@angular/material/sort` package.
 We would want to use it within a header cell, to wrap the cell and show the current sorting state while handling clicks to change the sort state.
 
 `MatSort` is an already existing sorting solution, tested and working and it requires wrapping the cell's content, a perfect fit for a component based entry.
 
-To see how it is implemented, see the code for `@pebula/ngrid-material/sort`.
+To see how it is implemented, see the code for `@perbula/ngrid-material/sort`.
 
 W> The entity type of each slot is defined by the slot's creator. Most slots support template based entries, some support component based and some support **both**
 
@@ -257,7 +257,7 @@ This is a fairly complex requirement which we can implement by creating a cell t
 </sort-component>
 ```
 
-Easy... but there is a problem, when we want a certain cell to have a more specific UI we will need to repeat the entire thing.  
+Easy... but there is a problem, when we want a certain cell to have a more specific UI we will need to repeat the entire thing.
 Eventually, we end up with a single template and multiple copies spread around in our application, when refactor day comes - big problem.
 
 `dataHeaderExtensions` to the rescue.

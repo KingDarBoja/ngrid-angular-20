@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewEncapsulation } from '@angular/core';
-import { PblNgridDataHeaderExtensionContext } from '@pebula/ngrid';
-import { PblNgridOverlayPanelConfig } from '@pebula/ngrid/overlay-panel';
+import { PblNgridDataHeaderExtensionContext } from '@perbula/ngrid';
+import { PblNgridOverlayPanelConfig } from '@perbula/ngrid/overlay-panel';
 
 import { PblNgridMatHeaderContextMenuPlugin } from './header-context-menu.directive';
 

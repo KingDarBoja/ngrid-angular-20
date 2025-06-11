@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { createDS, columnFactory } from '@pebula/ngrid';
-import { PblNgridRowEvent, PblNgridCellEvent } from '@pebula/ngrid/target-events';
+import { createDS, columnFactory } from '@perbula/ngrid';
+import { PblNgridRowEvent, PblNgridCellEvent } from '@perbula/ngrid/target-events';
 
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 function isCellEvent<T>(event: PblNgridRowEvent<T> | PblNgridCellEvent<T>): event is PblNgridCellEvent<T> {
   return !!(event as  PblNgridCellEvent<T>).cellTarget;

@@ -6,8 +6,8 @@ import { Dir } from '@angular/cdk/bidi';
 import { MatMenu } from '@angular/material/menu';
 import { MatSelect } from '@angular/material/select';
 
-import { MarkdownPagesMenuService, LocationService, ViewLayoutObserver, SearchService, SearchResults } from '@pebula/apps/docs-app-lib';
-import type { PageAssetNavEntry } from '@pebula-internal/webpack-markdown-pages';
+import { MarkdownPagesMenuService, LocationService, ViewLayoutObserver, SearchService, SearchResults } from '@perbula/apps/docs-app-lib';
+import type { PageAssetNavEntry } from '@perbula-internal/webpack-markdown-pages';
 
 @Component({
   selector: 'pbl-demo-home-page',

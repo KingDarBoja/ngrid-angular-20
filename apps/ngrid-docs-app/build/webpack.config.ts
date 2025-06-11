@@ -2,12 +2,12 @@ import * as Path from 'path';
 import { Compiler, DefinePlugin, WebpackOptionsNormalized } from 'webpack';
 import * as simplegit from 'simple-git/promise';
 
-import { PebulaDynamicDictionaryWebpackPlugin } from '@pebula-internal/webpack-dynamic-dictionary';
-import { PebulaNoCleanIfAnyWebpackPlugin } from '@pebula-internal/webpack-no-clean-if-any';
-import { MarkdownPagesWebpackPlugin } from '@pebula-internal/webpack-markdown-pages';
-import { SsrAndSeoWebpackPlugin } from '@pebula-internal/webpack-ssr-and-seo';
-import { MarkdownAppSearchWebpackPlugin } from '@pebula-internal/webpack-markdown-app-search';
-import { MarkdownCodeExamplesWebpackPlugin } from '@pebula-internal/webpack-markdown-code-examples';
+import { PebulaDynamicDictionaryWebpackPlugin } from '@perbula-internal/webpack-dynamic-dictionary';
+import { PebulaNoCleanIfAnyWebpackPlugin } from '@perbula-internal/webpack-no-clean-if-any';
+import { MarkdownPagesWebpackPlugin } from '@perbula-internal/webpack-markdown-pages';
+import { SsrAndSeoWebpackPlugin } from '@perbula-internal/webpack-ssr-and-seo';
+import { MarkdownAppSearchWebpackPlugin } from '@perbula-internal/webpack-markdown-app-search';
+import { MarkdownCodeExamplesWebpackPlugin } from '@perbula-internal/webpack-markdown-code-examples';
 import type { AngularWebpackPlugin as _AngularWebpackPlugin } from '@ngtools/webpack';
 import * as remarkPlugins from './remark';
 

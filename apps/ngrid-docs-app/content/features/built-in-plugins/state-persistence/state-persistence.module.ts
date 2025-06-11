@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridStatePluginModule } from '@pebula/ngrid/state';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridStatePluginModule } from '@perbula/ngrid/state';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { StatePersistenceExample } from './state-persistence.component';
 
 @NgModule({

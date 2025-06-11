@@ -7,17 +7,17 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
-import { PblNgridRegistryService, PblNgridModule } from '@pebula/ngrid';
-import { PblNgridDragModule } from '@pebula/ngrid/drag';
-import { PblNgridTargetEventsModule } from '@pebula/ngrid/target-events';
-import { PblNgridBlockUiModule } from '@pebula/ngrid/block-ui';
-import { PblNgridStatePluginModule } from '@pebula/ngrid/state';
-import { PblNgridMatSortModule } from '@pebula/ngrid-material/sort';
-import { PblNgridCellTooltipModule } from '@pebula/ngrid-material/cell-tooltip';
-import { PblNgridCheckboxModule } from '@pebula/ngrid-material/selection-column';
+import { PblNgridRegistryService, PblNgridModule } from '@perbula/ngrid';
+import { PblNgridDragModule } from '@perbula/ngrid/drag';
+import { PblNgridTargetEventsModule } from '@perbula/ngrid/target-events';
+import { PblNgridBlockUiModule } from '@perbula/ngrid/block-ui';
+import { PblNgridStatePluginModule } from '@perbula/ngrid/state';
+import { PblNgridMatSortModule } from '@perbula/ngrid-material/sort';
+import { PblNgridCellTooltipModule } from '@perbula/ngrid-material/cell-tooltip';
+import { PblNgridCheckboxModule } from '@perbula/ngrid-material/selection-column';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { CommonGridTemplatesModule, CommonGridTemplatesComponent } from '../common-grid-templates';
 import { VirtualScrollPerformanceDemoExample } from './virtual-scroll-performance-demo.component';
 

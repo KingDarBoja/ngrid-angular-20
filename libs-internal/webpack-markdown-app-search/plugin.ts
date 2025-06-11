@@ -1,15 +1,15 @@
 import * as webpack from 'webpack';
 // import * as domino from 'domino';
-import { PebulaDynamicDictionaryWebpackPlugin } from '@pebula-internal/webpack-dynamic-dictionary';
-import { PebulaNoCleanIfAnyWebpackPlugin } from '@pebula-internal/webpack-no-clean-if-any';
-import { ParsedPage } from '@pebula-internal/webpack-markdown-pages';
+import { PebulaDynamicDictionaryWebpackPlugin } from '@perbula-internal/webpack-dynamic-dictionary';
+import { PebulaNoCleanIfAnyWebpackPlugin } from '@perbula-internal/webpack-no-clean-if-any';
+import { ParsedPage } from '@perbula-internal/webpack-markdown-pages';
 import { SearchableSource } from './models';
 import { MarkdownPagesWebpackPlugin } from '../webpack-markdown-pages/plugin';
 
 const domino = require('domino');
 const { util: { createHash } } = webpack as any;
 
-declare module '@pebula-internal/webpack-dynamic-dictionary/plugin' {
+declare module '@perbula-internal/webpack-dynamic-dictionary/plugin' {
   interface DynamicExportedObject {
     searchContent: string;
   }

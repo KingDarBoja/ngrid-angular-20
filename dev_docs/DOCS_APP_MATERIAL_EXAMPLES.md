@@ -72,7 +72,7 @@ npm run example -- plugins/ngrid-material/SelectionColumn --add BulkModeAndVirtu
 
 For each run, the schematic will output markdown/html code and a list of files it updates/created.
 
-The markdown/html code is a basic template the can be used as content 
+The markdown/html code is a basic template the can be used as content
 
 For example, running:
 
@@ -110,7 +110,7 @@ As stated, example components come inside an example module with a module having
 To identify an example, it is prefixed with the `@Example` decorator, allowing custom metadata attached to the example:
 
 ```ts
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 @Component({ /* ANGULAR METADATA */ })
 @Example('pbl-my-example', { title: 'CMy Example' })
@@ -122,7 +122,7 @@ export class MyExample { }
 In addition, we need to map each component to it's module:
 
 ```ts
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
 
 @NgModule({
   declarations: [ MyExample ],

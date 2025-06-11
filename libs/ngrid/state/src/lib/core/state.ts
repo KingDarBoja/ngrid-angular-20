@@ -1,4 +1,4 @@
-import { PblNgridComponent } from '@pebula/ngrid';
+import { PblNgridComponent } from '@perbula/ngrid';
 import { PblNgridGlobalState, PblNgridStateOptions, PblNgridStateSaveOptions, PblNgridStateLoadOptions } from './models/index';
 import { stateVisor } from './state-visor';
 import * as U from './utils';

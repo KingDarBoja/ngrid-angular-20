@@ -4,21 +4,21 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 
-import { PblNgridRegistryService, PblNgridModule } from '@pebula/ngrid';
-import { PblNgridDragModule } from '@pebula/ngrid/drag';
-import { PblNgridTargetEventsModule } from '@pebula/ngrid/target-events';
-import { PblNgridBlockUiModule } from '@pebula/ngrid/block-ui';
-import { PblNgridStickyModule } from '@pebula/ngrid/sticky';
-import { PblNgridStatePluginModule } from '@pebula/ngrid/state';
-import { PblNgridOverlayPanelModule } from '@pebula/ngrid/overlay-panel';
-import { PblNgridMatSortModule } from '@pebula/ngrid-material/sort';
-import { PblNgridPaginatorModule } from '@pebula/ngrid-material/paginator';
-import { PblNgridContextMenuModule } from '@pebula/ngrid-material/context-menu';
-import { PblNgridCellTooltipModule } from '@pebula/ngrid-material/cell-tooltip';
-import { PblNgridCheckboxModule } from '@pebula/ngrid-material/selection-column';
+import { PblNgridRegistryService, PblNgridModule } from '@perbula/ngrid';
+import { PblNgridDragModule } from '@perbula/ngrid/drag';
+import { PblNgridTargetEventsModule } from '@perbula/ngrid/target-events';
+import { PblNgridBlockUiModule } from '@perbula/ngrid/block-ui';
+import { PblNgridStickyModule } from '@perbula/ngrid/sticky';
+import { PblNgridStatePluginModule } from '@perbula/ngrid/state';
+import { PblNgridOverlayPanelModule } from '@perbula/ngrid/overlay-panel';
+import { PblNgridMatSortModule } from '@perbula/ngrid-material/sort';
+import { PblNgridPaginatorModule } from '@perbula/ngrid-material/paginator';
+import { PblNgridContextMenuModule } from '@perbula/ngrid-material/context-menu';
+import { PblNgridCellTooltipModule } from '@perbula/ngrid-material/cell-tooltip';
+import { PblNgridCheckboxModule } from '@perbula/ngrid-material/selection-column';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { CommonGridTemplatesModule, CommonGridTemplatesComponent } from '../common-grid-templates';
 import { SellerDemoExample } from './seller-demo.component';
 

@@ -1,6 +1,6 @@
-import { PblColumn, PblColumnGroup } from '@pebula/ngrid';
+import { PblColumn, PblColumnGroup } from '@perbula/ngrid';
 
-declare module '@pebula/ngrid/lib/grid/column/model/column' {
+declare module '@perbula/ngrid/lib/grid/column/model/column' {
   interface PblColumn {
 
     reorder: boolean;
@@ -21,7 +21,7 @@ declare module '@pebula/ngrid/lib/grid/column/model/column' {
   }
 }
 
-declare module '@pebula/ngrid/lib/grid/column/model/group-column' {
+declare module '@perbula/ngrid/lib/grid/column/model/group-column' {
   interface PblColumnGroup {
     /**
      * Lock column in the group, preventing the group from splitting.
@@ -31,7 +31,7 @@ declare module '@pebula/ngrid/lib/grid/column/model/group-column' {
   }
 }
 
-declare module '@pebula/ngrid/core/lib/models/column' {
+declare module '@perbula/ngrid/core/lib/models/column' {
   interface PblColumnDefinition {
     reorder?: boolean;
     /**

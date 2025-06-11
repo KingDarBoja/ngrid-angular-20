@@ -10,12 +10,12 @@ import * as remarkHtml from 'remark-html';
 
 const { util: { createHash } } = webpack as any;
 
-import { PebulaDynamicDictionaryWebpackPlugin } from '@pebula-internal/webpack-dynamic-dictionary';
-import { PebulaNoCleanIfAnyWebpackPlugin } from '@pebula-internal/webpack-no-clean-if-any';
+import { PebulaDynamicDictionaryWebpackPlugin } from '@perbula-internal/webpack-dynamic-dictionary';
+import { PebulaNoCleanIfAnyWebpackPlugin } from '@perbula-internal/webpack-no-clean-if-any';
 import { ParsedPage, PageNavigationMetadata, PageAttributes } from './models';
 import { createPageFileAsset, sortPageAssetNavEntry } from './utils';
 
-declare module '@pebula-internal/webpack-dynamic-dictionary/plugin' {
+declare module '@perbula-internal/webpack-dynamic-dictionary/plugin' {
   interface DynamicExportedObject {
     markdownPages: string;
   }
@@ -170,7 +170,7 @@ export class MarkdownPagesWebpackPlugin {
           this.urlCache.set(outputAssetPath, obj);
           compilation.emitAsset(outputAssetPath, new webpack.sources.RawSource(source));
         }
-        
+
       }
 
       obj.postRenderMetadata = {

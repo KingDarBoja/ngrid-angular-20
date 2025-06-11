@@ -1,7 +1,7 @@
 import { join } from 'path';
 import { readFileSync, existsSync, writeFileSync } from 'fs';
 import { mkdirpSync } from 'fs-extra';
-import { PageAssetNavEntry, PageNavigationMetadata } from '@pebula-internal/webpack-markdown-pages/models';
+import { PageAssetNavEntry, PageNavigationMetadata } from '@perbula-internal/webpack-markdown-pages/models';
 
 const fetch = require('node-fetch').default;
 

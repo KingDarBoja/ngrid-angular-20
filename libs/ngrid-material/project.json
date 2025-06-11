@@ -1,14 +1,20 @@
 {
   "name": "ngrid-material",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "tags": ["name:material", "type:lib", "parent:ngrid"],
+  "tags": [
+    "name:material",
+    "type:lib",
+    "parent:ngrid"
+  ],
   "sourceRoot": "libs/ngrid-material/src",
   "projectType": "library",
   "prefix": "pbl",
   "targets": {
     "build": {
       "executor": "ng-cli-packagr-tasks:build",
-      "outputs": ["{workspaceRoot}/dist/@pebula/ngrid-material"],
+      "outputs": [
+        "{workspaceRoot}/dist/@perbula/ngrid-material"
+      ],
       "options": {
         "tsConfig": "libs/ngrid-material/tsconfig.lib.json",
         "project": "libs/ngrid-material/ng-package.json",
@@ -21,22 +27,22 @@
                 {
                   "glob": "README.md",
                   "input": ".",
-                  "output": "dist/@pebula/ngrid-material"
+                  "output": "dist/@perbula/ngrid-material"
                 },
                 {
                   "glob": "*.scss",
                   "input": "libs/ngrid-material",
-                  "output": "dist/@pebula/ngrid-material"
+                  "output": "dist/@perbula/ngrid-material"
                 },
                 {
                   "glob": "**/*.scss",
                   "input": "libs/ngrid-material/theming",
-                  "output": "dist/@pebula/ngrid-material/theming"
+                  "output": "dist/@perbula/ngrid-material/theming"
                 },
                 {
                   "glob": "*/theming/**/*.scss",
                   "input": "libs/ngrid-material",
-                  "output": "dist/@pebula/ngrid-material"
+                  "output": "dist/@perbula/ngrid-material"
                 }
               ]
             },
@@ -45,7 +51,7 @@
                 {
                   "glob": "*.scss",
                   "input": "libs/ngrid-material/theming/prebuilt",
-                  "output": "dist/@pebula/ngrid-material/themes"
+                  "output": "dist/@perbula/ngrid-material/themes"
                 }
               ]
             }
@@ -63,7 +69,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/libs/ngrid-material"],
+      "outputs": [
+        "{workspaceRoot}/coverage/libs/ngrid-material"
+      ],
       "options": {
         "jestConfig": "libs/ngrid-material/jest.config.ts",
         "passWithNoTests": true

@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { createDS, columnFactory, PblNgridRowContext } from '@pebula/ngrid';
+import { createDS, columnFactory, PblNgridRowContext } from '@perbula/ngrid';
 
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 @Component({
   selector: 'pbl-dynamic-size-example',

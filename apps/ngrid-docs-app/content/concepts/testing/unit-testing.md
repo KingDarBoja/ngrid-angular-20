@@ -21,7 +21,7 @@ techniques you are free to do so.
 
 ## NGrid Component Harness
 
-The main harness used to interact with **nGrid** is `PblNgridHarness` located in `@pebula/ngrid/testing`.  
+The main harness used to interact with **nGrid** is `PblNgridHarness` located in `@perbula/ngrid/testing`.
 
 From `PblNgridHarness` you can query for other harness components that wrap cells, columns, rows and other building blocks.
 
@@ -38,10 +38,10 @@ I> The entire documentation site is using nGrid's test harness components.
 The component harness helpers will work with any framework / runner, including Jest, however using Jest with JSDOM is not
 recommended.
 
-Wether you use the component harness or not, using Jest exposes a limited set of UI functionality when testing.  
+Wether you use the component harness or not, using Jest exposes a limited set of UI functionality when testing.
 This is true in general, but has a deep impact on big UI components like **nGrid**.
 
-Jest uses JSDOM to allow fest unit testing but it comes with a cost, it is not a browser.  
+Jest uses JSDOM to allow fest unit testing but it comes with a cost, it is not a browser.
 There is no layout rendering, no CSS calculation, no scroll API support and more.
 
 This does not allow proper UI testing for a component such as the grid.
@@ -49,7 +49,7 @@ For example, it is nearly impossible to deep test the grid with virtual scroll e
 This will also be true when working with grid's that have a lot of columns which exceed the viewport size, you will not be able
 to bring them into the view, no scrolling.
 
-That being said, if you're already using Jest you might not have any other option but to use it.  
+That being said, if you're already using Jest you might not have any other option but to use it.
 The component harness helpers will work but some functionality will not.
 
 You will be able to test columns, data and other functionality but not all.

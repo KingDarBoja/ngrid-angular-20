@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { createDS, columnFactory } from '@pebula/ngrid';
+import { createDS, columnFactory } from '@perbula/ngrid';
 
-import { Customer, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Customer, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 const ACCOUNT_BALANCE_TYPE = { name: 'accountBalance', data: { neg: 'rgba(255, 0, 0, 0.33)', pos: 'rgba(0, 128, 0, 0.33)', format: '1.0-2' } };
 

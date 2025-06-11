@@ -7,14 +7,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridDetailRowModule } from '@pebula/ngrid/detail-row';
-import { PblNgridBlockUiModule } from '@pebula/ngrid/block-ui';
-import { PblNgridPaginatorModule } from '@pebula/ngrid-material/paginator';
-import { PblNgridMatSortModule } from '@pebula/ngrid-material/sort';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridDetailRowModule } from '@perbula/ngrid/detail-row';
+import { PblNgridBlockUiModule } from '@perbula/ngrid/block-ui';
+import { PblNgridPaginatorModule } from '@perbula/ngrid-material/paginator';
+import { PblNgridMatSortModule } from '@perbula/ngrid-material/sort';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { DetailRowExample } from './detail-row.component';
 import { CustomParentExample } from './custom-parent.component';
 import { SingleAndExcludeModeExample } from './single-and-exclude-mode.component';

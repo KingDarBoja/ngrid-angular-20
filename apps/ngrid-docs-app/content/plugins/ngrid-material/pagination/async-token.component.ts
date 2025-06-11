@@ -1,11 +1,11 @@
 import { from as rxFrom } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { PblTokenPaginator } from '@pebula/ngrid/core';
-import { createDS, columnFactory } from '@pebula/ngrid';
+import { PblTokenPaginator } from '@perbula/ngrid/core';
+import { createDS, columnFactory } from '@perbula/ngrid';
 
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 function emulateServerSidePageNumberPaginationCall(datasource: DynamicClientApi, page: number, perPage: number) {
   return rxFrom(datasource.getPeople(500, 5000)).pipe(map( data => {

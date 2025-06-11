@@ -6,9 +6,9 @@ All folders in this directory are angular applications except for the **apps/lib
 
 The **apps/libs** directory contains library like modules that are feature modules consumed by applications in this directory.
 
-The project is configured with path mappings so `@pebula/apps/X` will point to `app/libs/x`.
+The project is configured with path mappings so `@perbula/apps/X` will point to `app/libs/x`.
 
-The main application is the documentation app that is used to document and showcase the libraries.  
+The main application is the documentation app that is used to document and showcase the libraries.
 The doc's app is built from MD files and source code which is not native to angular so internal plugins
 are used in the build process to make sure this is supported.
 

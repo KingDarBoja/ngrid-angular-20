@@ -12,7 +12,7 @@ Migrate to angular 14
 
 ## Highlights
 
-Support angular v14 from current supported angular version (12).  
+Support angular v14 from current supported angular version (12).
 It includes a refactor of the build system to nx 14 (from nx 12)
 
 This is a huge change since it include multiple monorepo management system changes (nx 14)
@@ -99,17 +99,17 @@ Upgrade process done in steps:
 ### Sass
 Sass theming API has been reworked so that clients can take advantage of @use. This includes:
 
-- A single entry point into `@pebula/ngrid`, `@pebula/ngrid-material` and `@pebula/ngrid-bootstrap`
+- A single entry point into `@perbula/ngrid`, `@perbula/ngrid-material` and `@perbula/ngrid-bootstrap`
 - Renamed functions, mixins, and variables to be a better reflection of what they do
 - Applications still using node-sass will need to switch to the sass package
 For more information, check out [the new material theming guide](https://github.com/angular/components/blob/25665dcc219fbbb76d0ba7f79982672500f78644/guides/theming.md) and [ngrid's theming docs](https://shlomiassaf.github.io/ngrid/concepts/theming/introduction).
-- For convinience, legacy theming API is still availavle at `@pebula/ngrid/theming`, `@pebula/ngrid-material/theming` and `@pebula/ngrid-bootstrap/theming`. The legacy API will be removed in v5.0.0
+- For convinience, legacy theming API is still availavle at `@perbula/ngrid/theming`, `@perbula/ngrid-material/theming` and `@perbula/ngrid-bootstrap/theming`. The legacy API will be removed in v5.0.0
 
 ### IVY APF v12
 
 Starting from version 4 of **nGrid**, the library is packaged using the new IVY [**A**ngular **P**acakge **F**ormat (v12)](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs).
 
-Compilation is done in `ViewEngine` mode.  
+Compilation is done in `ViewEngine` mode.
 While angular recommends compiling in [partial-ivy mode](https://angular.io/guide/creating-libraries#transitioning-libraries-to-partial-ivy-format), it has several limitations:
 
 - Support is still not wide-spread so several tools will not load **nGrid** (StackBlitz, CodeSandbox, etc...)
@@ -119,13 +119,13 @@ While angular recommends compiling in [partial-ivy mode](https://angular.io/guid
 
 However, as part of the CI process we still compile with partial-ivy mode enabled to catch errors since it is still new and has [it's quirks](https://github.com/angular/angular/issues/42208) which required some shellow API changes to work around it's issues. There should be no effect and used to ensure futute competability, however, if you experience strange behaviour please report.
 
-In addition, symboles exposes in public modules are now required to be exposed in the public API as well. This resulted in multiple symboles which were previously private now exposed.  
+In addition, symboles exposes in public modules are now required to be exposed in the public API as well. This resulted in multiple symboles which were previously private now exposed.
 
 ### Aligned with v12 of the angular eco-system
 
 Library is now on par with version 12 of `angular`, `@angular/cdk` and `@angular/components` (material).
 
-Since `nGrid@v4` is IVY compiled and the CDK does not support previous versions, v4 of **nGrid** will only run on angular version 12 and up. 
+Since `nGrid@v4` is IVY compiled and the CDK does not support previous versions, v4 of **nGrid** will only run on angular version 12 and up.
 
 ### ngrid
 
@@ -241,7 +241,7 @@ Since `nGrid@v4` is IVY compiled and the CDK does not support previous versions,
 
 * **ngrid:** move column (some) and datasource symbols to core package ([33d2bca](https://github.com/shlomiassaf/ngrid/commit/33d2bca06efd27e3605489697005d250dfb0780b))
 * **ngrid:** move configuration symbols to core package ([fc259ba](https://github.com/shlomiassaf/ngrid/commit/fc259ba343a98880bf9ccc39b9c6808007413f7d))
-* **ngrid:** move most of utils to `@pebula/ngrid/core` ([2990511](https://github.com/shlomiassaf/ngrid/commit/2990511c5bf3e68716bf2c08c87577fd6b2dc946))
+* **ngrid:** move most of utils to `@perbula/ngrid/core` ([2990511](https://github.com/shlomiassaf/ngrid/commit/2990511c5bf3e68716bf2c08c87577fd6b2dc946))
 * **ngrid:** move registry to core package ([55e8f31](https://github.com/shlomiassaf/ngrid/commit/55e8f311691394cb2fe2bcbbd76fa5169d72ad15))
 * **ngrid:** moved pagination types to core ([cad0f5b](https://github.com/shlomiassaf/ngrid/commit/cad0f5bf13b9b1a57dcf304be0da797c524820be))
 * **ngrid:** refactor the cell rendering engine and refactor the group definitions ([4882e4a](https://github.com/shlomiassaf/ngrid/commit/4882e4a1064d01aefab792ea6d984ba51bb5f70e)), closes [#123](https://github.com/shlomiassaf/ngrid/issues/123) [#131](https://github.com/shlomiassaf/ngrid/issues/131)
@@ -249,13 +249,13 @@ Since `nGrid@v4` is IVY compiled and the CDK does not support previous versions,
 
 ### BREAKING CHANGES
 
-* **ngrid:** To reduce clutter in the main packge the configuration symbols moved to `@pebula/ngrid/core`.
+* **ngrid:** To reduce clutter in the main packge the configuration symbols moved to `@perbula/ngrid/core`.
 At this point all symbols were re-exported from the main module so this no effect there. However, if you've extended on of the symbols using augmentation you will need to update the augmentation module path.
-* **ngrid:** To reduce clutter in the main packge the datasource symbols (all) and some of the column model symbols moved to `@pebula/ngrid/core`.
+* **ngrid:** To reduce clutter in the main packge the datasource symbols (all) and some of the column model symbols moved to `@perbula/ngrid/core`.
 At this point all symbols we're re-exported from the main module so this no effect there. However, if you've extended on of the symbols using augmentation you will need to update the augmentation module path.
 * **ngrid:** Since the registry and it's type mapping symbols are for intenral or plugin use they are now part of the core pacakge. Currently the single/multi directives are still in the main package but they might also be moved in a later phase
-* **ngrid:** If you've used `unrx` in your code, it is not located in `@pebula/ngrid/core` since it is not for used by "regular" users, only required for plugin authoring.
-* **ngrid:** Pagination types have moved from `@pebula/ngrid` to `@pebula/ngrid/core` as part of the cleanup process to simplify the main package. `@pebula/ngrid` re-exports the interfaces and types but the concrete implementations for `PblPagingPaginator` and `PblTokenPaginator` are now in the core pacakge as they are
+* **ngrid:** If you've used `unrx` in your code, it is not located in `@perbula/ngrid/core` since it is not for used by "regular" users, only required for plugin authoring.
+* **ngrid:** Pagination types have moved from `@perbula/ngrid` to `@perbula/ngrid/core` as part of the cleanup process to simplify the main package. `@perbula/ngrid` re-exports the interfaces and types but the concrete implementations for `PblPagingPaginator` and `PblTokenPaginator` are now in the core pacakge as they are
 not intended to be used by "regular" users, only plugin authors.
 * **ngrid:** Binding `[grid]` and `[row]` is no longer required. Same for `detailRow` and `infiniteRow`
 * **ngrid:** `resize-observer-polyfill` is no longer a peerDependency and is not required by the library. If you want polyfill support please import the polyfill using polyfill.ts
@@ -327,7 +327,7 @@ will override values from the array provided.
 
 * **ngrid:** move column (some) and datasource symbols to core package ([33d2bca](https://github.com/shlomiassaf/ngrid/commit/33d2bca06efd27e3605489697005d250dfb0780b))
 * **ngrid:** move configuration symbols to core package ([fc259ba](https://github.com/shlomiassaf/ngrid/commit/fc259ba343a98880bf9ccc39b9c6808007413f7d))
-* **ngrid:** move most of utils to `@pebula/ngrid/core` ([2990511](https://github.com/shlomiassaf/ngrid/commit/2990511c5bf3e68716bf2c08c87577fd6b2dc946))
+* **ngrid:** move most of utils to `@perbula/ngrid/core` ([2990511](https://github.com/shlomiassaf/ngrid/commit/2990511c5bf3e68716bf2c08c87577fd6b2dc946))
 * **ngrid:** move registry to core package ([55e8f31](https://github.com/shlomiassaf/ngrid/commit/55e8f311691394cb2fe2bcbbd76fa5169d72ad15))
 * **ngrid:** moved pagination types to core ([cad0f5b](https://github.com/shlomiassaf/ngrid/commit/cad0f5bf13b9b1a57dcf304be0da797c524820be))
 
@@ -339,13 +339,13 @@ will override values from the array provided.
 
 ### BREAKING CHANGES
 
-* **ngrid:** To reduce clutter in the main packge the configuration symbols moved to `@pebula/ngrid/core`.
+* **ngrid:** To reduce clutter in the main packge the configuration symbols moved to `@perbula/ngrid/core`.
 At this point all symbols were re-exported from the main module so this no effect there. However, if you've extended on of the symbols using augmentation you will need to update the augmentation module path.
-* **ngrid:** To reduce clutter in the main packge the datasource symbols (all) and some of the column model symbols moved to `@pebula/ngrid/core`.
+* **ngrid:** To reduce clutter in the main packge the datasource symbols (all) and some of the column model symbols moved to `@perbula/ngrid/core`.
 At this point all symbols we're re-exported from the main module so this no effect there. However, if you've extended on of the symbols using augmentation you will need to update the augmentation module path.
 * **ngrid:** Since the registry and it's type mapping symbols are for intenral or plugin use they are now part of the core pacakge. Currently the single/multi directives are still in the main package but they might also be moved in a later phase
-* **ngrid:** If you've used `unrx` in your code, it is not located in `@pebula/ngrid/core` since it is not for used by "regular" users, only required for plugin authoring.
-* **ngrid:** Pagination types have moved from `@pebula/ngrid` to `@pebula/ngrid/core` as part of the cleanup process to simplify the main package. `@pebula/ngrid` re-exports the interfaces and types but the concrete implementations for `PblPagingPaginator` and `PblTokenPaginator` are now in the core pacakge as they are
+* **ngrid:** If you've used `unrx` in your code, it is not located in `@perbula/ngrid/core` since it is not for used by "regular" users, only required for plugin authoring.
+* **ngrid:** Pagination types have moved from `@perbula/ngrid` to `@perbula/ngrid/core` as part of the cleanup process to simplify the main package. `@perbula/ngrid` re-exports the interfaces and types but the concrete implementations for `PblPagingPaginator` and `PblTokenPaginator` are now in the core pacakge as they are
 not intended to be used by "regular" users, only plugin authors.
 
 
@@ -600,7 +600,7 @@ will override values from the array provided.
 
 * **ngrid:** This refactor changes the terminology used by the library from legacy "table" references to "grid" references.
 This refactor addressed filenames and property names but did not include literal string names, and property names of configuration objects (e.g. configs...)  so functions that accepted 'table' will still accept it.
-Filenames change should not have any effect unless you are extending the types using TS augmentation so any `declare module '@pebula/ngrid/lib/table/...` will have to change.
+Filenames change should not have any effect unless you are extending the types using TS augmentation so any `declare module '@perbula/ngrid/lib/table/...` will have to change.
 For property names, all private/protected references to `table` are now `grid` and also all public references, however is most public ref's a getter was added to support the `table` property, with a `@deprecated` JSDoc annotation
 
 
@@ -865,5 +865,5 @@ Padding was the deault, when switching to margin a lot of CSS overwrites were ap
 ### BREAKING CHANGES
 
 * The ngrid-material package does not have SCSS theming helper any more.
-All SCSS theme files are now located in the core package (@pebula/ngrid)
+All SCSS theme files are now located in the core package (@perbula/ngrid)
 

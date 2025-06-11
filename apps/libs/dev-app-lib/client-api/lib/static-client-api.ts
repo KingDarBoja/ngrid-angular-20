@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DATA_TYPES, Customer, Person, Seller, BaseClientApi } from '@pebula/apps/client-api';
+import { DATA_TYPES, Customer, Person, Seller, BaseClientApi } from '@perbula/apps/client-api';
 
 @Injectable({ providedIn: 'root' })
 export class StaticClientApi extends BaseClientApi {

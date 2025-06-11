@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
-import { PblNgridConfigService } from '@pebula/ngrid/core';
-import { PblNgridModule, PblNgridPluginController, ngridPlugin } from '@pebula/ngrid';
-import { PblNgridTargetEventsModule } from '@pebula/ngrid/target-events';
+import { PblNgridConfigService } from '@perbula/ngrid/core';
+import { PblNgridModule, PblNgridPluginController, ngridPlugin } from '@perbula/ngrid';
+import { PblNgridTargetEventsModule } from '@perbula/ngrid/target-events';
 
 import { PblNgridCellTooltipDirective, PLUGIN_KEY } from './cell-tooltip.directive';
 

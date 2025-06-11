@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-import { PblNgridComponent, createDS, columnFactory } from '@pebula/ngrid';
+import { PblNgridComponent, createDS, columnFactory } from '@perbula/ngrid';
 
-import { Person, DynamicClientApi } from '@pebula/apps/docs-app-lib/client-api';
-import { Example } from '@pebula/apps/docs-app-lib';
+import { Person, DynamicClientApi } from '@perbula/apps/docs-app-lib/client-api';
+import { Example } from '@perbula/apps/docs-app-lib';
 
 // A function that returns the currency value placed in a `SecurityWithMarketDataDto` object.
 // implementation is an IIFE that returns the getValue method bound to an PblColumn instance of the currency column...
@@ -15,7 +15,7 @@ const COUNTRY_GETTER = {
   data: undefined as any
 }
 
-declare module '@pebula/ngrid/lib/grid/column/model/types' {
+declare module '@perbula/ngrid/lib/grid/column/model/types' {
   interface PblColumnTypeDefinitionDataMap {
     currencyFn: (row: Person) => string;
     countryNameDynamic: (row: Person) => string;

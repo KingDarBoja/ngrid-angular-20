@@ -1,7 +1,10 @@
 {
   "name": "ngrid",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "tags": ["name:ngrid", "type:lib"],
+  "tags": [
+    "name:ngrid",
+    "type:lib"
+  ],
   "sourceRoot": "libs/ngrid/src",
   "projectType": "library",
   "prefix": "pbl",
@@ -13,7 +16,9 @@
   "targets": {
     "build": {
       "executor": "ng-cli-packagr-tasks:build",
-      "outputs": ["{workspaceRoot}/dist/@pebula/ngrid"],
+      "outputs": [
+        "{workspaceRoot}/dist/@perbula/ngrid"
+      ],
       "options": {
         "tsConfig": "libs/ngrid/tsconfig.lib.json",
         "project": "libs/ngrid/ng-package.json",
@@ -27,27 +32,27 @@
                 {
                   "glob": "README.md",
                   "input": ".",
-                  "output": "dist/@pebula/ngrid"
+                  "output": "dist/@perbula/ngrid"
                 },
                 {
                   "glob": "LICENSE",
                   "input": ".",
-                  "output": "dist/@pebula/ngrid"
+                  "output": "dist/@perbula/ngrid"
                 },
                 {
                   "glob": "*.scss",
                   "input": "libs/ngrid",
-                  "output": "dist/@pebula/ngrid"
+                  "output": "dist/@perbula/ngrid"
                 },
                 {
                   "glob": "**/*.scss",
                   "input": "libs/ngrid/theming",
-                  "output": "dist/@pebula/ngrid/theming"
+                  "output": "dist/@perbula/ngrid/theming"
                 },
                 {
                   "glob": "*/theming/**/*.scss",
                   "input": "libs/ngrid",
-                  "output": "dist/@pebula/ngrid"
+                  "output": "dist/@perbula/ngrid"
                 }
               ]
             },
@@ -56,7 +61,7 @@
                 {
                   "glob": "*.scss",
                   "input": "libs/ngrid/theming/prebuilt",
-                  "output": "dist/@pebula/ngrid/themes"
+                  "output": "dist/@perbula/ngrid/themes"
                 }
               ]
             },
@@ -82,7 +87,9 @@
     },
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
-      "outputs": ["{workspaceRoot}/coverage/libs/ngrid"],
+      "outputs": [
+        "{workspaceRoot}/coverage/libs/ngrid"
+      ],
       "options": {
         "main": "libs/ngrid/src/__test-runners/karma-test.ts",
         "tsConfig": "libs/ngrid/tsconfig.spec.json",
@@ -99,7 +106,9 @@
     },
     "testJest": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/libs/ngrid"],
+      "outputs": [
+        "{workspaceRoot}/coverage/libs/ngrid"
+      ],
       "options": {
         "jestConfig": "libs/ngrid/jest.config.ts",
         "passWithNoTests": true

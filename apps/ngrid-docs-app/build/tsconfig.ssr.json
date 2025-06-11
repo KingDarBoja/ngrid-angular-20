@@ -20,21 +20,21 @@
     ],
     "baseUrl": "../../..",
     "paths": {
-      "@pebula-internal/*": [
+      "@perbula-internal/*": [
         "libs-internal/*/src/index.ts",
         "libs-internal/*"
       ],
-      "@pebula/apps/*": [
+      "@perbula/apps/*": [
         "apps/libs/*",
         "apps/libs/*/src/index.ts"
       ],
-      "@pebula/ngrid/lib/*": [
+      "@perbula/ngrid/lib/*": [
         "libs/ngrid/src/lib/*"
       ],
-      "@pebula/ngrid-material/lib/*": [
+      "@perbula/ngrid-material/lib/*": [
         "libs/ngrid-material/src/lib/*"
       ],
-      "@pebula/*": [
+      "@perbula/*": [
         "libs/*/src/index.ts",
         "libs/*"
       ]

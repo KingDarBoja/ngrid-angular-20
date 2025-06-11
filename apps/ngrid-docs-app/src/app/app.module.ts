@@ -26,12 +26,12 @@ import {
   LocationService,
   LazyModuleStoreService,
   LazyModulePreloader,
-} from '@pebula/apps/docs-app-lib';
+} from '@perbula/apps/docs-app-lib';
 
 import {
   AppContentChunksModule,
   APP_CONTENT_CHUNKS,
-} from '@pebula/apps/docs-app-lib/app-content-chunks.module';
+} from '@perbula/apps/docs-app-lib/app-content-chunks.module';
 
 import { environment } from '../environments/environment';
 import { DemoHomePageComponent } from './demo-home-page/demo-home-page.component';

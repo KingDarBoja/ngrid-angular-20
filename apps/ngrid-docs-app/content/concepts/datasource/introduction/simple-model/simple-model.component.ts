@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { Example } from '@pebula/apps/docs-app-lib';
-import { createDS } from '@pebula/ngrid';
+import { Example } from '@perbula/apps/docs-app-lib';
+import { createDS } from '@perbula/ngrid';
 import { of, timer } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 

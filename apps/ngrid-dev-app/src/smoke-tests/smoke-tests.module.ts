@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridBlockUiModule } from '@pebula/ngrid/block-ui';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridBlockUiModule } from '@perbula/ngrid/block-ui';
 
 import { CommonCellTemplatesModule, CommonCellTemplatesComponent } from './common-cell-templates';
 import { SmokeTestsExample } from './smoke-tests.component';

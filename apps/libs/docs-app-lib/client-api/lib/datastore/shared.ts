@@ -1,4 +1,4 @@
-import { Customer, DATA_TYPES, Person, Seller } from '@pebula/apps/client-api';
+import { Customer, DATA_TYPES, Person, Seller } from '@perbula/apps/client-api';
 
 export interface ClientProtocol {
   reset: {

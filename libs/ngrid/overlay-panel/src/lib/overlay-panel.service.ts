@@ -10,13 +10,13 @@ import {
   ScrollStrategy,
 } from '@angular/cdk/overlay';
 import { TemplatePortal, ComponentPortal } from '@angular/cdk/portal';
-import { PblNgridPluginController, PblNgridComponent, PblNgridMultiTemplateRegistry } from '@pebula/ngrid';
+import { PblNgridPluginController, PblNgridComponent, PblNgridMultiTemplateRegistry } from '@perbula/ngrid';
 
 import { PblNgridOverlayPanelComponentExtension } from './component-registry-extension';
 import { PblNgridOverlayPanelRef } from './overlay-panel-ref';
 import { PblNgridOverlayPanelContext } from './overlay-panel-def';
 
-declare module '@pebula/ngrid/core/lib/registry/types' {
+declare module '@perbula/ngrid/core/lib/registry/types' {
   interface PblNgridMultiRegistryMap {
     overlayPanels?:
       | PblNgridMultiTemplateRegistry<any, 'overlayPanels'>

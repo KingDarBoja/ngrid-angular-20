@@ -41,7 +41,7 @@ describe('ngrid grid schematic', () => {
 
     expect(moduleContent).toContain('PblNgridModule');
 
-    expect(moduleContent).toContain(`import { PblNgridModule } from '@pebula/ngrid';`);
+    expect(moduleContent).toContain(`import { PblNgridModule } from '@perbula/ngrid';`);
   });
 
   describe('style option', () => {

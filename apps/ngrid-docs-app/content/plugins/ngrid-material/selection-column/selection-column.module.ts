@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridBlockUiModule } from '@pebula/ngrid/block-ui';
-import { PblNgridStickyModule } from '@pebula/ngrid/sticky';
-import { PblNgridCheckboxModule } from '@pebula/ngrid-material/selection-column';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridBlockUiModule } from '@perbula/ngrid/block-ui';
+import { PblNgridStickyModule } from '@perbula/ngrid/sticky';
+import { PblNgridCheckboxModule } from '@perbula/ngrid-material/selection-column';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { SelectionColumnExample } from './selection-column.component';
 import { BulkModeAndVirtualScrollExample } from './bulk-mode-and-virtual-scroll.component';
 import { CheckboxColorExample } from './checkbox-color.component';

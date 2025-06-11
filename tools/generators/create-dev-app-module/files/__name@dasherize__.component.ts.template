@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { createDS, columnFactory } from '@pebula/ngrid';
-import { Seller, StaticRestClientApi } from '@pebula/apps/dev-app-lib/client-api';
+import { createDS, columnFactory } from '@perbula/ngrid';
+import { Seller, StaticRestClientApi } from '@perbula/apps/dev-app-lib/client-api';
 
 @Component({
   selector: '<%= selector %>',

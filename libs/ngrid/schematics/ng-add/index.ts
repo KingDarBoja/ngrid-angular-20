@@ -10,7 +10,7 @@ import * as messages from './messages';
 import { addPackageToPackageJson, getPackageVersionFromPackageJson } from '../utils/package-config';
 
 function getNgridPackageName(packageName: string) {
-  return `@pebula/${packageName}`;
+  return `@perbula/${packageName}`;
 }
 
 export default function ngAdd(options: Schema): Rule {

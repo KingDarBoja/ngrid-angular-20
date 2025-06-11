@@ -70,7 +70,7 @@ In the example above we used the `afterLoadState` event to register the initial 
 And of course, don't forget to the the `PblNgridStatePluginModule` module to your project!
 
 ```ts
-import { PblNgridStatePluginModule } from '@pebula/ngrid/state';
+import { PblNgridStatePluginModule } from '@perbula/ngrid/state';
 ```
 
 ## Plugin Options
@@ -131,7 +131,7 @@ export function loadState(grid: PblNgridComponent, options?: PblNgridStateLoadOp
 Which we can import:
 
 ```ts
-import { hasState, saveState, loadState  } from '@pebula/ngrid/state';
+import { hasState, saveState, loadState  } from '@perbula/ngrid/state';
 ```
 
 With these 3 we can check if a grid `hasState`, if so `loadState` and later `saveState`.
@@ -223,18 +223,18 @@ export interface PblNgridStateSaveOptions {
 
 Straight forward:
 
-- **persistenceAdapter**  
+- **persistenceAdapter**
   The persistence adapter to use for saving / restoring state. e.g: remote server, indexDb, localStorage, etc...
   The plugin comes with a default adapter that uses the local storage.
 
-- **identResolver**  
+- **identResolver**
   The adapter for uniquely identifying a grid. e.g.: An id property on the grid, url combination, hash, etc...
   The plugin comes with a default adapter that identifies a grid based on it's id property (the id attribute in the DOM)
 
-- **include / exclude**  
-  A map that filters out specific chunks and / or chunk keys.  
-  When **include** is set, only the values filtered out by the map are used.  
-  When **exclude** is set, all values are used except values filtered out by the map.  
+- **include / exclude**
+  A map that filters out specific chunks and / or chunk keys.
+  When **include** is set, only the values filtered out by the map are used.
+  When **exclude** is set, all values are used except values filtered out by the map.
   If both **include** and **exclude** are used, **include** winds and exclude is ignored.
 
 #### Map filtering in depth
@@ -269,7 +269,7 @@ Starting with the **grid** chunk / property, we only specify 3 keys, the grid ch
 
 `'showHeader', 'showFooter', 'focusMode', 'usePagination', 'hideColumns', 'minDataViewHeight'`
 
-So if we set the filter in **include** the 3 keys are the only state we save for the grid chunk.  
+So if we set the filter in **include** the 3 keys are the only state we save for the grid chunk.
 If we set the filter to **exclude** we use all other keys **except** the 3.
 
 I> The grid chunk represents state of primitive properties on the grid instance
@@ -279,7 +279,7 @@ I> The grid chunk can also be set to true which will include / exclude all keys
 Now, the **columnOrder** chunk / property, here we set it to `true` which means all keys in the chunk, but not quite...
 In fact, **columnOrder** can only be set to true/false because it has no keys, it's an array of column id's representing the order...
 
-The remaining 2, **columns** and **dataColumn** and related.  
+The remaining 2, **columns** and **dataColumn** and related.
 
 Up until this point we only worked on root chunks (grid and columnOrder), now we will also work with child chunk.
 

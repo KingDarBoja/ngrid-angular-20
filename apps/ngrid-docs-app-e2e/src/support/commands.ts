@@ -24,5 +24,5 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-// import '@pebula/ngrid-cypress';
+// import '@perbula/ngrid-cypress';
 import '../../../../libs/ngrid-cypress/src/index';

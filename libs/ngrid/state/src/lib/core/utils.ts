@@ -1,4 +1,4 @@
-import { PblNgridComponent, PblNgridPluginController, PblNgridExtensionApi } from '@pebula/ngrid';
+import { PblNgridComponent, PblNgridPluginController, PblNgridExtensionApi } from '@perbula/ngrid';
 import {
   RootStateChunks,
   StateChunks,

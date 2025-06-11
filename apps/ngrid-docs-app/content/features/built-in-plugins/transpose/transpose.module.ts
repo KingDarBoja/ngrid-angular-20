@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridTransposeModule } from '@pebula/ngrid/transpose';
-import { PblNgridBlockUiModule } from '@pebula/ngrid/block-ui';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridTransposeModule } from '@perbula/ngrid/transpose';
+import { PblNgridBlockUiModule } from '@perbula/ngrid/block-ui';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { TransposeExample } from './transpose.component';
 import { OriginalTemplatesExample } from './original-templates.component';
 import { WithColumnStylesExample } from './with-column-styles.component';

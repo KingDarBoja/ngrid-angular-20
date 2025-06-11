@@ -3,7 +3,6 @@
   "version": 1,
   "newProjectRoot": "",
   "projects": {
-
     "ngrid-docs-app-e2e": {
       "root": "apps/ngrid-docs-app-e2e",
       "sourceRoot": "apps/ngrid-docs-app-e2e/src",
@@ -55,7 +54,7 @@
       },
       "root": "apps/ngrid-dev-app",
       "sourceRoot": "apps/ngrid-dev-app/src",
-      "prefix": "pebula",
+      "prefix": "perbula",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -230,33 +229,33 @@
               "config": "tools/ng-packagr.transformers/ngrid.transformers.ts",
               "tsConfig": "tools/tsconfig.json",
               "data": {
-                "analyseSourcesWorkaround": { },
+                "analyseSourcesWorkaround": {},
                 "copyFile": {
                   "assets": [
                     {
                       "glob": "README.md",
                       "input": ".",
-                      "output": "dist/@pebula/ngrid"
+                      "output": "dist/@perbula/ngrid"
                     },
                     {
                       "glob": "LICENSE",
                       "input": ".",
-                      "output": "dist/@pebula/ngrid"
+                      "output": "dist/@perbula/ngrid"
                     },
                     {
                       "glob": "*.scss",
                       "input": "libs/ngrid",
-                      "output": "dist/@pebula/ngrid"
+                      "output": "dist/@perbula/ngrid"
                     },
                     {
                       "glob": "**/*.scss",
                       "input": "libs/ngrid/theming",
-                      "output": "dist/@pebula/ngrid/theming"
+                      "output": "dist/@perbula/ngrid/theming"
                     },
                     {
                       "glob": "*/theming/**/*.scss",
                       "input": "libs/ngrid",
-                      "output": "dist/@pebula/ngrid"
+                      "output": "dist/@perbula/ngrid"
                     }
                   ]
                 },
@@ -265,7 +264,7 @@
                     {
                       "glob": "*.scss",
                       "input": "libs/ngrid/theming/prebuilt",
-                      "output": "dist/@pebula/ngrid/themes"
+                      "output": "dist/@perbula/ngrid/themes"
                     }
                   ]
                 },
@@ -356,22 +355,22 @@
                     {
                       "glob": "README.md",
                       "input": ".",
-                      "output": "dist/@pebula/ngrid-material"
+                      "output": "dist/@perbula/ngrid-material"
                     },
                     {
                       "glob": "*.scss",
                       "input": "libs/ngrid-material",
-                      "output": "dist/@pebula/ngrid-material"
+                      "output": "dist/@perbula/ngrid-material"
                     },
                     {
                       "glob": "**/*.scss",
                       "input": "libs/ngrid-material/theming",
-                      "output": "dist/@pebula/ngrid-material/theming"
+                      "output": "dist/@perbula/ngrid-material/theming"
                     },
                     {
                       "glob": "*/theming/**/*.scss",
                       "input": "libs/ngrid-material",
-                      "output": "dist/@pebula/ngrid-material"
+                      "output": "dist/@perbula/ngrid-material"
                     }
                   ]
                 },
@@ -380,7 +379,7 @@
                     {
                       "glob": "*.scss",
                       "input": "libs/ngrid-material/theming/prebuilt",
-                      "output": "dist/@pebula/ngrid-material/themes"
+                      "output": "dist/@perbula/ngrid-material/themes"
                     }
                   ]
                 }
@@ -462,17 +461,17 @@
                     {
                       "glob": "**/*.d.ts",
                       "input": "libs/ngrid-cypress/src",
-                      "output": "dist/@pebula/ngrid-cypress/"
+                      "output": "dist/@perbula/ngrid-cypress/"
                     },
                     {
                       "glob": "README.md",
                       "input": ".",
-                      "output": "dist/@pebula/ngrid-cypress"
+                      "output": "dist/@perbula/ngrid-cypress"
                     },
                     {
                       "glob": "LICENSE",
                       "input": ".",
-                      "output": "dist/@pebula/ngrid-cypress"
+                      "output": "dist/@perbula/ngrid-cypress"
                     }
                   ]
                 },
@@ -529,22 +528,22 @@
                     {
                       "glob": "README.md",
                       "input": ".",
-                      "output": "dist/@pebula/ngrid-bootstrap"
+                      "output": "dist/@perbula/ngrid-bootstrap"
                     },
                     {
                       "glob": "*.scss",
                       "input": "libs/ngrid-bootstrap",
-                      "output": "dist/@pebula/ngrid-bootstrap"
+                      "output": "dist/@perbula/ngrid-bootstrap"
                     },
                     {
                       "glob": "**/*.scss",
                       "input": "libs/ngrid-bootstrap/theming",
-                      "output": "dist/@pebula/ngrid-bootstrap/theming"
+                      "output": "dist/@perbula/ngrid-bootstrap/theming"
                     },
                     {
                       "glob": "*/theming/**/*.scss",
                       "input": "libs/ngrid-bootstrap",
-                      "output": "dist/@pebula/ngrid-bootstrap"
+                      "output": "dist/@perbula/ngrid-bootstrap"
                     }
                   ]
                 },
@@ -553,7 +552,7 @@
                     {
                       "glob": "*.scss",
                       "input": "libs/ngrid-bootstrap/theming/prebuilt",
-                      "output": "dist/@pebula/ngrid-bootstrap/themes"
+                      "output": "dist/@perbula/ngrid-bootstrap/themes"
                     }
                   ]
                 }

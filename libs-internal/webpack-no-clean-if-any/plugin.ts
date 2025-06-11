@@ -1,7 +1,7 @@
 import { SyncBailHook } from 'tapable';
 import * as webpack from 'webpack';
 
-const pluginName = 'pebula-no-clean-if-any-webpack-plugin';
+const pluginName = 'perbula-no-clean-if-any-webpack-plugin';
 const compilerHooksMap = new WeakMap<webpack.Compiler, PebulaNoCleanIfAnyWebpackPluginCompilerHooks>();
 
 export interface PebulaNoCleanIfAnyWebpackPluginCompilerHooks {

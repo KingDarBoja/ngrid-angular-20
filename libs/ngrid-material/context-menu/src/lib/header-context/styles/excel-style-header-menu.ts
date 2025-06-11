@@ -1,8 +1,8 @@
 import { Component, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 import { MatMenu } from '@angular/material/menu';
 
-import { PblNgridComponent, PblColumn, PblNgridDataHeaderExtensionContext } from '@pebula/ngrid';
-import { PblNgridOverlayPanelRef } from '@pebula/ngrid/overlay-panel';
+import { PblNgridComponent, PblColumn, PblNgridDataHeaderExtensionContext } from '@perbula/ngrid';
+import { PblNgridOverlayPanelRef } from '@perbula/ngrid/overlay-panel';
 
 @Component({
   selector: 'mat-excel-style-header-menu',

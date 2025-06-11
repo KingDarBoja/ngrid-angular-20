@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridBlockUiModule } from '@pebula/ngrid/block-ui';
-import { PblNgridTargetEventsModule } from '@pebula/ngrid/target-events';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridBlockUiModule } from '@perbula/ngrid/block-ui';
+import { PblNgridTargetEventsModule } from '@perbula/ngrid/target-events';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { TargetEventsExample } from './target-events.component';
 import { FocusAndRangeSelectionExample } from './focus-and-range-selection.component';
 import { EnterAndLeaveEventsExample } from './enter-and-leave-events.component';

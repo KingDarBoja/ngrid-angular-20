@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PaginationQuery, BaseRestClientApi } from '@pebula/apps/client-api/rest';
+import { PaginationQuery, BaseRestClientApi } from '@perbula/apps/client-api/rest';
 import { DynamicClientApi } from './dynamic-api-client';
 
 const DEFAULT_PAGINATION_QUERY: PaginationQuery = { page: 1, itemsPerPage: 50 };

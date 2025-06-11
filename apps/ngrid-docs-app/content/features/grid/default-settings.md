@@ -6,10 +6,10 @@ ordinal: 6
 ---
 # Global Settings
 
-The grid is configurable, either through `@Input` properties or directly through the grid instance. This is also valid for grid plugins (both built-in and third party).  
+The grid is configurable, either through `@Input` properties or directly through the grid instance. This is also valid for grid plugins (both built-in and third party).
 In most cases, all of the configurations comes with default settings, which you can override using the global settings.
 
-The settings are split into groups, each group contains a collection of relevant settings within it's context.  
+The settings are split into groups, each group contains a collection of relevant settings within it's context.
 The grid itself has only **one** group, called `table`
 
 I> Group names are strictly typed, to add a new group the type requires augmentation.
@@ -18,7 +18,7 @@ To access the global configuration we use the `PblNgridConfigService` service:
 
 ```typescript
 import { NgModule } from '@angular/core';
-import { PblNgridConfigService } from '@pebula/ngrid';
+import { PblNgridConfigService } from '@perbula/ngrid';
 
 @NgModule({ /** Module definition here... */ })
 export class MyRootModule {

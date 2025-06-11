@@ -6,11 +6,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridTargetEventsModule } from '@pebula/ngrid/target-events';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridTargetEventsModule } from '@perbula/ngrid/target-events';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { CellEditExample } from './cell-edit.component';
 import { CellEditGlobalTriggerExample } from './cell-edit-global-trigger.component';
 import { CellEditDirectivesExample } from './cell-edit-directives.component';

@@ -1,7 +1,7 @@
 import { tap, finalize } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import type { DynamicExportedObject } from '@pebula-internal/webpack-dynamic-dictionary';
+import type { DynamicExportedObject } from '@perbula-internal/webpack-dynamic-dictionary';
 
 declare const NGRID_CONTENT_MAPPING_FILE: string;
 

@@ -1,11 +1,11 @@
 import { Directive, Injector, Input, OnDestroy, ComponentRef, createComponent, EnvironmentInjector } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 
-import { PblNgridComponent, PblNgridPluginController } from '@pebula/ngrid';
+import { PblNgridComponent, PblNgridPluginController } from '@perbula/ngrid';
 
 import { PblNgridCheckboxComponent } from './table-checkbox.component';
 
-declare module '@pebula/ngrid/lib/ext/types' {
+declare module '@perbula/ngrid/lib/ext/types' {
   interface PblNgridPluginExtension {
     matCheckboxSelection?: PblNgridMatCheckboxSelectionDirective;
   }

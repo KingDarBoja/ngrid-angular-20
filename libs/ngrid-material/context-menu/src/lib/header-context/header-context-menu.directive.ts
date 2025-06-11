@@ -1,8 +1,8 @@
 import { Directive, Input } from '@angular/core';
-import { PblNgridPluginController } from '@pebula/ngrid';
-import { PblNgridOverlayPanelFactory, PblNgridOverlayPanel, PblNgridOverlayPanelConfig } from '@pebula/ngrid/overlay-panel';
+import { PblNgridPluginController } from '@perbula/ngrid';
+import { PblNgridOverlayPanelFactory, PblNgridOverlayPanel, PblNgridOverlayPanelConfig } from '@perbula/ngrid/overlay-panel';
 
-declare module '@pebula/ngrid/lib/ext/types' {
+declare module '@perbula/ngrid/lib/ext/types' {
   interface PblNgridPluginExtension {
     matHeaderContextMenu?: PblNgridMatHeaderContextMenuPlugin;
   }

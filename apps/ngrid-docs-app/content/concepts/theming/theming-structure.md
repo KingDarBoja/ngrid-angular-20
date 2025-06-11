@@ -7,10 +7,10 @@ tags: space,spacing,theme,theming
 ---
 # Advanced Theming
 
-**nGrid** is built with SCSS using tools provided by the [@angular/components](https://material.angular.io/guides) theme toolkit.  
+**nGrid** is built with SCSS using tools provided by the [@angular/components](https://material.angular.io/guides) theme toolkit.
 It means that **nGrid** adopts the same system used by angular material to style components and to define and manage themes.
 
-I> **nGrid** does not depend on angular material and does not implement the *Material Design* spec.  
+I> **nGrid** does not depend on angular material and does not implement the *Material Design* spec.
 The same theming system is used but not the same style!
 
 A theme is created from SCSS utility functions and mixins which **nGrid** exposes for you to create custom themes.
@@ -50,10 +50,10 @@ To create a custom theme:
 A typical theme file will look something like this:
 
 ```scss
-@use '@pebula/ngrid' as ngrid;
+@use '@perbula/ngrid' as ngrid;
 
 // 1. Create a palette from a color schema
-// `ngrid.$blue-palett` is a predefined color palette provided by `@pebula/ngrid/theming`
+// `ngrid.$blue-palett` is a predefined color palette provided by `@perbula/ngrid/theming`
 $ngrid-palette: ngrid.define-palette(ngrid.$blue-palette);
 
 // 2. Create a theme from your palette using `pbl-light-theme` or `pbl-dark-theme`
@@ -72,12 +72,12 @@ Now let's break it down:
 
 ## Color Schemas
 
-In the example above we used the color schema `ngrid.$blue-palettee` to create a palette.  
+In the example above we used the color schema `ngrid.$blue-palettee` to create a palette.
 `ngrid.$blue-palette` is a built in color schema in **nGrid**, the material package also comes with a lot of color schemas and you can also create your own.
 
 A color schema is a set of color definitions composed form a baseline primary color and contrasts suitable for it.
 
-You can define your own color schemas, for inspiration take a look at the schemas defined in the <a href="https://github.com/angular/components/blob/8139358926b9d486b7f271778752fd73b50970af/src/material/core/theming/_palette.scss#L39" target="_blank">angular material project</a>.  
+You can define your own color schemas, for inspiration take a look at the schemas defined in the <a href="https://github.com/angular/components/blob/8139358926b9d486b7f271778752fd73b50970af/src/material/core/theming/_palette.scss#L39" target="_blank">angular material project</a>.
 To learn more about the color system visit the <a href="https://material.io/design/color" target="_blank">material design docs</a>
 
 The palette created from `ngrid.define-palette($colorSchema)` is a set of categories colors we can create a theme with.
@@ -124,7 +124,7 @@ $spacing-theme-defaults: (
 
 The **default** spacing setup defined when you call `ngrid.define-light-theme` or `ngrid.define-dark-theme`.
 
-The additional configurations are not applied by default and you need to include them if you want to use them.  
+The additional configurations are not applied by default and you need to include them if you want to use them.
 This can be done using the mixin `ngrid.predefined-spacing` with your theme:
 
 ```scss
@@ -141,13 +141,13 @@ W> Note that changing te spacing after the datasource initialized might cause vi
 
 ### Overriding the default spacing
 
-You can create your own, customize spacing configuration.  
+You can create your own, customize spacing configuration.
 Take one of the spacing configuration and use it to create a new modified version, or create completely new spacing configuration.
 
 Now use it to create a spacing class:
 
 ```scss
-@use '~@pebula/ngrid' as ngrid;
+@use '~@perbula/ngrid' as ngrid;
 
 $my-custom-spacing: (
   header-row-height: 28px,

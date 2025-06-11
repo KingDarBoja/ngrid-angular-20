@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PblNgridModule } from '@pebula/ngrid';
-import { PblNgridOverlayPanelModule } from '@pebula/ngrid/overlay-panel';
-import { PblNgridContextMenuModule } from '@pebula/ngrid-material/context-menu';
+import { PblNgridModule } from '@perbula/ngrid';
+import { PblNgridOverlayPanelModule } from '@perbula/ngrid/overlay-panel';
+import { PblNgridContextMenuModule } from '@perbula/ngrid-material/context-menu';
 
-import { BindNgModule } from '@pebula/apps/docs-app-lib';
-import { ExampleCommonModule } from '@pebula/apps/docs-app-lib/example-common.module';
+import { BindNgModule } from '@perbula/apps/docs-app-lib';
+import { ExampleCommonModule } from '@perbula/apps/docs-app-lib/example-common.module';
 import { ContextMenuExample } from './context-menu.component';
 import { CustomHeaderExample } from './custom-header.component';
 

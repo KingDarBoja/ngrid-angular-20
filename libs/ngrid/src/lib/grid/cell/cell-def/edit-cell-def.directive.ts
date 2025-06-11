@@ -1,5 +1,5 @@
 import { Directive, TemplateRef } from '@angular/core';
-import { PblColumnTypeDefinitionDataMap } from '@pebula/ngrid/core';
+import { PblColumnTypeDefinitionDataMap } from '@perbula/ngrid/core';
 
 import { PblNgridRegistryService } from '../../registry/registry.service';
 import { PblNgridCellContext } from '../../context/index';
@@ -27,7 +27,7 @@ export class PblNgridEditorCellDefDirective<T, P extends keyof PblColumnTypeDefi
   }
 }
 
-declare module '@pebula/ngrid/core/lib/registry/types' {
+declare module '@perbula/ngrid/core/lib/registry/types' {
   interface PblNgridMultiRegistryMap {
     editorCell?: PblNgridEditorCellDefDirective<any>;
   }

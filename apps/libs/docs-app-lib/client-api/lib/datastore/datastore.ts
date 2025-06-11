@@ -1,4 +1,4 @@
-import { DATA_TYPES, Customer, Person, Seller } from '@pebula/apps/client-api';
+import { DATA_TYPES, Customer, Person, Seller } from '@perbula/apps/client-api';
 
 function getFaker(): Promise<typeof import('faker')> {
   return import('faker');

@@ -14,7 +14,7 @@ import {
   EmbeddedViewRef,
   Inject,
 } from '@angular/core';
-import { unrx, PblNgridMultiRegistryMap } from '@pebula/ngrid/core';
+import { unrx, PblNgridMultiRegistryMap } from '@perbula/ngrid/core';
 
 import { _PblNgridComponent } from '../../tokens';
 import { EXT_API_TOKEN, PblNgridInternalExtensionApi } from '../../ext/grid-ext-api';

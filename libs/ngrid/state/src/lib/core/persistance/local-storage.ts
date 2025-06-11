@@ -1,7 +1,7 @@
 import { PblNgridGlobalState, PblNgridPersistAdapter } from '../models/index';
 
 export class PblNgridLocalStoragePersistAdapter implements PblNgridPersistAdapter {
-  private static globalStateKey: string = 'pebulaNgridState';
+  private static globalStateKey: string = 'perbulaNgridState';
 
   save(id: string, state: PblNgridGlobalState): Promise<void> {
     try {
