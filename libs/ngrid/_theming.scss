@@ -245,7 +245,7 @@ $pbl-light-theme-background: (
   ngrid-footer-row-color: white,
 );
 
-$dark-theme-row-color: map.get($grey-palette, 800);
+$dark-theme-row-color: map.get($pbl-grey, 800);
 
 // Background palette for dark themes.
 $pbl-dark-theme-background: (

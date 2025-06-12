@@ -1,6 +1,6 @@
 {
   "name": "@perbula/ngrid",
-  "version": "6.2.0",
+  "version": "6.3.0",
   "license": "MIT",
   "peerDependencies": {
     "@angular/core": ">=19.0.0",
