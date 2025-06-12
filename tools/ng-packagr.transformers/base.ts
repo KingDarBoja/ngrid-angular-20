@@ -1,4 +1,4 @@
-import { EntryPointTaskContext } from 'ng-cli-packagr-tasks';
+import { EntryPointTaskContext } from 'ng-cli-packager-tasks';
 
 export function updatePathsFromCache(taskContext: EntryPointTaskContext, pathMappingsCache: { [ tsPath: string ]: string[] }): void {
   const { entryPoint, tsConfig } = taskContext.epNode.data;

@@ -76,10 +76,10 @@ warning " > codelyzer@5.0.1" has incorrect peer dependency "@angular/core@>=2.3.
 warning " > codelyzer@5.0.1" has incorrect peer dependency "tslint@^5.0.0".
 warning "cypress-image-snapshot > jest-image-snapshot@4.2.0" has incorrect peer dependency "jest@>=20 <=26".
 warning " > gatsby-remark-prismjs@3.13.0" has unmet peer dependency "gatsby@^2.0.0".
-warning " > ng-cli-packagr-tasks@11.0.2" has unmet peer dependency "@angular-devkit/architect@0.1100.0".
-warning " > ng-cli-packagr-tasks@11.0.2" has unmet peer dependency "@angular-devkit/core@0.1100.0".
-warning " > ng-cli-packagr-tasks@11.0.2" has incorrect peer dependency "globby@^7.1.1".
-warning " > ng-cli-packagr-tasks@11.0.2" has incorrect peer dependency "ng-packagr@^11.0.0".
+warning " > ng-cli-packager-tasks@11.0.2" has unmet peer dependency "@angular-devkit/architect@0.1100.0".
+warning " > ng-cli-packager-tasks@11.0.2" has unmet peer dependency "@angular-devkit/core@0.1100.0".
+warning " > ng-cli-packager-tasks@11.0.2" has incorrect peer dependency "globby@^7.1.1".
+warning " > ng-cli-packager-tasks@11.0.2" has incorrect peer dependency "ng-packagr@^11.0.0".
 warning " > tsickle@0.39.1" has incorrect peer dependency "typescript@~3.9.5".
 warning " > webpack-cli@4.7.0" has unmet peer dependency "webpack@4.x.x || 5.x.x".
 warning "webpack-cli > @webpack-cli/configtest@1.0.3" has unmet peer dependency "webpack@4.x.x || 5.x.x".
@@ -287,14 +287,14 @@ Ran migration-v13.1-entry-components from @angular/core
 ---------------------------------------------------------
     Skipping migration for project ngrid-dev-app-e2e. Unable to determine 'tsconfig.json' file in workspace config.
     Skipping migration for project ngrid-docs-app-e2e. Unable to determine 'tsconfig.json' file in workspace config.
-    
+
       ✓  Updated Angular Material to version 13
-    
+
     Skipping migration for project ngrid-dev-app-e2e. Unable to determine 'tsconfig.json' file in workspace config.
     Skipping migration for project ngrid-docs-app-e2e. Unable to determine 'tsconfig.json' file in workspace config.
-    
+
       ✓  Updated Angular CDK to version 13
-    
+
 Unable to update libs/ngrid/schematics/tsconfig.json.
 Unable to update libs/ngrid/tsconfig.spec.json.
 Ran update-ts-config-for-test-filenames from @nrwl/jest
@@ -356,10 +356,10 @@ warning " > codelyzer@5.0.1" has incorrect peer dependency "@angular/core@>=2.3.
 warning " > codelyzer@5.0.1" has incorrect peer dependency "tslint@^5.0.0".
 warning "cypress-image-snapshot > jest-image-snapshot@4.2.0" has incorrect peer dependency "jest@>=20 <=26".
 warning " > gatsby-remark-prismjs@3.13.0" has unmet peer dependency "gatsby@^2.0.0".
-warning " > ng-cli-packagr-tasks@11.0.2" has unmet peer dependency "@angular-devkit/architect@0.1100.0".
-warning " > ng-cli-packagr-tasks@11.0.2" has unmet peer dependency "@angular-devkit/core@0.1100.0".
-warning " > ng-cli-packagr-tasks@11.0.2" has incorrect peer dependency "globby@^7.1.1".
-warning " > ng-cli-packagr-tasks@11.0.2" has incorrect peer dependency "ng-packagr@^11.0.0".
+warning " > ng-cli-packager-tasks@11.0.2" has unmet peer dependency "@angular-devkit/architect@0.1100.0".
+warning " > ng-cli-packager-tasks@11.0.2" has unmet peer dependency "@angular-devkit/core@0.1100.0".
+warning " > ng-cli-packager-tasks@11.0.2" has incorrect peer dependency "globby@^7.1.1".
+warning " > ng-cli-packager-tasks@11.0.2" has incorrect peer dependency "ng-packagr@^11.0.0".
 warning " > tsickle@0.39.1" has incorrect peer dependency "typescript@~3.9.5".
 warning " > webpack-cli@4.7.0" has unmet peer dependency "webpack@4.x.x || 5.x.x".
 warning "webpack-cli > @webpack-cli/configtest@1.0.3" has unmet peer dependency "webpack@4.x.x || 5.x.x".

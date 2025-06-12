@@ -1,10 +1,10 @@
 import * as path from 'path';
 import * as fs from 'fs';
-import { NgPackagerHooksContext, HookRegistry, EntryPointTaskContext } from 'ng-cli-packagr-tasks';
+import { NgPackagerHooksContext, HookRegistry, EntryPointTaskContext } from 'ng-cli-packager-tasks';
 import { ensureUnixPath } from 'ng-packagr/lib/utils/path';
 
-import { CopyFile } from 'ng-cli-packagr-tasks/dist/tasks/copy-file';
-import { NodeLib } from 'ng-cli-packagr-tasks/dist/tasks/node-lib';
+import { CopyFile } from 'ng-cli-packager-tasks/dist/tasks/copy-file';
+import { NodeLib } from 'ng-cli-packager-tasks/dist/tasks/node-lib';
 
 import { WritePackageJson } from './tasks';
 

@@ -6,9 +6,9 @@ import { BuildGraph } from 'ng-packagr/lib/graph/build-graph';
 import { debug } from 'ng-packagr/lib/utils/log';
 import { ensureUnixPath } from 'ng-packagr/lib/utils/path';
 
-import { EntryPointTaskContext, Job } from 'ng-cli-packagr-tasks';
+import { EntryPointTaskContext, Job } from 'ng-cli-packager-tasks';
 
-declare module 'ng-cli-packagr-tasks/dist/build/hooks' {
+declare module 'ng-cli-packager-tasks/dist/build/hooks' {
   interface NgPackagrBuilderTaskSchema {
     analyseSources: {
     }

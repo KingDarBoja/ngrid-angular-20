@@ -3,12 +3,12 @@ import { dest, task, series } from 'gulp';
 
 import * as log from 'ng-packagr/lib/utils/log';
 
-import { EntryPointTaskContext, Job } from 'ng-cli-packagr-tasks';
-import { CopyFile } from 'ng-cli-packagr-tasks/dist/tasks/copy-file';
+import { EntryPointTaskContext, Job } from 'ng-cli-packager-tasks';
+import { CopyFile } from 'ng-cli-packager-tasks/dist/tasks/copy-file';
 
 import { buildScssPipeline } from './build-scss-pipeline';
 
-declare module 'ng-cli-packagr-tasks/dist/build/hooks' {
+declare module 'ng-cli-packager-tasks/dist/build/hooks' {
   interface NgPackagrBuilderTaskSchema {
     sassCompile: {
       entries: string[];

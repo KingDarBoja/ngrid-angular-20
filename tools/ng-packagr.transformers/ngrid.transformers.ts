@@ -1,6 +1,6 @@
-import { NgPackagerHooksContext, EntryPointTaskContext, HookRegistry } from 'ng-cli-packagr-tasks';
-import { CopyFile } from 'ng-cli-packagr-tasks/dist/tasks/copy-file';
-import { Bump } from 'ng-cli-packagr-tasks/dist/tasks/bump';
+import { NgPackagerHooksContext, EntryPointTaskContext, HookRegistry } from 'ng-cli-packager-tasks';
+import { CopyFile } from 'ng-cli-packager-tasks/dist/tasks/copy-file';
+import { Bump } from 'ng-cli-packager-tasks/dist/tasks/bump';
 
 import { updatePathsFromCache } from './base';
 import { SchematicsCompile, SassCompile, AnalyseSourcesWorkaround } from './tasks';

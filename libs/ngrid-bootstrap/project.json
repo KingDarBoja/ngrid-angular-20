@@ -11,7 +11,7 @@
   "prefix": "pbl",
   "targets": {
     "build": {
-      "executor": "ng-cli-packagr-tasks:build",
+      "executor": "ng-cli-packager-tasks:build",
       "outputs": [
         "{workspaceRoot}/dist/@perbula/ngrid-bootstrap"
       ],

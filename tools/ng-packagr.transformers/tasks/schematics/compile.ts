@@ -4,11 +4,11 @@ import * as ts from 'typescript';
 import { normalize } from '@angular-devkit/core';
 import * as log from 'ng-packagr/lib/utils/log';
 
-import { EntryPointTaskContext, Job } from 'ng-cli-packagr-tasks';
-import { CopyFile, CopyPattern } from 'ng-cli-packagr-tasks/dist/tasks/copy-file';
-import { ngCompilerCli } from 'ng-cli-packagr-tasks/dist/tasks/ngc-cli-utils';
+import { EntryPointTaskContext, Job } from 'ng-cli-packager-tasks';
+import { CopyFile, CopyPattern } from 'ng-cli-packager-tasks/dist/tasks/copy-file';
+import { ngCompilerCli } from 'ng-cli-packager-tasks/dist/tasks/ngc-cli-utils';
 
-declare module 'ng-cli-packagr-tasks/dist/build/hooks' {
+declare module 'ng-cli-packager-tasks/dist/build/hooks' {
   interface NgPackagrBuilderTaskSchema {
     schematicsCompile: {
       libPath: string;

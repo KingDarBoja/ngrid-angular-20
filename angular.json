@@ -111,7 +111,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngrid-dev-app:build"
+            "buildTarget": "ngrid-dev-app:build"
           },
           "configurations": {
             "docker": {
@@ -119,14 +119,14 @@
               "disableHostCheck": true
             },
             "production": {
-              "browserTarget": "ngrid-dev-app:build:production"
+              "buildTarget": "ngrid-dev-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngrid-dev-app:build"
+            "buildTarget": "ngrid-dev-app:build"
           }
         },
         "lint": {
@@ -221,7 +221,7 @@
       },
       "architect": {
         "build": {
-          "builder": "ng-cli-packagr-tasks:build",
+          "builder": "ng-cli-packager-tasks:build",
           "options": {
             "tsConfig": "libs/ngrid/tsconfig.lib.json",
             "project": "libs/ngrid/ng-package.json",
@@ -342,7 +342,7 @@
       },
       "architect": {
         "build": {
-          "builder": "ng-cli-packagr-tasks:build",
+          "builder": "ng-cli-packager-tasks:build",
           "options": {
             "tsConfig": "libs/ngrid-material/tsconfig.lib.json",
             "project": "libs/ngrid-material/ng-package.json",
@@ -448,7 +448,7 @@
       },
       "architect": {
         "build": {
-          "builder": "ng-cli-packagr-tasks:build",
+          "builder": "ng-cli-packager-tasks:build",
           "options": {
             "tsConfig": "libs/ngrid-cypress/tsconfig.lib.json",
             "project": "libs/ngrid-cypress/ng-package.json",
@@ -515,7 +515,7 @@
       "prefix": "pbl",
       "architect": {
         "build": {
-          "builder": "ng-cli-packagr-tasks:build",
+          "builder": "ng-cli-packager-tasks:build",
           "options": {
             "tsConfig": "libs/ngrid-bootstrap/tsconfig.lib.json",
             "project": "libs/ngrid-bootstrap/ng-package.json",

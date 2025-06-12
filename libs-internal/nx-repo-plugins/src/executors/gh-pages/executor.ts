@@ -7,7 +7,7 @@ import {
   TargetConfiguration,
 } from '@nx/devkit';
 import { RunCommandsOptions } from 'nx/src/executors/run-commands/run-commands.impl';
-import { CopyFile, CopyPattern } from 'ng-cli-packagr-tasks/dist/tasks/copy-file';
+import { CopyFile, CopyPattern } from 'ng-cli-packager-tasks/dist/tasks/copy-file';
 
 import { GhPagesExecutorSchema } from './schema';
 

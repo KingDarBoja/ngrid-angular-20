@@ -314,9 +314,9 @@
       "apps/ngrid-dev-app/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.options.browserTarget": [
-      "apps/ngrid-dev-app/project.json",
-      "nx/core/project-json"
+    "targets.serve.options.buildTarget": [
+      "angular.json",
+      "nx-angular-json-plugin"
     ],
     "targets.serve.configurations.docker": [
       "angular.json",
@@ -334,9 +334,9 @@
       "apps/ngrid-dev-app/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.configurations.production.browserTarget": [
-      "apps/ngrid-dev-app/project.json",
-      "nx/core/project-json"
+    "targets.serve.configurations.production.buildTarget": [
+      "angular.json",
+      "nx-angular-json-plugin"
     ],
     "targets.extract-i18n": [
       "apps/ngrid-dev-app/project.json",
@@ -350,9 +350,9 @@
       "apps/ngrid-dev-app/project.json",
       "nx/core/project-json"
     ],
-    "targets.extract-i18n.options.browserTarget": [
-      "apps/ngrid-dev-app/project.json",
-      "nx/core/project-json"
+    "targets.extract-i18n.options.buildTarget": [
+      "angular.json",
+      "nx-angular-json-plugin"
     ],
     "targets.test": [
       "apps/ngrid-dev-app/project.json",
@@ -462,11 +462,23 @@
       "apps/ngrid-dev-app/project.json",
       "nx/core/project-json"
     ],
+    "targets.serve.options.browserTarget": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.browserTarget": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
     "targets.serve.configurations.development": [
       "apps/ngrid-dev-app/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development.browserTarget": [
+      "apps/ngrid-dev-app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.browserTarget": [
       "apps/ngrid-dev-app/project.json",
       "nx/core/project-json"
     ],

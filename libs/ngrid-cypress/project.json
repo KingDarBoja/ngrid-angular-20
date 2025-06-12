@@ -10,7 +10,7 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "ng-cli-packagr-tasks:build",
+      "executor": "ng-cli-packager-tasks:build",
       "outputs": [
         "{options.outputPath}"
       ],

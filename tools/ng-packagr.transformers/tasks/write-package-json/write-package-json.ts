@@ -5,10 +5,10 @@ import { NgPackage } from 'ng-packagr/lib/ng-package/package';
 import * as log from 'ng-packagr/lib/utils/log';
 import { ensureUnixPath } from 'ng-packagr/lib/utils/path';
 import { rmdir } from 'ng-packagr/lib/utils/fs';
-import { EntryPointTaskContext, Job } from 'ng-cli-packagr-tasks';
+import { EntryPointTaskContext, Job } from 'ng-cli-packager-tasks';
 import { getDistEntryFile } from '../utils';
 
-declare module 'ng-cli-packagr-tasks/dist/build/hooks' {
+declare module 'ng-cli-packager-tasks/dist/build/hooks' {
   interface NgPackagrBuilderTaskSchema {
     writePackageJson: {
     }
