@@ -1,8 +1,9 @@
+@use "sass:map";
 /**
  * Legacy support, will be removed in v5 (TODO: Remove in v5)
  */
 
- @mixin pbl-ngrid-material-context-menu-theme($theme) {
+@mixin pbl-ngrid-material-context-menu-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
@@ -19,4 +20,3 @@
   @include pbl-ngrid-theme($theme);
   @include pbl-ngrid-material-context-menu-theme($theme);
 }
-

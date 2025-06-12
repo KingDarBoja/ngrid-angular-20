@@ -1,3 +1,4 @@
+@use "sass:map";
 @forward './theming/typography/typography' show define-typography-level, define-typography-config;
 @forward './theming/palette' show $blue-palette, $grey-palette, $light-theme-palette, $dark-theme-palette, $spacing-theme-defaults;
 @forward './theming/theming' show define-palette, get-color-from-palette, define-light-theme, define-dark-theme;
