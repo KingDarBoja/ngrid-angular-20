@@ -14654,3 +14654,334 @@ Error: This workspace is more than three days old and is not connected. Workspac
 [NX v21.1.3 Daemon Server] - 2025-06-12T07:56:32.261Z - Handled POST_TASKS_EXECUTION. Handling time: 1. Response time: 0.
 [NX v21.1.3 Daemon Server] - 2025-06-12T07:56:32.261Z - Time taken for 'postTasksExecution' 0.43150900000182446ms
 [NX v21.1.3 Daemon Server] - 2025-06-12T07:56:32.283Z - Closed a connection. Number of open connections: 0
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:26:36.069Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.657Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.659Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.762Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.762Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.762Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.770Z - Time taken for 'hash changed files from watcher' 2.156068000011146ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.834Z - Time taken for 'build-project-configs' 55.558528000023216ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.964Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.965Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.965Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:11.965Z - Time taken for 'total execution time for createProjectGraph()' 120.13971999986097ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:23.379Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:23.382Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:23.606Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:23.607Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:23.608Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:23.696Z - Time taken for 'hash changed files from watcher' 23.180509999860078ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:24.062Z - Time taken for 'build-project-configs' 297.7945179999806ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:24.686Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:24.690Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:24.691Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:24.692Z - Time taken for 'total execution time for createProjectGraph()' 562.2557029998861ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:38.779Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:38.780Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.184Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.184Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.184Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.196Z - Time taken for 'hash changed files from watcher' 4.515830999938771ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.229Z - Time taken for 'build-project-configs' 28.71657699998468ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.322Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.322Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.323Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.323Z - Time taken for 'total execution time for createProjectGraph()' 84.4187769999262ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.898Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:39.899Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.700Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.700Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.701Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.709Z - Time taken for 'hash changed files from watcher' 1.6538589999545366ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.764Z - Time taken for 'build-project-configs' 43.69008100009523ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.828Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.828Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.828Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:40.829Z - Time taken for 'total execution time for createProjectGraph()' 57.81125900009647ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:48.584Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:48.586Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.191Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.191Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.191Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.203Z - Time taken for 'hash changed files from watcher' 3.537975000217557ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.264Z - Time taken for 'build-project-configs' 54.62020900007337ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.339Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.340Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.340Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.340Z - Time taken for 'total execution time for createProjectGraph()' 68.5936839999631ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.461Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:50.461Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.665Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.665Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.665Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.675Z - Time taken for 'hash changed files from watcher' 3.4181460000108927ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.722Z - Time taken for 'build-project-configs' 34.761701999930665ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.824Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.825Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.825Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:27:53.825Z - Time taken for 'total execution time for createProjectGraph()' 92.04746499983594ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:04.320Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:04.320Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:05.704Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:05.705Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.723Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.723Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.723Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.730Z - Time taken for 'hash changed files from watcher' 2.69001100002788ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.785Z - Time taken for 'build-project-configs' 36.775630000047386ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.866Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.867Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.867Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:10.867Z - Time taken for 'total execution time for createProjectGraph()' 76.36690100003034ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:25.501Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:25.503Z - [WATCHER]: libs/ngrid/_index.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:27.988Z - [WATCHER]: libs/ngrid/_index.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:27.988Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:31.905Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:31.905Z - [REQUEST]: libs/ngrid/_index.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:31.905Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:31.913Z - Time taken for 'hash changed files from watcher' 2.10139700002037ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:31.965Z - Time taken for 'build-project-configs' 39.6349100000225ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:32.034Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:32.034Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:32.034Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:28:32.035Z - Time taken for 'total execution time for createProjectGraph()' 61.19862399995327ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:43.767Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:43.768Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:46.911Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:46.911Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.173Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.173Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.173Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.182Z - Time taken for 'hash changed files from watcher' 5.425745000131428ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.240Z - Time taken for 'build-project-configs' 51.298890999983996ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.353Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.353Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.353Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:50.353Z - Time taken for 'total execution time for createProjectGraph()' 98.23243400012143ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:51.728Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:51.729Z - [WATCHER]: libs/ngrid/_theming.scss was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.132Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.132Z - [REQUEST]: libs/ngrid/_theming.scss
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.132Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.143Z - Time taken for 'hash changed files from watcher' 1.97463500010781ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.196Z - Time taken for 'build-project-configs' 42.135865999851376ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.273Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.274Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.274Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:29:58.274Z - Time taken for 'total execution time for createProjectGraph()' 71.1688210000284ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:44.954Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:44.960Z - [WATCHER]: libs/ngrid/package.json was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.366Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.366Z - [REQUEST]: libs/ngrid/package.json
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.366Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.374Z - Time taken for 'hash changed files from watcher' 3.9678289997391403ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.431Z - Time taken for 'build-project-configs' 46.46301500033587ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.512Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.512Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.513Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:51.513Z - Time taken for 'total execution time for createProjectGraph()' 70.54367800010368ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:54.010Z - [WATCHER]: package.json was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:30:54.010Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.413Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.414Z - [REQUEST]: package.json
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.414Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.422Z - Time taken for 'hash changed files from watcher' 2.6916900002397597ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.476Z - Time taken for 'build-project-configs' 36.41162799997255ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.562Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.563Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.563Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:00.563Z - Time taken for 'total execution time for createProjectGraph()' 79.19707700004801ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:13.920Z - [WATCHER]: libs/ngrid-material/package.json was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:13.920Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:16.171Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:16.172Z - [WATCHER]: libs/ngrid-bootstrap/package.json was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:20.338Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:20.338Z - [REQUEST]: libs/ngrid-material/package.json,libs/ngrid-bootstrap/package.json
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:20.339Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:20.397Z - Time taken for 'hash changed files from watcher' 15.601975999772549ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:20.695Z - Time taken for 'build-project-configs' 242.5299970000051ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:21.194Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:21.198Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:21.199Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:21.200Z - Time taken for 'total execution time for createProjectGraph()' 406.9242719998583ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:36.702Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:36.703Z - [WATCHER]: Stopping the watcher for /home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19 (sources)
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:36.703Z - [WATCHER]: Stopping the watcher for /home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19 (outputs)
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:31:36.711Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.422Z - Started listening on: /tmp/bcdec997867a7e3b4dd6/d.sock
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.425Z - [WATCHER]: Subscribed to changes within: /home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19 (native)
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.429Z - Established a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.430Z - Established a connection. Number of open connections: 2
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.432Z - Closed a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.434Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.458Z - Time taken for 'loadSpecifiedNxPlugins' 2.5199329999999804ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.574Z - Time taken for 'Load Nx Plugin: /home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19/node_modules/nx/src/adapter/angular-json' 137.731069ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.655Z - Time taken for 'Load Nx Plugin: /home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19/node_modules/nx/src/plugins/package-json' 218.070147ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.686Z - Time taken for 'Load Nx Plugin: /home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 248.24466999999999ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.691Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.691Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.691Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:36.714Z - Time taken for 'loadDefaultNxPlugins' 254.101024ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.205Z - Time taken for 'build-project-configs' 473.43011600000006ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.429Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.431Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.433Z - Time taken for 'total for creating and serializing project graph' 996.1722770000001ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.437Z - Done responding to the client project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.437Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 996. Response time: 7.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.458Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.458Z - Done responding to the client handleRunPreTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.458Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.458Z - Time taken for 'preTasksExecution' 0.9246689999999944ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.590Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.590Z - Done responding to the client handleHashTasks
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:37.590Z - Handled HASH_TASKS. Handling time: 43. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:39.595Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:39.596Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:39.596Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 1.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.870Z - Established a connection. Number of open connections: 2
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.870Z - Closed a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.871Z - Established a connection. Number of open connections: 2
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.873Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.873Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.874Z - Time taken for 'total for creating and serializing project graph' 0.3951489999999467ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.877Z - Done responding to the client project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:40.877Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:52.637Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:52.696Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:52.749Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:52.806Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:52.860Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.330Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.388Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.440Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.493Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.545Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.599Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.651Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.710Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.764Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.825Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.885Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:55.959Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:56.013Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:32:56.100Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:06.030Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:10.361Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:11.521Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:11.580Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:11.817Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:12.236Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:12.293Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:12.542Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:13.128Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:13.183Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:13.235Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:13.535Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:14.036Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:14.093Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:14.146Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:14.356Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:14.711Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:14.766Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:14.991Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:15.160Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:15.354Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:15.540Z - Closed a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:15.561Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:15.561Z - Done responding to the client recordOutputsHash
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:15.561Z - Handled RECORD_OUTPUTS_HASH. Handling time: 10. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.281Z - [REQUEST]: Responding to the client. PROCESS_IN_BACKGROUND
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.281Z - Done responding to the client PROCESS_IN_BACKGROUND
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.281Z - Handled PROCESS_IN_BACKGROUND. Handling time: 483. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.282Z - Uploading file artifacts
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.282Z - Done uploading file artifacts
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.282Z - Sending EndRun request
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.343Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.343Z - Done responding to the client handleRunPostTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.343Z - Handled POST_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.343Z - Time taken for 'postTasksExecution' 0.4760950000054436ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.362Z - Closed a connection. Number of open connections: 0
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.614Z - Established a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.616Z - Closed a connection. Number of open connections: 0
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.617Z - Established a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.619Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.620Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.623Z - Time taken for 'total for creating and serializing project graph' 0.793656000001647ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.626Z - Done responding to the client project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.626Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 6.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.639Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.639Z - Done responding to the client handleRunPreTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.639Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.639Z - Time taken for 'preTasksExecution' 0.27062799999839626ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.714Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.715Z - Done responding to the client handleHashTasks
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.715Z - Handled HASH_TASKS. Handling time: 14. Response time: 1.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.964Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.964Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.964Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.993Z - [REQUEST]: Responding to the client. outputsHashesMatch
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.993Z - Done responding to the client outputsHashesMatch
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:16.993Z - Handled OUTPUTS_HASHES_MATCH. Handling time: 9. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:17.006Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:17.006Z - Done responding to the client recordOutputsHash
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:17.006Z - Handled RECORD_OUTPUTS_HASH. Handling time: 8. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:17.369Z - Error when sending EndRun
+Error: This workspace is more than three days old and is not connected. Workspaces must be connected within 3 days of creation. Claim your workspace at https://cloud.nx.app
+    at Timeout._onTimeout (/home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19/.nx/cache/cloud/2506.06.6/lib/daemon/process-run-end.js:27171:234)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.683Z - Established a connection. Number of open connections: 2
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.684Z - Closed a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.685Z - Established a connection. Number of open connections: 2
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.687Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.688Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.690Z - Time taken for 'total for creating and serializing project graph' 0.7463050000005751ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.692Z - Done responding to the client project-graph
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:18.692Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 4.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:24.736Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:25.703Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:26.091Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:27.190Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:27.251Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:27.304Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:31.016Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:31.080Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:31.167Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:31.223Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:31.693Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:37.220Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:42.102Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:46.840Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.331Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.441Z - Closed a connection. Number of open connections: 1
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.466Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.466Z - Done responding to the client recordOutputsHash
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.466Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.587Z - [REQUEST]: Responding to the client. PROCESS_IN_BACKGROUND
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.587Z - Done responding to the client PROCESS_IN_BACKGROUND
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.587Z - Handled PROCESS_IN_BACKGROUND. Handling time: 26. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.587Z - Uploading file artifacts
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.587Z - Done uploading file artifacts
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:51.588Z - Sending EndRun request
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:52.379Z - Error when sending EndRun
+Error: This workspace is more than three days old and is not connected. Workspaces must be connected within 3 days of creation. Claim your workspace at https://cloud.nx.app
+    at Timeout._onTimeout (/home/rajvir_singh/Desktop/Working/Freelancing/ngrid-angular-v19/.nx/cache/cloud/2506.06.6/lib/daemon/process-run-end.js:27171:234)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:54.637Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:54.637Z - Done responding to the client handleRunPostTasksExecution
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:54.637Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:54.637Z - Time taken for 'postTasksExecution' 0.22376600001007318ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:33:54.669Z - Closed a connection. Number of open connections: 0
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:45.211Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:51.923Z - [WATCHER]: Processing file changes in outputs
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:51.926Z - [WATCHER]: libs/ngrid-material/package.json was modified
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.033Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.034Z - [REQUEST]: libs/ngrid-material/package.json
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.034Z - [REQUEST]: 
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.053Z - Time taken for 'hash changed files from watcher' 5.154995999997482ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.133Z - Time taken for 'build-project-configs' 77.31321999998181ms
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.246Z - [SYNC]: collect registered sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.247Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.247Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.1.3 Daemon Server] - 2025-06-12T08:35:52.247Z - Time taken for 'total execution time for createProjectGraph()' 103.3380940000061ms
