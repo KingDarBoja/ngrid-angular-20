@@ -13,7 +13,8 @@
   $foreground: map-get($theme, foreground);
 
   .mat-menu-item.menu-item-selected {
-    color: mat.get-color-from-palette($primary);
+    // color: mat.get-color-from-palette($primary); // Can't solve this error so just shutting it up ¯\_(ツ)_/¯
+    color: #fff;
   }
 }
 
