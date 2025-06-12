@@ -1,4 +1,6 @@
 @use "sass:map";
+@use '@angular/material' as mat;
+
 /**
  * Legacy support, will be removed in v5 (TODO: Remove in v5)
  */
@@ -11,7 +13,7 @@
   $foreground: map-get($theme, foreground);
 
   .mat-menu-item.menu-item-selected {
-    color: mat-color($primary);
+    color: mat.get-color-from-palette($primary);
   }
 }
 
