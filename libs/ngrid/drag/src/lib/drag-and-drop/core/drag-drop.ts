@@ -1,4 +1,4 @@
-import { Injectable, Inject, NgZone, ElementRef, Renderer2 } from '@angular/core';
+import { Injectable, Inject, NgZone, ElementRef, Renderer2, RendererFactory2 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { ViewportRuler} from '@angular/cdk/scrolling';
 import { DragRef, DragRefConfig, DropListRef, DragDropRegistry } from '@angular/cdk/drag-drop';
@@ -17,11 +17,15 @@ const DEFAULT_CONFIG = {
  */
 @Injectable({providedIn: 'root'})
 export class PblDragDrop {
+  protected _renderer: Renderer2;
+
   constructor(@Inject(DOCUMENT) protected _document: any,
               protected _ngZone: NgZone,
               protected _viewportRuler: ViewportRuler,
               protected _dragDropRegistry: DragDropRegistry<DragRef, DropListRef>,
-              protected _renderer: Renderer2) {}
+              rendererFactory: RendererFactory2) {
+                this._renderer = rendererFactory.createRenderer(null, null);
+              }
 
   /**
    * Turns an element into a draggable item.

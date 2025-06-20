@@ -24873,6 +24873,11 @@
       },
       {
         "source": "ngrid",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ngrid",
         "target": "npm:@angular/cdk",
         "type": "static"
       }
@@ -60822,5 +60827,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1749736827415
+  "computedAt": 1750430008613
 }

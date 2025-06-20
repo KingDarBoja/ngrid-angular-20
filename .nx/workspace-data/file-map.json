@@ -618,7 +618,7 @@
       },
       {
         "file": "package.json",
-        "hash": "9349644050721576491"
+        "hash": "7116146414431804746"
       },
       {
         "file": "replace_pebula.sh",
@@ -910,566 +910,6 @@
       }
     ],
     "projectFileMap": {
-      "ngrid-dev-app-e2e": [
-        {
-          "file": "apps/ngrid-dev-app-e2e/.eslintrc.json",
-          "hash": "15523834149352881398"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/cypress.config.ts",
-          "hash": "3189937832590238341"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/project.json",
-          "hash": "9925323194357432557"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/ngrid/column-width/column-width.component.spec.ts/column-width.component.snap.png",
-          "hash": "13832627190484943741"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/smoke-tests/smoke-tests.component.spec.ts/smoke-test-1.snap.png",
-          "hash": "4591848187604426678"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/ngrid/column-width/column-width.component.cy.ts/column-width.component.snap.png",
-          "hash": "7055330400345779053"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/smoke-tests/smoke-tests.component.cy.ts/smoke-test-1.snap.png",
-          "hash": "14353134729127024024"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/e2e/app.cy.ts",
-          "hash": "18129466717211742227"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/e2e/ngrid/column-width/column-width.component.cy.ts",
-          "hash": "5868609276288029384"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/e2e/smoke-tests/smoke-tests.component.cy.ts",
-          "hash": "11212023374143748276"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/support/commands.ts",
-          "hash": "7195388851834204026",
-          "deps": [
-            "ngrid-cypress"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/tsconfig.json",
-          "hash": "10598468421828834777"
-        }
-      ],
-      "ngrid-dev-app": [
-        {
-          "file": "apps/ngrid-dev-app/.browserslistrc",
-          "hash": "17600754102500844387"
-        },
-        {
-          "file": "apps/ngrid-dev-app/.eslintrc.json",
-          "hash": "11168946325940091885"
-        },
-        {
-          "file": "apps/ngrid-dev-app/karma.conf.js",
-          "hash": "6524475589985518502"
-        },
-        {
-          "file": "apps/ngrid-dev-app/project.json",
-          "hash": "6921067421958358299"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-host.module.ts",
-          "hash": "14574516208052206692"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.html",
-          "hash": "7287712619826297064"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.scss",
-          "hash": "16462495969962877767"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.ts",
-          "hash": "4197847631420460504"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.component.ts",
-          "hash": "5971931771522245139"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.module.ts",
-          "hash": "9145749438095430086"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.routes.ts",
-          "hash": "15314878937096503259"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/environment.prod.ts",
-          "hash": "10220522844224226756"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/environment.ts",
-          "hash": "4256018448305775564"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/index.html",
-          "hash": "14943815133352632577"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/main.ts",
-          "hash": "17744026861403465323"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.html",
-          "hash": "3622549574145560110"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.spec.ts",
-          "hash": "5307472065810181985",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.ts",
-          "hash": "6631249951665736263",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.module.ts",
-          "hash": "3126187899926000310",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/polyfills.ts",
-          "hash": "1265948147204620756"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/routes.ts",
-          "hash": "10442982203054449464"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.html",
-          "hash": "7104794129428092244"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.scss",
-          "hash": "14216482866114887670"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.ts",
-          "hash": "11346075529792630645"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.module.ts",
-          "hash": "4827436097089935897",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/index.ts",
-          "hash": "13010538465262050582"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.html",
-          "hash": "14085419833089808756"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.ts",
-          "hash": "11109472124601688828",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.module.ts",
-          "hash": "6641530947604286906",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/test.ts",
-          "hash": "18431003686400190017"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/theme.scss",
-          "hash": "16277412803444371502"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.app.json",
-          "hash": "12519174525844968579"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.editor.json",
-          "hash": "983320222551977675"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.json",
-          "hash": "16339988739234363096"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.spec.json",
-          "hash": "4775647149578852576"
-        }
-      ],
-      "ngrid-material": [
-        {
-          "file": "libs/ngrid-material/.eslintrc.json",
-          "hash": "11168946325940091885"
-        },
-        {
-          "file": "libs/ngrid-material/README.md",
-          "hash": "2939170626156680274"
-        },
-        {
-          "file": "libs/ngrid-material/_index.scss",
-          "hash": "11422908472131411107"
-        },
-        {
-          "file": "libs/ngrid-material/_theming.scss",
-          "hash": "1973795188203906944"
-        },
-        {
-          "file": "libs/ngrid-material/cell-tooltip/README.md",
-          "hash": "1815276674382988700"
-        },
-        {
-          "file": "libs/ngrid-material/cell-tooltip/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-material/cell-tooltip/package.json",
-          "hash": "14469127164566556267"
-        },
-        {
-          "file": "libs/ngrid-material/cell-tooltip/src/index.ts",
-          "hash": "15437197957609078741"
-        },
-        {
-          "file": "libs/ngrid-material/cell-tooltip/src/lib/cell-tooltip.directive.ts",
-          "hash": "8852216449220551156",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/cell-tooltip/src/lib/cell-tooltip.module.ts",
-          "hash": "18016935999229981025",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/README.md",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/package.json",
-          "hash": "7148291474171480860"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/index.ts",
-          "hash": "5588541818293703469"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/context-menu.module.ts",
-          "hash": "14570690845190186995",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-extension.ts",
-          "hash": "9675454447200909762",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-trigger.html",
-          "hash": "8639434868636314201"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-trigger.scss",
-          "hash": "7743379187623832871"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-trigger.ts",
-          "hash": "626008374752329131",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu.directive.ts",
-          "hash": "1297762680580262495",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/styles/excel-style-header-menu.html",
-          "hash": "451986666076308758"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/styles/excel-style-header-menu.scss",
-          "hash": "12611084545906839399"
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/src/lib/header-context/styles/excel-style-header-menu.ts",
-          "hash": "1197745164025651591",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/context-menu/theming/_index.scss",
-          "hash": "7608219322675428781"
-        },
-        {
-          "file": "libs/ngrid-material/jest.config.ts",
-          "hash": "3093647692072641660"
-        },
-        {
-          "file": "libs/ngrid-material/ng-package.json",
-          "hash": "12510337595205739777"
-        },
-        {
-          "file": "libs/ngrid-material/ng-package.prod.json",
-          "hash": "12510337595205739777"
-        },
-        {
-          "file": "libs/ngrid-material/package.json",
-          "hash": "14589357007172393249",
-          "deps": [
-            "npm:@angular/material",
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/paginator/README.md",
-          "hash": "16953553451430655762"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/package.json",
-          "hash": "17021992371437774778"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/src/index.ts",
-          "hash": "1977630771053128410"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/src/lib/index.ts",
-          "hash": "18330552548636458306"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/src/lib/paginator-plugin.directive.ts",
-          "hash": "2696526785882393441"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.component.html",
-          "hash": "536498934302710749"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.component.scss",
-          "hash": "1184470615365068668"
-        },
-        {
-          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.component.ts",
-          "hash": "17605883136204406366",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.module.ts",
-          "hash": "240299242911311360",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/project.json",
-          "hash": "12866798678918907672"
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/README.md",
-          "hash": "922565391880632880"
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/package.json",
-          "hash": "16580317271064504932"
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/src/index.ts",
-          "hash": "7739797418819577118"
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/src/lib/checkbox-plugin.directive.ts",
-          "hash": "5901682212123703800",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.component.html",
-          "hash": "12385191139546880511"
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.component.scss",
-          "hash": "14874934972804550264"
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.component.ts",
-          "hash": "9373083333054734347",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.module.ts",
-          "hash": "9232297855585040258",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/sort/README.md",
-          "hash": "8431523196024599644"
-        },
-        {
-          "file": "libs/ngrid-material/sort/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-material/sort/package.json",
-          "hash": "9759980589625840014"
-        },
-        {
-          "file": "libs/ngrid-material/sort/src/index.ts",
-          "hash": "7325225569413553252"
-        },
-        {
-          "file": "libs/ngrid-material/sort/src/lib/mat-sort-component-extension.ts",
-          "hash": "14204694255931153244",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/sort/src/lib/mat-sort.directive.ts",
-          "hash": "9400158994127426886",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/sort/src/lib/mat-sort.module.ts",
-          "hash": "11004006115047622876",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-material/src/index.ts",
-          "hash": "14622343908532069822"
-        },
-        {
-          "file": "libs/ngrid-material/src/lib/ngrid-material.module.spec.ts",
-          "hash": "12267689243566270640"
-        },
-        {
-          "file": "libs/ngrid-material/src/lib/ngrid-material.module.ts",
-          "hash": "16348055462754686959"
-        },
-        {
-          "file": "libs/ngrid-material/src/test-setup.ts",
-          "hash": "7608486994823320296"
-        },
-        {
-          "file": "libs/ngrid-material/theming/_ngrid-material.scss",
-          "hash": "606664278631827661"
-        },
-        {
-          "file": "libs/ngrid-material/theming/prebuilt/deeppurple-amber.scss",
-          "hash": "545422964716686863"
-        },
-        {
-          "file": "libs/ngrid-material/theming/prebuilt/indigo-pink.scss",
-          "hash": "15499584836929678472"
-        },
-        {
-          "file": "libs/ngrid-material/theming/prebuilt/pink-bluegrey.scss",
-          "hash": "11203882372098938714"
-        },
-        {
-          "file": "libs/ngrid-material/theming/prebuilt/purple-green.scss",
-          "hash": "9751911900579717121"
-        },
-        {
-          "file": "libs/ngrid-material/tsconfig.editor.json",
-          "hash": "9906452651540460564"
-        },
-        {
-          "file": "libs/ngrid-material/tsconfig.json",
-          "hash": "6759356895592988557"
-        },
-        {
-          "file": "libs/ngrid-material/tsconfig.lib.json",
-          "hash": "5587993054197354677"
-        },
-        {
-          "file": "libs/ngrid-material/tsconfig.lib.prod.json",
-          "hash": "174503844014784742"
-        },
-        {
-          "file": "libs/ngrid-material/tsconfig.spec.json",
-          "hash": "3130111287583436921"
-        }
-      ],
       "ngrid-docs-app": [
         {
           "file": "apps/ngrid-docs-app/.browserslistrc",
@@ -4375,110 +3815,663 @@
           "hash": "14276071961662460388"
         }
       ],
-      "ngrid-cypress": [
+      "ngrid-dev-app-e2e": [
         {
-          "file": "libs/ngrid-cypress/.eslintrc.json",
-          "hash": "13800677001662881425"
+          "file": "apps/ngrid-dev-app-e2e/.eslintrc.json",
+          "hash": "15523834149352881398"
         },
         {
-          "file": "libs/ngrid-cypress/jest.config.js",
-          "hash": "3427166275704733651"
+          "file": "apps/ngrid-dev-app-e2e/cypress.config.ts",
+          "hash": "3189937832590238341"
         },
         {
-          "file": "libs/ngrid-cypress/ng-package.json",
-          "hash": "5359078781386186729"
+          "file": "apps/ngrid-dev-app-e2e/project.json",
+          "hash": "9925323194357432557"
         },
         {
-          "file": "libs/ngrid-cypress/ng-package.prod.json",
-          "hash": "5359078781386186729"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/.gitkeep",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "libs/ngrid-cypress/package.json",
-          "hash": "7886866728552730204"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/ngrid/column-width/column-width.component.spec.ts/column-width.component.snap.png",
+          "hash": "13832627190484943741"
         },
         {
-          "file": "libs/ngrid-cypress/project.json",
-          "hash": "13016601564405566258"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/smoke-tests/smoke-tests.component.spec.ts/smoke-test-1.snap.png",
+          "hash": "4591848187604426678"
         },
         {
-          "file": "libs/ngrid-cypress/src/index.ts",
-          "hash": "15047189995100038596"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/ngrid/column-width/column-width.component.cy.ts/column-width.component.snap.png",
+          "hash": "7055330400345779053"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/commands.ts",
-          "hash": "14793964258473168776"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/smoke-tests/smoke-tests.component.cy.ts/smoke-test-1.snap.png",
+          "hash": "14353134729127024024"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/README.md",
-          "hash": "14425523494199691215"
+          "file": "apps/ngrid-dev-app-e2e/src/e2e/app.cy.ts",
+          "hash": "18129466717211742227"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/fireCdpCommand.ts",
-          "hash": "6763385287600723730"
+          "file": "apps/ngrid-dev-app-e2e/src/e2e/ngrid/column-width/column-width.component.cy.ts",
+          "hash": "5868609276288029384"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/getCypressElementCoordinates.ts",
-          "hash": "13562709094711219208"
+          "file": "apps/ngrid-dev-app-e2e/src/e2e/smoke-tests/smoke-tests.component.cy.ts",
+          "hash": "11212023374143748276"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseButtonNumbers.ts",
-          "hash": "7855548806337435358"
+          "file": "apps/ngrid-dev-app-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseDown.ts",
-          "hash": "14181204010783418626"
+          "file": "apps/ngrid-dev-app-e2e/src/support/commands.ts",
+          "hash": "7195388851834204026",
+          "deps": [
+            "ngrid-cypress"
+          ]
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseMove.ts",
-          "hash": "10936840949917828076"
+          "file": "apps/ngrid-dev-app-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseUp.ts",
-          "hash": "2368066484945398943"
+          "file": "apps/ngrid-dev-app-e2e/tsconfig.json",
+          "hash": "10598468421828834777"
+        }
+      ],
+      "libs-internal-nx-repo-plugins": [
+        {
+          "file": "libs-internal/nx-repo-plugins/.eslintrc.json",
+          "hash": "12949005618342739038"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/extend-cypress.d.ts",
-          "hash": "1015021387478857547"
+          "file": "libs-internal/nx-repo-plugins/README.md",
+          "hash": "2408103327397489630"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/index.ts",
-          "hash": "8260979671821175576"
+          "file": "libs-internal/nx-repo-plugins/executors.json",
+          "hash": "9275076484365515372"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/actions.ts",
-          "hash": "15856343917038495847"
+          "file": "libs-internal/nx-repo-plugins/generators.json",
+          "hash": "4042556004226870813"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/index.ts",
-          "hash": "8755425402586601302"
+          "file": "libs-internal/nx-repo-plugins/package.json",
+          "hash": "14104793057708242683"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/ngrid-harness.ts",
-          "hash": "8341441923854434916"
+          "file": "libs-internal/nx-repo-plugins/project.json",
+          "hash": "2884920998157934305"
         },
         {
-          "file": "libs/ngrid-cypress/src/test-setup.ts",
-          "hash": "16110123792168980195"
+          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/executor.ts",
+          "hash": "11715565515008527615"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.editor.json",
+          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.d.ts",
+          "hash": "3478508728939328856"
+        },
+        {
+          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.json",
+          "hash": "6851305329239506893"
+        },
+        {
+          "file": "libs-internal/nx-repo-plugins/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs-internal/nx-repo-plugins/tsconfig.json",
+          "hash": "14490782888307098276"
+        },
+        {
+          "file": "libs-internal/nx-repo-plugins/tsconfig.lib.json",
+          "hash": "11146748992678458315"
+        }
+      ],
+      "ngrid-material": [
+        {
+          "file": "libs/ngrid-material/.eslintrc.json",
+          "hash": "11168946325940091885"
+        },
+        {
+          "file": "libs/ngrid-material/README.md",
+          "hash": "2939170626156680274"
+        },
+        {
+          "file": "libs/ngrid-material/_index.scss",
+          "hash": "11422908472131411107"
+        },
+        {
+          "file": "libs/ngrid-material/_theming.scss",
+          "hash": "1973795188203906944"
+        },
+        {
+          "file": "libs/ngrid-material/cell-tooltip/README.md",
+          "hash": "1815276674382988700"
+        },
+        {
+          "file": "libs/ngrid-material/cell-tooltip/ng-package.json",
+          "hash": "15871551581530871780"
+        },
+        {
+          "file": "libs/ngrid-material/cell-tooltip/package.json",
+          "hash": "14469127164566556267"
+        },
+        {
+          "file": "libs/ngrid-material/cell-tooltip/src/index.ts",
+          "hash": "15437197957609078741"
+        },
+        {
+          "file": "libs/ngrid-material/cell-tooltip/src/lib/cell-tooltip.directive.ts",
+          "hash": "8852216449220551156",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/cell-tooltip/src/lib/cell-tooltip.module.ts",
+          "hash": "18016935999229981025",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/README.md",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/ng-package.json",
+          "hash": "15871551581530871780"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/package.json",
+          "hash": "7148291474171480860"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/index.ts",
+          "hash": "5588541818293703469"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/context-menu.module.ts",
+          "hash": "14570690845190186995",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-extension.ts",
+          "hash": "9675454447200909762",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-trigger.html",
+          "hash": "8639434868636314201"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-trigger.scss",
+          "hash": "7743379187623832871"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu-trigger.ts",
+          "hash": "626008374752329131",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/header-context-menu.directive.ts",
+          "hash": "1297762680580262495",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/styles/excel-style-header-menu.html",
+          "hash": "451986666076308758"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/styles/excel-style-header-menu.scss",
+          "hash": "12611084545906839399"
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/src/lib/header-context/styles/excel-style-header-menu.ts",
+          "hash": "1197745164025651591",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/context-menu/theming/_index.scss",
+          "hash": "7608219322675428781"
+        },
+        {
+          "file": "libs/ngrid-material/jest.config.ts",
+          "hash": "3093647692072641660"
+        },
+        {
+          "file": "libs/ngrid-material/ng-package.json",
+          "hash": "12510337595205739777"
+        },
+        {
+          "file": "libs/ngrid-material/ng-package.prod.json",
+          "hash": "12510337595205739777"
+        },
+        {
+          "file": "libs/ngrid-material/package.json",
+          "hash": "13129080825851200574",
+          "deps": [
+            "npm:@angular/material",
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/paginator/README.md",
+          "hash": "16953553451430655762"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/ng-package.json",
+          "hash": "15871551581530871780"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/package.json",
+          "hash": "17021992371437774778"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/src/index.ts",
+          "hash": "1977630771053128410"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/src/lib/index.ts",
+          "hash": "18330552548636458306"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/src/lib/paginator-plugin.directive.ts",
+          "hash": "2696526785882393441"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.component.html",
+          "hash": "536498934302710749"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.component.scss",
+          "hash": "1184470615365068668"
+        },
+        {
+          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.component.ts",
+          "hash": "17605883136204406366",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/paginator/src/lib/table-paginator.module.ts",
+          "hash": "240299242911311360",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/project.json",
+          "hash": "12866798678918907672"
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/README.md",
+          "hash": "922565391880632880"
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/ng-package.json",
+          "hash": "15871551581530871780"
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/package.json",
+          "hash": "16580317271064504932"
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/src/index.ts",
+          "hash": "7739797418819577118"
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/src/lib/checkbox-plugin.directive.ts",
+          "hash": "5901682212123703800",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.component.html",
+          "hash": "12385191139546880511"
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.component.scss",
+          "hash": "14874934972804550264"
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.component.ts",
+          "hash": "9373083333054734347",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/selection-column/src/lib/table-checkbox.module.ts",
+          "hash": "9232297855585040258",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/sort/README.md",
+          "hash": "8431523196024599644"
+        },
+        {
+          "file": "libs/ngrid-material/sort/ng-package.json",
+          "hash": "15871551581530871780"
+        },
+        {
+          "file": "libs/ngrid-material/sort/package.json",
+          "hash": "9759980589625840014"
+        },
+        {
+          "file": "libs/ngrid-material/sort/src/index.ts",
+          "hash": "7325225569413553252"
+        },
+        {
+          "file": "libs/ngrid-material/sort/src/lib/mat-sort-component-extension.ts",
+          "hash": "14204694255931153244",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/sort/src/lib/mat-sort.directive.ts",
+          "hash": "9400158994127426886",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/sort/src/lib/mat-sort.module.ts",
+          "hash": "11004006115047622876",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-material/src/index.ts",
+          "hash": "14622343908532069822"
+        },
+        {
+          "file": "libs/ngrid-material/src/lib/ngrid-material.module.spec.ts",
+          "hash": "12267689243566270640"
+        },
+        {
+          "file": "libs/ngrid-material/src/lib/ngrid-material.module.ts",
+          "hash": "16348055462754686959"
+        },
+        {
+          "file": "libs/ngrid-material/src/test-setup.ts",
+          "hash": "7608486994823320296"
+        },
+        {
+          "file": "libs/ngrid-material/theming/_ngrid-material.scss",
+          "hash": "606664278631827661"
+        },
+        {
+          "file": "libs/ngrid-material/theming/prebuilt/deeppurple-amber.scss",
+          "hash": "545422964716686863"
+        },
+        {
+          "file": "libs/ngrid-material/theming/prebuilt/indigo-pink.scss",
+          "hash": "15499584836929678472"
+        },
+        {
+          "file": "libs/ngrid-material/theming/prebuilt/pink-bluegrey.scss",
+          "hash": "11203882372098938714"
+        },
+        {
+          "file": "libs/ngrid-material/theming/prebuilt/purple-green.scss",
+          "hash": "9751911900579717121"
+        },
+        {
+          "file": "libs/ngrid-material/tsconfig.editor.json",
           "hash": "9906452651540460564"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.json",
-          "hash": "9317299484536014170"
+          "file": "libs/ngrid-material/tsconfig.json",
+          "hash": "6759356895592988557"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.lib.json",
-          "hash": "2237255161980640292"
+          "file": "libs/ngrid-material/tsconfig.lib.json",
+          "hash": "5587993054197354677"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.lib.prod.json",
-          "hash": "12992528324979090623"
+          "file": "libs/ngrid-material/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.spec.json",
-          "hash": "2368708604775059221"
+          "file": "libs/ngrid-material/tsconfig.spec.json",
+          "hash": "3130111287583436921"
+        }
+      ],
+      "ngrid-dev-app": [
+        {
+          "file": "apps/ngrid-dev-app/.browserslistrc",
+          "hash": "17600754102500844387"
+        },
+        {
+          "file": "apps/ngrid-dev-app/.eslintrc.json",
+          "hash": "11168946325940091885"
+        },
+        {
+          "file": "apps/ngrid-dev-app/karma.conf.js",
+          "hash": "6524475589985518502"
+        },
+        {
+          "file": "apps/ngrid-dev-app/project.json",
+          "hash": "6921067421958358299"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-host.module.ts",
+          "hash": "14574516208052206692"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.html",
+          "hash": "7287712619826297064"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.scss",
+          "hash": "16462495969962877767"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.ts",
+          "hash": "4197847631420460504"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.component.ts",
+          "hash": "5971931771522245139"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.module.ts",
+          "hash": "9145749438095430086"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.routes.ts",
+          "hash": "15314878937096503259"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/environment.prod.ts",
+          "hash": "10220522844224226756"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/environment.ts",
+          "hash": "4256018448305775564"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/index.html",
+          "hash": "14943815133352632577"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/main.ts",
+          "hash": "17744026861403465323"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.html",
+          "hash": "3622549574145560110"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.spec.ts",
+          "hash": "5307472065810181985",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.ts",
+          "hash": "6631249951665736263",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.module.ts",
+          "hash": "3126187899926000310",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/polyfills.ts",
+          "hash": "1265948147204620756"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/routes.ts",
+          "hash": "10442982203054449464"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.html",
+          "hash": "7104794129428092244"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.scss",
+          "hash": "14216482866114887670"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.ts",
+          "hash": "11346075529792630645"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.module.ts",
+          "hash": "4827436097089935897",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/index.ts",
+          "hash": "13010538465262050582"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.html",
+          "hash": "14085419833089808756"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.ts",
+          "hash": "11109472124601688828",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.module.ts",
+          "hash": "6641530947604286906",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/test.ts",
+          "hash": "18431003686400190017"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/theme.scss",
+          "hash": "16277412803444371502"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.app.json",
+          "hash": "12519174525844968579"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.editor.json",
+          "hash": "983320222551977675"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.json",
+          "hash": "16339988739234363096"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.spec.json",
+          "hash": "4775647149578852576"
+        }
+      ],
+      "ngrid-docs-app-e2e": [
+        {
+          "file": "apps/ngrid-docs-app-e2e/.eslintrc.json",
+          "hash": "15523834149352881398"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/cypress.config.ts",
+          "hash": "11079506450483153362"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/project.json",
+          "hash": "12496675350293302951"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/app.cy.ts",
+          "hash": "14546407666088005225"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-groups.cy.ts",
+          "hash": "12945274890988147703"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-reorder.cy.ts",
+          "hash": "1272305213552139967"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/hide-column.cy.ts",
+          "hash": "12501845137655418995"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/support/commands.ts",
+          "hash": "11896041194008128124",
+          "deps": [
+            "ngrid-cypress"
+          ]
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/tsconfig.json",
+          "hash": "8293994036765364863"
         }
       ],
       "ngrid": [
@@ -4832,7 +4825,12 @@
         },
         {
           "file": "libs/ngrid/drag/src/lib/drag-and-drop/core/drag-drop.ts",
-          "hash": "1746951769943499416"
+          "hash": "543747923469802207",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/cdk"
+          ]
         },
         {
           "file": "libs/ngrid/drag/src/lib/drag-and-drop/core/drag-handle.ts",
@@ -5068,7 +5066,7 @@
         },
         {
           "file": "libs/ngrid/package.json",
-          "hash": "9962598883289572048",
+          "hash": "6746890639925271803",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/cdk"
@@ -5987,6 +5985,112 @@
           "hash": "1905284285349723543"
         }
       ],
+      "ngrid-cypress": [
+        {
+          "file": "libs/ngrid-cypress/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "libs/ngrid-cypress/jest.config.js",
+          "hash": "3427166275704733651"
+        },
+        {
+          "file": "libs/ngrid-cypress/ng-package.json",
+          "hash": "5359078781386186729"
+        },
+        {
+          "file": "libs/ngrid-cypress/ng-package.prod.json",
+          "hash": "5359078781386186729"
+        },
+        {
+          "file": "libs/ngrid-cypress/package.json",
+          "hash": "7886866728552730204"
+        },
+        {
+          "file": "libs/ngrid-cypress/project.json",
+          "hash": "13016601564405566258"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/index.ts",
+          "hash": "15047189995100038596"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/commands.ts",
+          "hash": "14793964258473168776"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/README.md",
+          "hash": "14425523494199691215"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/fireCdpCommand.ts",
+          "hash": "6763385287600723730"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/getCypressElementCoordinates.ts",
+          "hash": "13562709094711219208"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseButtonNumbers.ts",
+          "hash": "7855548806337435358"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseDown.ts",
+          "hash": "14181204010783418626"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseMove.ts",
+          "hash": "10936840949917828076"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseUp.ts",
+          "hash": "2368066484945398943"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/extend-cypress.d.ts",
+          "hash": "1015021387478857547"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/index.ts",
+          "hash": "8260979671821175576"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/actions.ts",
+          "hash": "15856343917038495847"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/index.ts",
+          "hash": "8755425402586601302"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/ngrid-harness.ts",
+          "hash": "8341441923854434916"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/test-setup.ts",
+          "hash": "16110123792168980195"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.editor.json",
+          "hash": "9906452651540460564"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.json",
+          "hash": "9317299484536014170"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.lib.json",
+          "hash": "2237255161980640292"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.lib.prod.json",
+          "hash": "12992528324979090623"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.spec.json",
+          "hash": "2368708604775059221"
+        }
+      ],
       "ngrid-bootstrap": [
         {
           "file": "libs/ngrid-bootstrap/.eslintrc.json",
@@ -6048,7 +6152,7 @@
         },
         {
           "file": "libs/ngrid-bootstrap/package.json",
-          "hash": "16377180503708810294",
+          "hash": "14646589793153713170",
           "deps": [
             "npm:@ng-bootstrap/ng-bootstrap",
             "ngrid"
@@ -6247,105 +6351,6 @@
         {
           "file": "libs/ngrid-bootstrap/tsconfig.spec.json",
           "hash": "3130111287583436921"
-        }
-      ],
-      "ngrid-docs-app-e2e": [
-        {
-          "file": "apps/ngrid-docs-app-e2e/.eslintrc.json",
-          "hash": "15523834149352881398"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/cypress.config.ts",
-          "hash": "11079506450483153362"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/project.json",
-          "hash": "12496675350293302951"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/app.cy.ts",
-          "hash": "14546407666088005225"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-groups.cy.ts",
-          "hash": "12945274890988147703"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-reorder.cy.ts",
-          "hash": "1272305213552139967"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/hide-column.cy.ts",
-          "hash": "12501845137655418995"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/src/support/commands.ts",
-          "hash": "11896041194008128124",
-          "deps": [
-            "ngrid-cypress"
-          ]
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "apps/ngrid-docs-app-e2e/tsconfig.json",
-          "hash": "8293994036765364863"
-        }
-      ],
-      "libs-internal-nx-repo-plugins": [
-        {
-          "file": "libs-internal/nx-repo-plugins/.eslintrc.json",
-          "hash": "12949005618342739038"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/README.md",
-          "hash": "2408103327397489630"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/executors.json",
-          "hash": "9275076484365515372"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/generators.json",
-          "hash": "4042556004226870813"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/package.json",
-          "hash": "14104793057708242683"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/project.json",
-          "hash": "2884920998157934305"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/executor.ts",
-          "hash": "11715565515008527615"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.d.ts",
-          "hash": "3478508728939328856"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.json",
-          "hash": "6851305329239506893"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/index.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/tsconfig.json",
-          "hash": "14490782888307098276"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/tsconfig.lib.json",
-          "hash": "11146748992678458315"
         }
       ]
     }
