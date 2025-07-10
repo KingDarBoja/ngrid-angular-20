@@ -6,7 +6,7 @@ import {
   OnInit,
   Inject,
   SkipSelf,
-  ChangeDetectorRef
+  ChangeDetectorRef,
 } from '@angular/core';
 import { Direction, Directionality } from '@angular/cdk/bidi';
 import { ScrollDispatcher } from '@angular/cdk/scrolling';
@@ -20,7 +20,11 @@ import {
   CDK_DRAG_CONFIG,
   DragDropConfig,
 } from '@angular/cdk/drag-drop';
-import { PblNgridComponent, PblNgridExtensionApi, PblNgridPluginController } from '@perbula/ngrid';
+import {
+  PblNgridComponent,
+  PblNgridExtensionApi,
+  PblNgridPluginController,
+} from '@perbula/ngrid';
 
 import { PblDropListRef } from './drop-list-ref';
 import { PblDragDrop } from './drag-drop';
@@ -33,21 +37,32 @@ import { PblDragDrop } from './drag-drop';
     { provide: CDK_DROP_LIST, useClass: CdkLazyDropList },
   ],
   standalone: false,
-  host: { // tslint:disable-line:no-host-metadata-property
-    'class': 'cdk-drop-list',
+  host: {
+    // tslint:disable-line:no-host-metadata-property
+    class: 'cdk-drop-list',
     '[id]': 'id',
     '[class.cdk-drop-list-dragging]': '_dropListRef.isDragging()',
     '[class.cdk-drop-list-receiving]': '_dropListRef.isReceiving()',
-  }
+  },
 })
-export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> implements OnInit {
+export class CdkLazyDropList<T = any, DRef = any>
+  extends CdkDropList<T>
+  implements OnInit
+{
+  get pblDropListRef(): PblDropListRef<DRef> {
+    return this._dropListRef as any;
+  }
 
-  get pblDropListRef(): PblDropListRef<DRef> { return this._dropListRef as any; }
+  get grid(): PblNgridComponent<T> {
+    return this._gridApi?.grid;
+  }
+  set grid(value: PblNgridComponent<T>) {
+    this.updateGrid(value);
+  }
 
-  get grid(): PblNgridComponent<T> { return this._gridApi?.grid; }
-  set grid(value: PblNgridComponent<T>) { this.updateGrid(value); }
-
-  get dir(): Direction | null { return this._gridApi?.getDirection(); }
+  get dir(): Direction | null {
+    return this._gridApi?.getDirection();
+  }
 
   /**
    * Selector that will be used to determine the direct container element, starting from
@@ -58,23 +73,40 @@ export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> impleme
   // tslint:disable-next-line:no-input-rename
   @Input('cdkDropListDirectContainerElement') directContainerElement: string;
 
-  protected get gridApi(): PblNgridExtensionApi<T> { return this._gridApi; }
+  protected get gridApi(): PblNgridExtensionApi<T> {
+    return this._gridApi;
+  }
   protected readonly originalElement: ElementRef<HTMLElement>;
   private _gridApi: PblNgridExtensionApi<T>;
 
-  constructor(@Optional() grid: PblNgridComponent<T>,
-              element: ElementRef<HTMLElement>,
-              dragDrop: DragDrop,
-              changeDetectorRef: ChangeDetectorRef,
-              _scrollDispatcher?: ScrollDispatcher,
-              @Optional() dir?: Directionality,
-              @Optional() @Inject(CDK_DROP_LIST_GROUP) @SkipSelf() group?: CdkDropListGroup<CdkDropList>,
-              @Optional() @Inject(CDK_DRAG_CONFIG) config?: DragDropConfig) {
-    super(element, dragDrop, changeDetectorRef, _scrollDispatcher, dir, group, config);
+  constructor(
+    @Optional() grid: PblNgridComponent<T>,
+    element: ElementRef<HTMLElement>,
+    dragDrop: DragDrop,
+    changeDetectorRef: ChangeDetectorRef,
+    _scrollDispatcher?: ScrollDispatcher,
+    @Optional() dir?: Directionality,
+    @Optional()
+    @Inject(CDK_DROP_LIST_GROUP)
+    @SkipSelf()
+    group?: CdkDropListGroup<CdkDropList>,
+    @Optional() @Inject(CDK_DRAG_CONFIG) config?: DragDropConfig,
+  ) {
+    super(
+      element,
+      dragDrop,
+      changeDetectorRef,
+      _scrollDispatcher,
+      dir,
+      group,
+      config,
+    );
 
     if (!(this.pblDropListRef instanceof PblDropListRef)) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
-        throw new Error('Invalid `DropListRef` injection, the ref is not an instance of PblDropListRef')
+        throw new Error(
+          'Invalid `DropListRef` injection, the ref is not an instance of PblDropListRef',
+        );
       }
       return;
     }
@@ -91,7 +123,7 @@ export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> impleme
   }
 
   ngOnInit(): void {
-    this._dropListRef.beforeStarted.subscribe( () => this.beforeStarted() );
+    this._dropListRef.beforeStarted.subscribe(() => this.beforeStarted());
   }
 
   addDrag(drag: CdkDrag): void {
@@ -108,12 +140,21 @@ export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> impleme
    * We can't do this via a DragDrop service replacement as we might have multiple drop-lists on the same
    * element which mean they must share the same DragDrop factory...
    */
-  protected initDropListRef(): void { }
+  protected initDropListRef(): void {}
 
   protected beforeStarted(): void {
     if (this.directContainerElement) {
-      const element = this.originalElement.nativeElement.querySelector(this.directContainerElement) as HTMLElement;
-      this.element = new ElementRef<HTMLElement>(element);
+      const element = this.originalElement.nativeElement.querySelector(
+        this.directContainerElement,
+      ) as HTMLElement;
+      if (element) {
+        this.element = new ElementRef<HTMLElement>(element);
+      } else {
+        console.warn(
+          `PblNgrid: Could not find directContainerElement '${this.directContainerElement}', using original element`,
+        );
+        this.element = this.originalElement;
+      }
     } else {
       this.element = this.originalElement;
     }
@@ -123,12 +164,14 @@ export class CdkLazyDropList<T = any, DRef = any> extends CdkDropList<T> impleme
     }
   }
 
-  protected gridChanged(prev?: PblNgridExtensionApi<T>) { }
+  protected gridChanged(prev?: PblNgridExtensionApi<T>) {}
 
   private updateGrid(grid: PblNgridComponent<T>) {
     if (grid !== this.grid) {
       const prev = this._gridApi;
-      this._gridApi = grid ? PblNgridPluginController.find(grid).extApi : undefined;
+      this._gridApi = grid
+        ? PblNgridPluginController.find(grid).extApi
+        : undefined;
       this.gridChanged(prev);
     }
   }

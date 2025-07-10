@@ -1,28 +1,43 @@
 import { Subject, Observable } from 'rxjs';
 import { isDevMode, IterableDiffer, IterableDiffers } from '@angular/core';
-import { PblNgridColumnDefinitionSet, PblColumnSet, PblMetaRowDefinitions } from '@perbula/ngrid/core';
+import {
+  PblNgridColumnDefinitionSet,
+  PblColumnSet,
+  PblMetaRowDefinitions,
+} from '@perbula/ngrid/core';
 
 import { _PblNgridComponent } from '../../../tokens';
 import { PblNgridInternalExtensionApi } from '../../../ext/grid-ext-api';
 import { findCellDef } from '../../cell/cell-def/utils';
 import {
   PblColumnFactory,
-  PblColumnGroup, PblColumnGroupStore,
-  isPblColumn, PblColumn, PblMetaColumn,
+  PblColumnGroup,
+  PblColumnGroupStore,
+  isPblColumn,
+  PblColumn,
+  PblMetaColumn,
   PblNgridColumnSet,
 } from '../model';
 import { GridRowType } from '../../row/types';
 import { PblNgridBaseRowComponent } from '../../row/base-row.component';
 import { StaticColumnWidthLogic } from '../width-logic/static-column-width';
 import { resetColumnWidths } from '../../utils/width';
-import { PblMetaColumnStore, PblRowColumnsChangeEvent, PblRowTypeToColumnTypeMap } from './types';
+import {
+  PblMetaColumnStore,
+  PblRowColumnsChangeEvent,
+  PblRowTypeToColumnTypeMap,
+} from './types';
 import { HiddenColumns } from './hidden-columns';
 import { MetaRowsStore } from './meta-rows-store';
 
 export class PblColumnStore {
   metaColumns: PblMetaColumnStore[];
-  get metaHeaderRows() { return this.metaRowsStore.headers; }
-  get metaFooterRows() { return this.metaRowsStore.footers; }
+  get metaHeaderRows() {
+    return this.metaRowsStore.headers;
+  }
+  get metaFooterRows() {
+    return this.metaRowsStore.footers;
+  }
   columnIds: string[];
   visibleColumnIds: string[];
   hiddenColumnIds: string[];
@@ -31,8 +46,12 @@ export class PblColumnStore {
   headerColumnDef: PblMetaRowDefinitions;
   footerColumnDef: PblMetaRowDefinitions;
 
-  get primary(): PblColumn | undefined { return this._primary; }
-  get groupStore(): PblColumnGroupStore { return this._groupStore; }
+  get primary(): PblColumn | undefined {
+    return this._primary;
+  }
+  get groupStore(): PblColumnGroupStore {
+    return this._groupStore;
+  }
 
   private _primary: PblColumn | undefined;
   private byId = new Map<string, PblMetaColumnStore & { data?: PblColumn }>();
@@ -44,31 +63,44 @@ export class PblColumnStore {
   private metaRowsStore: MetaRowsStore;
   private grid: _PblNgridComponent;
 
-  constructor(private readonly extApi: PblNgridInternalExtensionApi, private readonly differs: IterableDiffers) {
+  constructor(
+    private readonly extApi: PblNgridInternalExtensionApi,
+    private readonly differs: IterableDiffers,
+  ) {
     this.grid = extApi.grid;
     this.metaRowsStore = new MetaRowsStore(differs);
     this.resetIds();
     this.resetColumns();
 
-    this.metaRowsStore.visibleChanged$
-      .subscribe(event => {
-        event.changes.forEachOperation((record, previousIndex, currentIndex) => {
-          if (record.previousIndex == null) {
-            const columns = this.find(record.item);
-            const col = event.metaRow.kind === 'header' ?
-              event.metaRow.isGroup ? columns.headerGroup : columns.header
-              : event.metaRow.isGroup ? columns.footerGroup : columns.footer;
-            event.metaRow.rowDef.cols.splice(currentIndex, 0, col);
-          } else if (currentIndex == null) {
-            event.metaRow.rowDef.cols.splice(previousIndex, 1);
-          } else {
-            moveItemInArray(event.metaRow.rowDef.cols, previousIndex, currentIndex);
-          }
-        });
+    this.metaRowsStore.visibleChanged$.subscribe((event) => {
+      event.changes.forEachOperation((record, previousIndex, currentIndex) => {
+        if (record.previousIndex == null) {
+          const columns = this.find(record.item);
+          const col =
+            event.metaRow.kind === 'header'
+              ? event.metaRow.isGroup
+                ? columns.headerGroup
+                : columns.header
+              : event.metaRow.isGroup
+                ? columns.footerGroup
+                : columns.footer;
+          event.metaRow.rowDef.cols.splice(currentIndex, 0, col);
+        } else if (currentIndex == null) {
+          event.metaRow.rowDef.cols.splice(previousIndex, 1);
+        } else {
+          moveItemInArray(
+            event.metaRow.rowDef.cols,
+            previousIndex,
+            currentIndex,
+          );
+        }
       });
+    });
   }
 
-  getColumnsOf<TRowType extends GridRowType>(row: PblNgridBaseRowComponent<TRowType>): PblRowTypeToColumnTypeMap<TRowType>[] {
+  getColumnsOf<TRowType extends GridRowType>(
+    row: PblNgridBaseRowComponent<TRowType>,
+  ): PblRowTypeToColumnTypeMap<TRowType>[] {
     switch (row.rowType) {
       case 'data':
       case 'header':
@@ -76,12 +108,14 @@ export class PblColumnStore {
         return this.visibleColumns as any;
       case 'meta-header':
       case 'meta-footer':
-        return (row as any)._row.rowDef.cols;
+        return (row as any)._row?.rowDef?.cols || [];
     }
     return [];
   }
 
-  columnRowChange(): Observable<PblRowColumnsChangeEvent<PblRowTypeToColumnTypeMap<'data'>>> {
+  columnRowChange(): Observable<
+    PblRowColumnsChangeEvent<PblRowTypeToColumnTypeMap<'data'>>
+  > {
     return this._visibleChanged$ as any;
   }
 
@@ -97,7 +131,10 @@ export class PblColumnStore {
     this.updateColumnVisibility(undefined, this.allColumns);
   }
 
-  updateColumnVisibility(hide?: PblColumn[] | string[], show?: PblColumn[] | string[]) {
+  updateColumnVisibility(
+    hide?: PblColumn[] | string[],
+    show?: PblColumn[] | string[],
+  ) {
     const didHide = hide && this.hiddenColumns.add(hide);
     const didShow = show && this.hiddenColumns.remove(show);
     if (didShow || didHide) {
@@ -170,7 +207,7 @@ export class PblColumnStore {
     return false;
   }
 
-  find(id: string): PblMetaColumnStore & { data?: PblColumn } | undefined {
+  find(id: string): (PblMetaColumnStore & { data?: PblColumn }) | undefined {
     return this.byId.get(id);
   }
 
@@ -186,11 +223,13 @@ export class PblColumnStore {
     return rowWidth;
   }
 
-  invalidate(columnOrDefinitionSet: PblNgridColumnDefinitionSet | PblNgridColumnSet): void {
-    const columnSet: PblNgridColumnSet = this.lastSet = 'groupStore' in columnOrDefinitionSet
-      ? columnOrDefinitionSet
-      : PblColumnFactory.fromDefinitionSet(columnOrDefinitionSet).build()
-    ;
+  invalidate(
+    columnOrDefinitionSet: PblNgridColumnDefinitionSet | PblNgridColumnSet,
+  ): void {
+    const columnSet: PblNgridColumnSet = (this.lastSet =
+      'groupStore' in columnOrDefinitionSet
+        ? columnOrDefinitionSet
+        : PblColumnFactory.fromDefinitionSet(columnOrDefinitionSet).build());
     const { groupStore, table, header, footer, headerGroup } = columnSet;
 
     this._groupStore = groupStore.clone();
@@ -202,11 +241,11 @@ export class PblColumnStore {
     this.headerColumnDef = {
       rowClassName: (table.header && table.header.rowClassName) || '',
       type: (table.header && table.header.type) || 'fixed',
-    }
+    };
     this.footerColumnDef = {
       rowClassName: (table.footer && table.footer.rowClassName) || '',
       type: (table.footer && table.footer.type) || 'fixed',
-    }
+    };
 
     this._primary = undefined;
 
@@ -230,7 +269,9 @@ export class PblColumnStore {
 
       if (column.pIndex) {
         if (this._primary && isDevMode()) {
-          console.warn(`Multiple primary index columns defined: previous: "${this._primary.id}", current: "${column.id}"`);
+          console.warn(
+            `Multiple primary index columns defined: previous: "${this._primary.id}", current: "${column.id}"`,
+          );
         }
         this._primary = column;
       }
@@ -243,7 +284,8 @@ export class PblColumnStore {
       const keys: string[] = [];
       for (const def of rowDef.cols) {
         const metaCol = this.getColumnRecord(def.id, this.metaColumns);
-        const column = metaCol.header || (metaCol.header = new PblMetaColumn(def));
+        const column =
+          metaCol.header || (metaCol.header = new PblMetaColumn(def));
         keys.push(column.id);
         newRowDef.cols.push(column);
       }
@@ -261,7 +303,8 @@ export class PblColumnStore {
       const keys: string[] = [];
       for (const def of rowDef.cols) {
         const metaCol = this.getColumnRecord(def.id, this.metaColumns);
-        const column = metaCol.footer || (metaCol.footer = new PblMetaColumn(def));
+        const column =
+          metaCol.footer || (metaCol.footer = new PblMetaColumn(def));
         keys.push(column.id);
         newRowDef.cols.push(column);
       }
@@ -301,49 +344,69 @@ export class PblColumnStore {
 
     for (const col of this.visibleColumns) {
       const cell = findCellDef(registry, col, 'tableCell', true);
-      if ( cell ) {
+      if (cell) {
         col.cellTpl = cell.tRef;
       } else {
         const defaultCellTemplate = registry.getMultiDefault('tableCell');
-        col.cellTpl = defaultCellTemplate ? defaultCellTemplate.tRef : this.grid._fbTableCell;
+        col.cellTpl = defaultCellTemplate
+          ? defaultCellTemplate.tRef
+          : this.grid._fbTableCell;
       }
 
       const editorCell = findCellDef(registry, col, 'editorCell', true);
-      if ( editorCell ) {
+      if (editorCell) {
         col.editorTpl = editorCell.tRef;
       } else {
         const defaultCellTemplate = registry.getMultiDefault('editorCell');
-        col.editorTpl = defaultCellTemplate ? defaultCellTemplate.tRef : undefined;
+        col.editorTpl = defaultCellTemplate
+          ? defaultCellTemplate.tRef
+          : undefined;
       }
     }
   }
 
-  attachCustomHeaderCellTemplates(columns?: Array<PblColumn | PblMetaColumnStore>): void {
+  attachCustomHeaderCellTemplates(
+    columns?: Array<PblColumn | PblMetaColumnStore>,
+  ): void {
     const { registry } = this.grid;
 
     if (!columns) {
       columns = [].concat(this.visibleColumns, this.metaColumns);
     }
 
-    const defaultHeaderCellTemplate = registry.getMultiDefault('headerCell') || { tRef: this.grid._fbHeaderCell };
-    const defaultFooterCellTemplate = registry.getMultiDefault('footerCell') || { tRef: this.grid._fbFooterCell };
+    const defaultHeaderCellTemplate = registry.getMultiDefault(
+      'headerCell',
+    ) || { tRef: this.grid._fbHeaderCell };
+    const defaultFooterCellTemplate = registry.getMultiDefault(
+      'footerCell',
+    ) || { tRef: this.grid._fbFooterCell };
     for (const col of columns) {
       if (isPblColumn(col)) {
-        const headerCellDef = findCellDef(registry, col, 'headerCell', true) || defaultHeaderCellTemplate;
-        const footerCellDef = findCellDef(registry, col, 'footerCell', true) || defaultFooterCellTemplate;
+        const headerCellDef =
+          findCellDef(registry, col, 'headerCell', true) ||
+          defaultHeaderCellTemplate;
+        const footerCellDef =
+          findCellDef(registry, col, 'footerCell', true) ||
+          defaultFooterCellTemplate;
         col.headerCellTpl = headerCellDef.tRef;
         col.footerCellTpl = footerCellDef.tRef;
       } else {
         if (col.header) {
-          const headerCellDef = findCellDef(registry, col.header, 'headerCell', true) || defaultHeaderCellTemplate;
+          const headerCellDef =
+            findCellDef(registry, col.header, 'headerCell', true) ||
+            defaultHeaderCellTemplate;
           col.header.template = headerCellDef.tRef;
         }
         if (col.headerGroup) {
-          const headerCellDef = findCellDef(registry, col.headerGroup, 'headerCell', true) || defaultHeaderCellTemplate;
+          const headerCellDef =
+            findCellDef(registry, col.headerGroup, 'headerCell', true) ||
+            defaultHeaderCellTemplate;
           col.headerGroup.template = headerCellDef.tRef;
         }
         if (col.footer) {
-          const footerCellDef = findCellDef(registry, col.footer, 'footerCell', true) || defaultFooterCellTemplate;
+          const footerCellDef =
+            findCellDef(registry, col.footer, 'footerCell', true) ||
+            defaultFooterCellTemplate;
           col.footer.template = footerCellDef.tRef;
         }
       }
@@ -362,8 +425,14 @@ export class PblColumnStore {
     const groups: PblColumnGroup[] = [];
 
     for (let tIndex = 0; tIndex < this.visibleColumns.length; tIndex++) {
-      const columns = [this.visibleColumns[tIndex - 1], this.visibleColumns[tIndex], this.visibleColumns[tIndex + 1]];
-      const columnGroups = columns.map( c => c ? c.getGroupOfRow(columnSet.rowIndex) : undefined );
+      const columns = [
+        this.visibleColumns[tIndex - 1],
+        this.visibleColumns[tIndex],
+        this.visibleColumns[tIndex + 1],
+      ];
+      const columnGroups = columns.map((c) =>
+        c ? c.getGroupOfRow(columnSet.rowIndex) : undefined,
+      );
       // true when the group exists in one of the columns BUT NOT in the LAST COLUMN (i.e: Its a slave split)
       const groupExists = groups.lastIndexOf(columnGroups[1]) !== -1;
 
@@ -400,18 +469,31 @@ export class PblColumnStore {
           if (idx !== -1) {
             keys.splice(idx, 1);
           }
-          this.metaColumns.splice(this.metaColumns.findIndex( m => m.id === id), 1);
+          this.metaColumns.splice(
+            this.metaColumns.findIndex((m) => m.id === id),
+            1,
+          );
         }
         this._groupStore.remove(ghost);
       }
     }
-    this.metaRowsStore.updateHeader({ rowDef: columnSet, keys, allKeys, isGroup: true, kind: 'header' });
+    this.metaRowsStore.updateHeader({
+      rowDef: columnSet,
+      keys,
+      allKeys,
+      isGroup: true,
+      kind: 'header',
+    });
   }
 
-  private getColumnRecord<T extends PblMetaColumnStore & { data?: PblColumn }>(id: string, collection?: T[]): T  {
-    let columnRecord: PblMetaColumnStore & { data?: PblColumn } = this.byId.get(id);
+  private getColumnRecord<T extends PblMetaColumnStore & { data?: PblColumn }>(
+    id: string,
+    collection?: T[],
+  ): T {
+    let columnRecord: PblMetaColumnStore & { data?: PblColumn } =
+      this.byId.get(id);
     if (!columnRecord) {
-      this.byId.set(id, columnRecord = { id });
+      this.byId.set(id, (columnRecord = { id }));
       if (collection) {
         collection.push(columnRecord as T);
       }
@@ -430,10 +512,16 @@ export class PblColumnStore {
     }
     for (const h of this.metaRowsStore.headers) {
       if (h.isGroup) {
-        h.keys = h.allKeys.filter( key => this.find(key).headerGroup.isVisible );
+        h.keys = h.allKeys.filter(
+          (key) => this.find(key).headerGroup.isVisible,
+        );
       }
     }
-    resetColumnWidths(this.getStaticWidth(), this.visibleColumns, this.metaColumns);
+    resetColumnWidths(
+      this.getStaticWidth(),
+      this.visibleColumns,
+      this.metaColumns,
+    );
   }
 
   private resetColumns(): void {
@@ -455,18 +543,22 @@ export class PblColumnStore {
     if (this.differ) {
       if (!this.columnUpdateInProgress) {
         this.columnUpdateInProgress = true;
-        Promise.resolve()
-          .then(() => {
-            this.columnUpdateInProgress = false;
-            const changes = this.differ.diff(this.visibleColumns);
-            if (changes) {
-              this.hiddenColumnIds = Array.from(this.hiddenColumns.hidden);
-              this.visibleColumnIds = Array.from(this.visibleColumns).map( c => c.id );
-              this.columnIds = Array.from(this.allColumns).map( c => c.id );
-              this._visibleChanged$.next({ columns: this.visibleColumns, changes });
-              this.afterColumnPositionChange();
-            }
-          });
+        Promise.resolve().then(() => {
+          this.columnUpdateInProgress = false;
+          const changes = this.differ.diff(this.visibleColumns);
+          if (changes) {
+            this.hiddenColumnIds = Array.from(this.hiddenColumns.hidden);
+            this.visibleColumnIds = Array.from(this.visibleColumns).map(
+              (c) => c.id,
+            );
+            this.columnIds = Array.from(this.allColumns).map((c) => c.id);
+            this._visibleChanged$.next({
+              columns: this.visibleColumns,
+              changes,
+            });
+            this.afterColumnPositionChange();
+          }
+        });
       }
     }
     // no differ means we did not invalidate yet, so nothing will change until it start showing
@@ -491,7 +583,11 @@ export class PblColumnStore {
  * @param fromIndex Starting index of the item.
  * @param toIndex Index to which the item should be moved.
  */
-export function moveItemInArray<T = any>(array: T[], fromIndex: number, toIndex: number): void {
+export function moveItemInArray<T = any>(
+  array: T[],
+  fromIndex: number,
+  toIndex: number,
+): void {
   const from = clamp(fromIndex, array.length - 1);
   const to = clamp(toIndex, array.length - 1);
 
@@ -509,10 +605,17 @@ export function moveItemInArray<T = any>(array: T[], fromIndex: number, toIndex:
   array[to] = target;
 }
 
-export function moveItemInArrayExt<T = any>(array: T[],
-                                            fromIndex: number,
-                                            toIndex: number,
-                                            fn: (previousItem: T, currentItem: T, previousIndex: number, currentIndex: number) => void): void {
+export function moveItemInArrayExt<T = any>(
+  array: T[],
+  fromIndex: number,
+  toIndex: number,
+  fn: (
+    previousItem: T,
+    currentItem: T,
+    previousIndex: number,
+    currentIndex: number,
+  ) => void,
+): void {
   const from = clamp(fromIndex, array.length - 1);
   const to = clamp(toIndex, array.length - 1);
 
@@ -532,7 +635,6 @@ export function moveItemInArrayExt<T = any>(array: T[],
   fn(array[to], target, to, from);
   array[to] = target;
 }
-
 
 /** Clamps a number between zero and a maximum. */
 function clamp(value: number, max: number): number {

@@ -1,5 +1,11 @@
 import { take } from 'rxjs/operators';
-import { Input, Directive, OnDestroy, AfterViewInit, OnInit } from '@angular/core';
+import {
+  Input,
+  Directive,
+  OnDestroy,
+  AfterViewInit,
+  OnInit,
+} from '@angular/core';
 import { DragDrop, CdkDrag } from '@angular/cdk/drag-drop';
 
 import { PblDragRef } from './drag-ref';
@@ -9,21 +15,29 @@ import { CdkLazyDropList } from './drop-list';
 @Directive({
   selector: '[cdkLazyDrag]', // tslint:disable-line: directive-selector
   exportAs: 'cdkLazyDrag',
-  host: { // tslint:disable-line:no-host-metadata-property
-    'class': 'cdk-drag',
+  host: {
+    // tslint:disable-line:no-host-metadata-property
+    class: 'cdk-drag',
     '[class.cdk-drag-dragging]': '_dragRef.isDragging()',
   },
   standalone: false,
-  providers: [
-    { provide: DragDrop, useExisting: PblDragDrop },
-  ],
+  providers: [{ provide: DragDrop, useExisting: PblDragDrop }],
 })
-export class CdkLazyDrag<T = any, Z extends CdkLazyDropList<T> = CdkLazyDropList<T>, DRef = any> extends CdkDrag<T> implements OnInit, AfterViewInit, OnDestroy {
-
+export class CdkLazyDrag<
+    T = any,
+    Z extends CdkLazyDropList<T> = CdkLazyDropList<T>,
+    DRef = any,
+  >
+  extends CdkDrag<T>
+  implements OnInit, AfterViewInit, OnDestroy
+{
   /**
    * A class to set when the root element is not the host element. (i.e. when `cdkDragRootElement` is used).
    */
-  @Input('cdkDragRootElementClass') set rootElementSelectorClass(value: string) { // tslint:disable-line:no-input-rename
+  @Input('cdkDragRootElementClass') set rootElementSelectorClass(
+    value: string,
+  ) {
+    // tslint:disable-line:no-input-rename
     if (value !== this._rootClass && this._hostNotRoot) {
       if (this._rootClass) {
         this.getRootElement().classList.remove(...this._rootClass.split(' '));
@@ -35,9 +49,13 @@ export class CdkLazyDrag<T = any, Z extends CdkLazyDropList<T> = CdkLazyDropList
     this._rootClass = value;
   }
 
-  get pblDragRef(): PblDragRef<DRef> { return this._dragRef as any; }
+  get pblDragRef(): PblDragRef<DRef> {
+    return this._dragRef as any;
+  }
 
-  @Input() get cdkDropList(): Z { return this.dropContainer as Z; }
+  @Input() get cdkDropList(): Z {
+    return this.dropContainer as Z;
+  }
   set cdkDropList(dropList: Z) {
     // TO SUPPORT `cdkDropList` via string input (ID) we need a reactive registry...
     const prev = this.cdkDropList;
@@ -65,11 +83,13 @@ export class CdkLazyDrag<T = any, Z extends CdkLazyDropList<T> = CdkLazyDropList
   ngOnInit(): void {
     if (!(this.pblDragRef instanceof PblDragRef)) {
       if (typeof ngDevMode === 'undefined' || ngDevMode) {
-        throw new Error('Invalid `DragRef` injection, the ref is not an instance of PblDragRef')
+        throw new Error(
+          'Invalid `DragRef` injection, the ref is not an instance of PblDragRef',
+        );
       }
       return;
     }
-    this.pblDragRef.rootElementChanged.subscribe( event => {
+    this.pblDragRef.rootElementChanged.subscribe((event) => {
       const rootElementSelectorClass = this._rootClass;
       const hostNotRoot = this.element.nativeElement !== event.curr;
 
@@ -89,12 +109,32 @@ export class CdkLazyDrag<T = any, Z extends CdkLazyDropList<T> = CdkLazyDropList
   // Working around the issue of drop container is not the direct parent (father) of a drag item.
   // The entire ngAfterViewInit() overriding method can be removed if PR accepted.
   ngAfterViewInit(): void {
-    this.started.subscribe( startedEvent => {
+    this.started.subscribe((startedEvent) => {
       if (this.dropContainer) {
         const element = this.getRootElement();
         const initialRootElementParent = element.parentNode as HTMLElement;
-        if (!element.nextSibling && initialRootElementParent !== this.dropContainer.element.nativeElement) {
-          this.ended.pipe(take(1)).subscribe( endedEvent => initialRootElementParent.appendChild(element) );
+        const dropContainerElement = this.dropContainer.element.nativeElement;
+
+        // Check if the element is not a direct child of the drop container
+        if (initialRootElementParent !== dropContainerElement) {
+          this.ended.pipe(take(1)).subscribe((endedEvent) => {
+            // Minimal restoration - only if element ends up in body or outside grid
+            setTimeout(() => {
+              if (
+                element.parentNode === document.body ||
+                !dropContainerElement.contains(element)
+              ) {
+                console.log(
+                  'PblNgrid: Element outside grid, restoring to drop container',
+                );
+                try {
+                  dropContainerElement.appendChild(element);
+                } catch (error) {
+                  console.warn('PblNgrid: Could not restore element:', error);
+                }
+              }
+            }, 0);
+          });
         }
       }
     });
@@ -106,5 +146,5 @@ export class CdkLazyDrag<T = any, Z extends CdkLazyDropList<T> = CdkLazyDropList
     super.ngOnDestroy();
   }
 
-  protected dropContainerChanged(prev: Z) { }
+  protected dropContainerChanged(prev: Z) {}
 }

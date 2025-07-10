@@ -1,8 +1,17 @@
 import { PblMetaRowDefinitions } from '@perbula/ngrid/core';
-import { PblNgridMetaRowService, PblMetaRow } from '../meta-rows/meta-row.service';
+import {
+  PblNgridMetaRowService,
+  PblMetaRow,
+} from '../meta-rows/meta-row.service';
 
 export function initColumnOrMetaRow(element: HTMLElement, isFooter: boolean) {
-  element.classList.add(...(isFooter ? ['cdk-footer-row', 'pbl-ngrid-footer-row'] : ['cdk-header-row', 'pbl-ngrid-header-row']));
+  if (element && element.classList) {
+    element.classList.add(
+      ...(isFooter
+        ? ['cdk-footer-row', 'pbl-ngrid-footer-row']
+        : ['cdk-header-row', 'pbl-ngrid-header-row']),
+    );
+  }
 }
 
 export function setRowVisibility(element: HTMLElement, visible: boolean) {
@@ -13,11 +22,17 @@ export function setRowVisibility(element: HTMLElement, visible: boolean) {
   }
 }
 
-export function applyMetaRowClass(metaRowsService: PblNgridMetaRowService,
-                                  metaRows: PblMetaRow,
-                                  element: HTMLElement,
-                                  oldMetaRow: PblMetaRowDefinitions,
-                                  newMetaRow: PblMetaRowDefinitions) {
+export function applyMetaRowClass(
+  metaRowsService: PblNgridMetaRowService,
+  metaRows: PblMetaRow,
+  element: HTMLElement,
+  oldMetaRow: PblMetaRowDefinitions,
+  newMetaRow: PblMetaRowDefinitions,
+) {
+  if (!element || !element.classList) {
+    return;
+  }
+
   if (oldMetaRow) {
     if (oldMetaRow.rowClassName) {
       element.classList.remove(oldMetaRow.rowClassName);
@@ -43,14 +58,18 @@ const FIRST_LAST_ROW_SELECTORS = {
     selector: 'pbl-ngrid-footer-row',
     first: 'pbl-ngrid-first-footer-row',
     last: 'pbl-ngrid-last-footer-row',
-  }
+  },
 };
 
-export function updateMetaRowFirstLastClass(section: keyof typeof FIRST_LAST_ROW_SELECTORS,
-                                            root: Element,
-                                            prev: { first?: Element; last?: Element }): { first?: Element; last?: Element } {
+export function updateMetaRowFirstLastClass(
+  section: keyof typeof FIRST_LAST_ROW_SELECTORS,
+  root: Element,
+  prev: { first?: Element; last?: Element },
+): { first?: Element; last?: Element } {
   const sectionCss = FIRST_LAST_ROW_SELECTORS[section];
-  const rows = root.querySelectorAll(`.${sectionCss.selector}:not(.pbl-ngrid-row-visually-hidden):not(.pbl-ngrid-row-hidden)`);
+  const rows = root.querySelectorAll(
+    `.${sectionCss.selector}:not(.pbl-ngrid-row-visually-hidden):not(.pbl-ngrid-row-hidden)`,
+  );
 
   const first = rows[0];
   if (prev.first !== first) {
