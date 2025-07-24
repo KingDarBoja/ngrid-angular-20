@@ -37,192 +37,860 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "apps/libs/docs-app-lib/lib/components/example-asset-file-view/example-asset-file-view.component.ts",
-        "hash": "6185938908875019629"
+        "file": "tools/tasks/release/tsconfig.json",
+        "hash": "14136994591599673433"
       },
       {
-        "file": "dev_docs/nx.md",
-        "hash": "20200054323059144"
+        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.component.ts.template",
+        "hash": "5455322393477621962"
       },
       {
-        "file": "tools/tasks/release/changelog-commit-template.hbs",
-        "hash": "18434900023486939154"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/demo-action-row/demo-action-row.component.html",
-        "hash": "15852779095095980350"
-      },
-      {
-        "file": "tools/tasks/LICENSE",
-        "hash": "7214701688586489797"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/index.ts",
-        "hash": "9496908387439031010"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/content-chunk-view/content-chunk-view.component.scss",
-        "hash": "14477823824612470821"
-      },
-      {
-        "file": "dev_docs/migrations/migrations.v14.8.2.json",
-        "hash": "15412495605189245826"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/client-api/lib/dynamic-api-client.ts",
-        "hash": "9459533335292915682"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-code-examples/utils.ts",
-        "hash": "821917474345641295"
-      },
-      {
-        "file": "tools/tasks/release/git/github-urls.ts",
-        "hash": "3519178117387623752"
-      },
-      {
-        "file": "dev_docs/PROJECT_STRUCTURE.md",
-        "hash": "12856871634455397411"
-      },
-      {
-        "file": "apps/libs/dev-app-lib/client-api/lib/datastore/datastore.ts",
-        "hash": "9090124695036576037"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-pages/index.ts",
-        "hash": "388128799482832629"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/example/index.ts",
-        "hash": "143457356085006005"
-      },
-      {
-        "file": "dev_docs/RELEASE.md",
-        "hash": "4152181861256437729"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/noop.ts",
-        "hash": "2063808438583795328"
-      },
-      {
-        "file": "tools/tasks/release/prompt/npm-dist-tag-prompt.ts",
-        "hash": "1899244754084100641"
-      },
-      {
-        "file": "tools/tasks/release/check-release-output.ts",
-        "hash": "2569710172724112070"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/client-api/lib/dynamic-rest-api-client.ts",
-        "hash": "8948838556902260717"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "10147299076496925823"
-      },
-      {
-        "file": "tsconfig.lib.json",
-        "hash": "13240209363755785750"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-container/markdown-page-container.component.ts",
-        "hash": "11569422977691724376"
-      },
-      {
-        "file": "tools/generators/create-docs-app-module/schema.json",
-        "hash": "15859250303929710919"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/app-search-results/app-search-results.component.scss",
-        "hash": "7237121228629220824"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/grid/layout-1/layout-1.component.ts",
-        "hash": "1112230325547771904"
-      },
-      {
-        "file": "dev_docs/DOCS_APP.md",
-        "hash": "2617043940060272248"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/ng-custom-logo/ng-custom-logo.component.scss",
-        "hash": "15620849941425497384"
-      },
-      {
-        "file": "apps/libs/dev-app-lib/client-api/index.ts",
-        "hash": "9116859033767097195"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/app-search-input/app-search-input.component.scss",
-        "hash": "3944926292471901694"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/worker.ts",
-        "hash": "12082350730268453888"
-      },
-      {
-        "file": "tools/tasks/release/version-name/publish-branches.ts",
-        "hash": "3533264895741139963"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-code-examples/models.ts",
-        "hash": "4848506235086812648"
-      },
-      {
-        "file": "tsconfig.editor.json",
-        "hash": "11557030700343931629"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-app-search/models.ts",
-        "hash": "13102691694717885572"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "15943681067979948127"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/view-layout-observer.service.ts",
-        "hash": "8638360907782632267"
-      },
-      {
-        "file": "tools/tasks/release/version-name/create-version.ts",
-        "hash": "14788885643249915829"
-      },
-      {
-        "file": "karma.conf.js",
-        "hash": "9035123531951369397"
+        "file": "dev_docs/migrations/migrations.v14.8.2.log",
+        "hash": "4751784864121159413"
       },
       {
         "file": "apps/libs/docs-app-lib/client-api/lib/datastore/datastore.worker.ts",
         "hash": "17593581881412258895"
       },
       {
-        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/window.ts",
-        "hash": "771285273568724595"
+        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.component.html.template",
+        "hash": "3622549574145560110"
       },
       {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-area.directive.ts",
-        "hash": "10976364428579043531"
+        "file": "tools/ng-packagr.transformers/tasks/write-package-json/write-package-json.ts",
+        "hash": "12123417718913574420"
       },
       {
-        "file": "apps/libs/dev-app-lib/client-api/lib/static-client-api.ts",
-        "hash": "11263234243437283799"
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc.component.scss",
+        "hash": "9471608679557276065"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": "apps/libs/client-api/rest/index.ts",
+        "hash": "3510269715815850271"
       },
       {
-        "file": "apps/libs/docs-app-lib/lib/pipes/negate.ts",
-        "hash": "5945622728654740042"
+        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-viewer/markdown-page-viewer.component.html",
+        "hash": "15429747499561843525"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/demo-action-row/demo-action-row.component.ts",
+        "hash": "17801449033033071635"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/material-module.ts",
+        "hash": "14524909475341374441"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-code-examples/models.ts",
+        "hash": "4848506235086812648"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/sass/index.ts",
+        "hash": "11531806413163104613"
+      },
+      {
+        "file": "apps/libs/client-api/lib/models.ts",
+        "hash": "16551419665865763834"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/sass/compile.schema.json",
+        "hash": "392627651467638604"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-viewer/markdown-page-viewer.component.scss",
+        "hash": "13132673154865091297"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-pages/plugin.ts",
+        "hash": "531705328314800617"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/ngrid-cypress.transformers.ts",
+        "hash": "11856199865830502950"
+      },
+      {
+        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.module.ts.template",
+        "hash": "9062097800690591454"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/base.ts",
+        "hash": "111837106536241303"
+      },
+      {
+        "file": "tools/tasks/release/release-output/release-packages.ts",
+        "hash": "15105804097688032523"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-app-search/index.ts",
+        "hash": "8685766590785281402"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/columns/columns-content.component.scss",
+        "hash": "4921430953666857079"
+      },
+      {
+        "file": "dev_docs/migrations/migrations.v13.0.0.json",
+        "hash": "12683162206132480037"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/home-page/home-page.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/lazy-module-store.ts",
+        "hash": "1673189763974560641"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/ng-custom-logo/ng-custom-logo.component.ts",
+        "hash": "8757387405405596695"
+      },
+      {
+        "file": "tools/scripts/publish.sh",
+        "hash": "6305309916914676395"
+      },
+      {
+        "file": "tools/tasks/LICENSE",
+        "hash": "7214701688586489797"
       },
       {
         "file": "tools/ng-packagr.transformers/tasks/write-package-json/index.ts",
         "hash": "14781651739913422043"
       },
       {
+        "file": "apps/libs/docs-app-lib/lib/components/ng-custom-logo/ng-custom-logo.component.html",
+        "hash": "7107412584120937073"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "1132135014424967668"
+      },
+      {
+        "file": "tslint.json",
+        "hash": "4197511524016541115"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/home-page/home-page.component.ts",
+        "hash": "7898101287496613200"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/schematics/index.ts",
+        "hash": "11531806413163104613"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/grid/layout-1/layout-1.component.scss",
+        "hash": "2157055483606676275"
+      },
+      {
+        "file": "tools/scripts/publish.gh-pages.sh",
+        "hash": "6897430516327124024"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/markdown-dynamic-component-portal.ts",
+        "hash": "7872218994525445083"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/app-search-input/app-search-input.component.html",
+        "hash": "1794233993097413908"
+      },
+      {
+        "file": "tools/tasks/release/git/git-client.ts",
+        "hash": "1852831885371364973"
+      },
+      {
+        "file": "apps/libs/client-api/lib/client-api.ts",
+        "hash": "17811318652667167329"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/content-chunk-view/content-chunk-view.component.ts",
+        "hash": "15560120896666843686"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/exapmle-view/example-view.component.scss",
+        "hash": "12060710954110981185"
+      },
+      {
+        "file": "tools/tasks/release/publish-release.ts",
+        "hash": "11192886979660565657"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-pages/utils.ts",
+        "hash": "17939153259692497683"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6175403401748368450"
+      },
+      {
+        "file": "dev_docs/DOCS_APP.md",
+        "hash": "2617043940060272248"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-code-examples/plugin.ts",
+        "hash": "7224692087371428607"
+      },
+      {
+        "file": "tools/generators/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "angular.json",
+        "hash": "6696909354942132582"
+      },
+      {
+        "file": "tools/tasks/release/extract-release-notes.ts",
+        "hash": "1757335679142351742"
+      },
+      {
+        "file": "dev_docs/migrations/migrations.v13.10.6.json",
+        "hash": "6815246080326469715"
+      },
+      {
+        "file": "tools/tasks/release/version-name/create-version.ts",
+        "hash": "14788885643249915829"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/adapter.ts",
+        "hash": "3981309544495103729"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/client-api/lib/dynamic-api-client.ts",
+        "hash": "9459533335292915682"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-link-template.ts",
+        "hash": "15048911082019911803"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/markdown-pages-menu.service.ts",
+        "hash": "3818797196616387790"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "13861030216370761219"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-container/markdown-page-container.component.html",
+        "hash": "1727609702323802249"
+      },
+      {
+        "file": "libs-internal/webpack-no-clean-if-any/index.ts",
+        "hash": "11640679383486868755"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/grid/layout-1/layout-1.component.ts",
+        "hash": "1112230325547771904"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/client-api/lib/datastore/datastore.ts",
+        "hash": "9689541193819299790"
+      },
+      {
+        "file": "libs-internal/webpack-no-clean-if-any/plugin.ts",
+        "hash": "3652114391108298559"
+      },
+      {
+        "file": "tools/tasks/README.md",
+        "hash": "2514296741267509627"
+      },
+      {
+        "file": "tools/tasks/release/prompt/upstream-remote-prompt.ts",
+        "hash": "1726116791825307857"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/worker.ts",
+        "hash": "12082350730268453888"
+      },
+      {
+        "file": "tools/generators/create-docs-app-module/index.ts",
+        "hash": "5528712367700358898"
+      },
+      {
+        "file": "dev_docs/tsconfig.md",
+        "hash": "3068717066219775277"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/index.ts",
+        "hash": "5281828224573968130"
+      },
+      {
+        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.component.ts.template",
+        "hash": "12709031087992256055"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/markdown-code-examples.service.ts",
+        "hash": "4557522630809839225"
+      },
+      {
+        "file": "decorate-angular-cli.js",
+        "hash": "17336714435872552062"
+      },
+      {
+        "file": "apps/libs/dev-app-lib/client-api/lib/datastore/datastore.ts",
+        "hash": "9090124695036576037"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15943681067979948127"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "7398899667365298114"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/home-page/home-page.component.html",
+        "hash": "9303266502077436756"
+      },
+      {
+        "file": "apps/libs/client-api/index.ts",
+        "hash": "16683886839899900601"
+      },
+      {
+        "file": "karma.conf.js",
+        "hash": "9035123531951369397"
+      },
+      {
+        "file": "dev_docs/RELEASE.md",
+        "hash": "4152181861256437729"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/sass/compile.ts",
+        "hash": "10792221423049547246"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/ngrid-material.transformers.ts",
+        "hash": "8526806500329783905"
+      },
+      {
+        "file": "apps/libs/client-api/rest/lib/rest-client-api.ts",
+        "hash": "6700494018438803824"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/app-search-results/app-search-results.component.html",
+        "hash": "13115759664061627608"
+      },
+      {
+        "file": "apps/libs/client-api/rest/lib/types.ts",
+        "hash": "7054161366290360903"
+      },
+      {
+        "file": "tools/tasks/release/git/github-urls.ts",
+        "hash": "3519178117387623752"
+      },
+      {
+        "file": "tools/tasks/release/release-output/output-validations.ts",
+        "hash": "5426376094867212578"
+      },
+      {
+        "file": "tools/tasks/release/changelog-root-template.hbs",
+        "hash": "17757967253066778762"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/pipes/negate.ts",
+        "hash": "5945622728654740042"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc.module.ts",
+        "hash": "92511835709334110"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-code-examples/utils.ts",
+        "hash": "821917474345641295"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/example-asset-file-view/example-asset-file-view.component.scss",
+        "hash": "1948550626020997840"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/example-asset-file-view/example-asset-file-view.component.ts",
+        "hash": "6185938908875019629"
+      },
+      {
+        "file": "tools/tasks/release/changelog.ts",
+        "hash": "13427538820813016366"
+      },
+      {
+        "file": "apps/libs/tsconfig.json",
+        "hash": "15794026147912907790"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-code-examples/index.ts",
+        "hash": "4322456509102588483"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-area.token.ts",
+        "hash": "4142694704267653051"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/ngrid.transformers.ts",
+        "hash": "12769931731833002925"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "10413835597396750776"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/client-api/lib/client-adapters/worker.ts",
+        "hash": "13961403501591479952"
+      },
+      {
+        "file": "tools/tsconfig.json",
+        "hash": "2729128020832907774"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/TODO.md",
+        "hash": "17959945697465604611"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/client-api/lib/datastore/shared.ts",
+        "hash": "5314134706835562821"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/search.worker.ts",
+        "hash": "12246569777936210374"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/ng-custom-logo/ng-custom-logo.component.scss",
+        "hash": "15620849941425497384"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/content-map.service.ts",
+        "hash": "8785038191820042558"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-pages/models.ts",
+        "hash": "5890108428150065430"
+      },
+      {
+        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.module.ts.template",
+        "hash": "13781351287756730883"
+      },
+      {
+        "file": "apps/libs/dev-app-lib/client-api/lib/static-client-rest-api.ts",
+        "hash": "7902254716651110999"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/view-layout-observer.service.ts",
+        "hash": "8638360907782632267"
+      },
+      {
+        "file": "tools/generators/create-dev-app-module/schema.json",
+        "hash": "9993020417368616313"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/index.ts",
+        "hash": "10972208570949150150"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/sass/build-scss-pipeline.ts",
+        "hash": "5077540810505836073"
+      },
+      {
+        "file": "tsconfig.editor.json",
+        "hash": "11557030700343931629"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-app-search/plugin.ts",
+        "hash": "12266074836336146428"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/app-content-chunks-module.ts",
+        "hash": "17256758765187108305"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "10147299076496925823"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/directives/ghosts.ts",
+        "hash": "9448703130467810795"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/app-search-input/app-search-input.component.scss",
+        "hash": "3944926292471901694"
+      },
+      {
+        "file": "dev_docs/REFACTOR_REF.md",
+        "hash": "7771068121740945196"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/search-engine.ts",
+        "hash": "10699585837474154159"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/index.ts",
+        "hash": "1610143306314427211"
+      },
+      {
+        "file": "apps/libs/dev-app-lib/client-api/lib/static-client-api.ts",
+        "hash": "11263234243437283799"
+      },
+      {
+        "file": "libs-internal/local-types/dev-mode-types/index.d.ts",
+        "hash": "9976794084420009330"
+      },
+      {
+        "file": "tsconfig.lib.json",
+        "hash": "13240209363755785750"
+      },
+      {
+        "file": "dev_docs/DEPRECATE.md",
+        "hash": "2384274485623837381"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/index.ts",
+        "hash": "6488541981122541855"
+      },
+      {
+        "file": "dev_docs/migrations/migrations.v13.10.6.log",
+        "hash": "5248973695532182859"
+      },
+      {
+        "file": "libs-internal/webpack-ssr-and-seo/plugin.ts",
+        "hash": "9576461314146014619"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/client-api/lib/client-adapters/window.ts",
+        "hash": "9549103763857328589"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "4055606894390288348"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/example-common.module/index.ts",
+        "hash": "12634770356524493181"
+      },
+      {
+        "file": "dev_docs/PROJECT_STRUCTURE.md",
+        "hash": "12856871634455397411"
+      },
+      {
+        "file": "replace_pebula.sh",
+        "hash": "9132018089726267685"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/columns/columns-content.component.ts",
+        "hash": "6328526184879776399"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/schematics/compile.schema.json",
+        "hash": "17861139667205188965"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc.component.html",
+        "hash": "16863503647451021132"
+      },
+      {
+        "file": "tools/generators/create-docs-app-module/schema.json",
+        "hash": "15859250303929710919"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "17889840017670050322"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/demo-action-row/demo-action-row.component.html",
+        "hash": "15852779095095980350"
+      },
+      {
+        "file": "libs-internal/webpack-dynamic-dictionary/index.ts",
+        "hash": "10451359879606611938"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/example-asset-file-view/example-asset-file-view.component.html",
+        "hash": "8283857203290968431"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/content-chunk-view/content-chunk-view.component.scss",
+        "hash": "14477823824612470821"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/index.ts",
+        "hash": "3271013823155727358"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-app-search/models.ts",
+        "hash": "13102691694717885572"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/app-search-results/app-search-results.component.scss",
+        "hash": "7237121228629220824"
+      },
+      {
+        "file": "dev_docs/nx.md",
+        "hash": "20200054323059144"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/utils.ts",
+        "hash": "12027919680628412656"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/exapmle-view/example-view.component.html",
+        "hash": "8659745663212004836"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-area.directive.ts",
+        "hash": "10976364428579043531"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "3727402542653024756"
+      },
+      {
         "file": "apps/libs/docs-app-lib/lib/components/markdown-page-viewer/markdown-page-viewer.component.ts",
         "hash": "9561424591507801995"
+      },
+      {
+        "file": "tools/tasks/release/release-output/check-package.ts",
+        "hash": "1383494657665524693"
+      },
+      {
+        "file": "tools/tasks/release/base-release-task.ts",
+        "hash": "5227632959406357842"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/client-api/lib/dynamic-rest-api-client.ts",
+        "hash": "8948838556902260717"
+      },
+      {
+        "file": "libs-internal/webpack-ssr-and-seo/index.ts",
+        "hash": "13123352317469092992"
+      },
+      {
+        "file": "dev_docs/DOCS_APP_MATERIAL_EXAMPLES.md",
+        "hash": "1053853472396178015"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/content-chunk-view/content-chunk-view.component.html",
+        "hash": "9796735306718437295"
+      },
+      {
+        "file": "tools/generators/create-dev-app-module/index.ts",
+        "hash": "8361260603062542455"
+      },
+      {
+        "file": "tools/tasks/release/npm/npm-client.ts",
+        "hash": "11550749710587237549"
+      },
+      {
+        "file": "tools/tasks/release/changelog-commit-template.hbs",
+        "hash": "18434900023486939154"
+      },
+      {
+        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.component.html.template",
+        "hash": "9812448913191337785"
+      },
+      {
+        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.component.__style__.template",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tools/tasks/release/.package-config.ts",
+        "hash": "5682472794914830323"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/demo-action-row/demo-action-row.component.scss",
+        "hash": "17835251901782896356"
+      },
+      {
+        "file": "tools/tasks/release/stage-release.ts",
+        "hash": "11932531812383037585"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/location.service.ts",
+        "hash": "17477707082698488693"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-head.directive.ts",
+        "hash": "15587733695264403519"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/app-search-results/app-search-results.component.ts",
+        "hash": "9166303408855228464"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/client-api/index.ts",
+        "hash": "8318016510799189890"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/schematics/compile.ts",
+        "hash": "17167610544231474795"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-container/markdown-page-container.component.ts",
+        "hash": "11569422977691724376"
+      },
+      {
+        "file": "tools/tasks/release/check-release-output.ts",
+        "hash": "2569710172724112070"
+      },
+      {
+        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.md.template",
+        "hash": "12293102894292857658"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "3676969872831487996"
+      },
+      {
+        "file": "libs-internal/webpack-dynamic-dictionary/plugin.ts",
+        "hash": "5958763706517952585"
+      },
+      {
+        "file": "apps/libs/dev-app-lib/client-api/lib/datastore/sellers.json",
+        "hash": "7662972273699334208"
+      },
+      {
+        "file": "apps/libs/dev-app-lib/client-api/index.ts",
+        "hash": "9116859033767097195"
+      },
+      {
+        "file": "tools/tasks/release/prompt/new-version-prompt.ts",
+        "hash": "10066823736519628207"
+      },
+      {
+        "file": "tools/tasks/release/version-name/publish-branches.ts",
+        "hash": "3533264895741139963"
+      },
+      {
+        "file": "tools/tasks/release/prompt/prerelease-labels.ts",
+        "hash": "10485668718946501830"
+      },
+      {
+        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.component.__style__.template",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/.prettierignore",
+        "hash": "8063287652656255604"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/exapmle-view/example-view.component.ts",
+        "hash": "1231963377745642702"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/index.ts",
+        "hash": "1964168393655702366"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/example/index.ts",
+        "hash": "143457356085006005"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/ngrid-bootstrap.transformers.ts",
+        "hash": "8526806500329783905"
+      },
+      {
+        "file": "libs-internal/webpack-markdown-pages/index.ts",
+        "hash": "388128799482832629"
+      },
+      {
+        "file": "package.json",
+        "hash": "9358015279116181451"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-link.ts",
+        "hash": "1647787831037860640"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/window.ts",
+        "hash": "771285273568724595"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/write-package-json/write-package-json.schema.json",
+        "hash": "5637560706702066283"
+      },
+      {
+        "file": "tools/tasks/release/prompt/npm-dist-tag-prompt.ts",
+        "hash": "1899244754084100641"
+      },
+      {
+        "file": "libs/.prettierignore",
+        "hash": "8063287652656255604"
+      },
+      {
+        "file": "tools/ngx-build-plus.server/server/schema.json",
+        "hash": "6207880648187597768"
+      },
+      {
+        "file": "tools/ngx-build-plus.server/builders.json",
+        "hash": "10905939531633897821"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/analyse-sources-workaround.schema.json",
+        "hash": "10744700098367390898"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/lazy-module-preloader.ts",
+        "hash": "16631264558729246241"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/models.ts",
+        "hash": "11373953472040390866"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/pbl-docs-app-shared.module.ts",
+        "hash": "549261294681950541"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/directives/ng-hooks.ts",
+        "hash": "5237374589624128648"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/grid/layout-1/layout-1.component.html",
+        "hash": "12827402847426469884"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/app-search-input/app-search-input.component.ts",
+        "hash": "15722752886688674587"
+      },
+      {
+        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/analyse-sources-workaround.ts",
+        "hash": "7676077807955828029"
+      },
+      {
+        "file": "README.md",
+        "hash": "8197900527567689917"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/app-content-chunks.module/columns/columns-content.component.html",
+        "hash": "7694490071357223898"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/pipes/index.ts",
+        "hash": "4184028466496760207"
+      },
+      {
+        "file": "tools/ngx-build-plus.server/server/index.js",
+        "hash": "11000069054822811428"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "13719178979816235719"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-container/markdown-page-container.component.scss",
+        "hash": "7403540116769086376"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/noop.ts",
+        "hash": "2063808438583795328"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/search/search.service.ts",
+        "hash": "16927863204615455762"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/lib/services/markdown-pages.service.ts",
+        "hash": "4505075574487880293"
+      },
+      {
+        "file": "apps/libs/docs-app-lib/toc.module/index.ts",
+        "hash": "9496908387439031010"
       },
       {
         "file": "apps/libs/docs-app-lib/toc.module/lib/toc.component.ts",
@@ -233,849 +901,63 @@
         "hash": "7588391357950714239"
       },
       {
-        "file": "dev_docs/tsconfig.md",
-        "hash": "3068717066219775277"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/home-page/home-page.component.ts",
-        "hash": "7898101287496613200"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/grid/layout-1/layout-1.component.html",
-        "hash": "12827402847426469884"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-code-examples/plugin.ts",
-        "hash": "7224692087371428607"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/client-api/index.ts",
-        "hash": "8318016510799189890"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/demo-action-row/demo-action-row.component.ts",
-        "hash": "17801449033033071635"
-      },
-      {
-        "file": "tools/tasks/release/extract-release-notes.ts",
-        "hash": "1757335679142351742"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/lazy-module-store.ts",
-        "hash": "1673189763974560641"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/app-search-results/app-search-results.component.ts",
-        "hash": "9166303408855228464"
-      },
-      {
-        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.module.ts.template",
-        "hash": "9062097800690591454"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/index.ts",
-        "hash": "5281828224573968130"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/directives/ghosts.ts",
-        "hash": "9448703130467810795"
-      },
-      {
-        "file": "tools/tasks/release/release-output/release-packages.ts",
-        "hash": "15105804097688032523"
-      },
-      {
-        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.component.__style__.template",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/columns/columns-content.component.html",
-        "hash": "7694490071357223898"
-      },
-      {
-        "file": "apps/libs/dev-app-lib/client-api/lib/datastore/sellers.json",
-        "hash": "7662972273699334208"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/index.ts",
-        "hash": "3271013823155727358"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-area.token.ts",
-        "hash": "4142694704267653051"
-      },
-      {
-        "file": "tools/tsconfig.json",
-        "hash": "2729128020832907774"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "13719178979816235719"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/search-engine.ts",
-        "hash": "10699585837474154159"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/ngrid-bootstrap.transformers.ts",
-        "hash": "8526806500329783905"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-viewer/markdown-page-viewer.component.html",
-        "hash": "15429747499561843525"
-      },
-      {
-        "file": "libs-internal/local-types/dev-mode-types/index.d.ts",
-        "hash": "9976794084420009330"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/sass/compile.schema.json",
-        "hash": "392627651467638604"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/home-page/home-page.component.scss",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/pipes/index.ts",
-        "hash": "4184028466496760207"
-      },
-      {
-        "file": "tools/tasks/release/prompt/new-version-prompt.ts",
-        "hash": "10066823736519628207"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/markdown-pages-menu.service.ts",
-        "hash": "3818797196616387790"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "14068701091119527314"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/ng-custom-logo/ng-custom-logo.component.html",
-        "hash": "7107412584120937073"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/location.service.ts",
-        "hash": "17477707082698488693"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "10413835597396750776"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/index.ts",
-        "hash": "6488541981122541855"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/schematics/index.ts",
-        "hash": "11531806413163104613"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/exapmle-view/example-view.component.scss",
-        "hash": "12060710954110981185"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/columns/columns-content.component.scss",
-        "hash": "4921430953666857079"
-      },
-      {
-        "file": "dev_docs/migrations/migrations.v13.10.6.log",
-        "hash": "5248973695532182859"
-      },
-      {
-        "file": "dev_docs/DOCS_APP_MATERIAL_EXAMPLES.md",
-        "hash": "1053853472396178015"
-      },
-      {
-        "file": "decorate-angular-cli.js",
-        "hash": "17336714435872552062"
-      },
-      {
-        "file": "README.md",
-        "hash": "8197900527567689917"
-      },
-      {
-        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.component.__style__.template",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/index.ts",
-        "hash": "1964168393655702366"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "3727402542653024756"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "1132135014424967668"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/columns/columns-content.component.ts",
-        "hash": "6328526184879776399"
-      },
-      {
-        "file": "tools/scripts/publish.sh",
-        "hash": "6305309916914676395"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/analyse-sources-workaround.schema.json",
-        "hash": "10744700098367390898"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/content-map.service.ts",
-        "hash": "8785038191820042558"
-      },
-      {
-        "file": "tools/tasks/release/publish-release.ts",
-        "hash": "11192886979660565657"
-      },
-      {
-        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.md.template",
-        "hash": "12293102894292857658"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/sass/compile.ts",
-        "hash": "10792221423049547246"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/schematics/compile.ts",
-        "hash": "17167610544231474795"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/demo-action-row/demo-action-row.component.scss",
-        "hash": "17835251901782896356"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/TODO.md",
-        "hash": "17959945697465604611"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-pages/models.ts",
-        "hash": "5890108428150065430"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-container/markdown-page-container.component.html",
-        "hash": "1727609702323802249"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/index.ts",
-        "hash": "1610143306314427211"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/utils.ts",
-        "hash": "12027919680628412656"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/client-api/lib/datastore/shared.ts",
-        "hash": "5314134706835562821"
-      },
-      {
-        "file": "apps/libs/tsconfig.json",
-        "hash": "15794026147912907790"
-      },
-      {
-        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.component.ts.template",
-        "hash": "5455322393477621962"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/directives/ng-hooks.ts",
-        "hash": "5237374589624128648"
-      },
-      {
-        "file": "angular.json",
-        "hash": "6696909354942132582"
-      },
-      {
-        "file": "libs-internal/webpack-no-clean-if-any/index.ts",
-        "hash": "11640679383486868755"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/ngrid-cypress.transformers.ts",
-        "hash": "11856199865830502950"
-      },
-      {
-        "file": "apps/libs/client-api/rest/lib/rest-client-api.ts",
-        "hash": "6700494018438803824"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/app-search-input/app-search-input.component.ts",
-        "hash": "15722752886688674587"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/ngrid.transformers.ts",
-        "hash": "12769931731833002925"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-pages/utils.ts",
-        "hash": "17939153259692497683"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-code-examples/index.ts",
-        "hash": "4322456509102588483"
-      },
-      {
-        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.component.html.template",
-        "hash": "3622549574145560110"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/sass/build-scss-pipeline.ts",
-        "hash": "5077540810505836073"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-link.ts",
-        "hash": "1647787831037860640"
-      },
-      {
-        "file": "tools/generators/create-docs-app-module/index.ts",
-        "hash": "5528712367700358898"
-      },
-      {
-        "file": "libs/.prettierignore",
-        "hash": "8063287652656255604"
-      },
-      {
-        "file": "tools/tasks/release/base-release-task.ts",
-        "hash": "5227632959406357842"
-      },
-      {
-        "file": "tools/tasks/release/changelog.ts",
-        "hash": "13427538820813016366"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-pages/plugin.ts",
-        "hash": "531705328314800617"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/exapmle-view/example-view.component.html",
-        "hash": "8659745663212004836"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/app-search-results/app-search-results.component.html",
-        "hash": "13115759664061627608"
-      },
-      {
-        "file": "tools/tasks/release/release-output/check-package.ts",
-        "hash": "1383494657665524693"
-      },
-      {
-        "file": "libs-internal/webpack-dynamic-dictionary/plugin.ts",
-        "hash": "5958763706517952585"
-      },
-      {
-        "file": "tools/ngx-build-plus.server/server/index.js",
-        "hash": "11000069054822811428"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/content-chunk-view/content-chunk-view.component.ts",
-        "hash": "15560120896666843686"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/app-search-input/app-search-input.component.html",
-        "hash": "1794233993097413908"
-      },
-      {
-        "file": "nx.json",
-        "hash": "6175403401748368450"
-      },
-      {
-        "file": "tools/generators/create-dev-app-module/files/__name@dasherize__.module.ts.template",
-        "hash": "13781351287756730883"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/client-api/lib/datastore/datastore.ts",
-        "hash": "9689541193819299790"
-      },
-      {
-        "file": "apps/.gitkeep",
-        "hash": "4055606894390288348"
-      },
-      {
-        "file": "apps/libs/client-api/lib/models.ts",
-        "hash": "16551419665865763834"
-      },
-      {
-        "file": "CHANGELOG.md",
-        "hash": "3676969872831487996"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/write-package-json/write-package-json.ts",
-        "hash": "12123417718913574420"
-      },
-      {
-        "file": "tools/scripts/publish.gh-pages.sh",
-        "hash": "6897430516327124024"
-      },
-      {
-        "file": "tools/tasks/release/npm/npm-client.ts",
-        "hash": "11550749710587237549"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/exapmle-view/example-view.component.ts",
-        "hash": "1231963377745642702"
-      },
-      {
-        "file": "tools/generators/create-dev-app-module/schema.json",
-        "hash": "9993020417368616313"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/search-adapters/adapter.ts",
-        "hash": "3981309544495103729"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/pbl-docs-app-shared.module.ts",
-        "hash": "549261294681950541"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/search.worker.ts",
-        "hash": "12246569777936210374"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-link-template.ts",
-        "hash": "15048911082019911803"
-      },
-      {
-        "file": "apps/libs/client-api/rest/lib/types.ts",
-        "hash": "7054161366290360903"
-      },
-      {
-        "file": "tools/tasks/release/tsconfig.json",
-        "hash": "14136994591599673433"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc.component.html",
-        "hash": "16863503647451021132"
-      },
-      {
-        "file": "tools/generators/create-dev-app-module/index.ts",
-        "hash": "8361260603062542455"
-      },
-      {
-        "file": "apps/.prettierignore",
-        "hash": "8063287652656255604"
-      },
-      {
-        "file": "tools/tasks/README.md",
-        "hash": "2514296741267509627"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "17889840017670050322"
-      },
-      {
-        "file": "dev_docs/REFACTOR_REF.md",
-        "hash": "7771068121740945196"
-      },
-      {
-        "file": "apps/libs/dev-app-lib/client-api/lib/static-client-rest-api.ts",
-        "hash": "7902254716651110999"
-      },
-      {
-        "file": "apps/libs/client-api/lib/client-api.ts",
-        "hash": "17811318652667167329"
-      },
-      {
-        "file": "tslint.json",
-        "hash": "4197511524016541115"
-      },
-      {
-        "file": "tools/tasks/release/changelog-root-template.hbs",
-        "hash": "17757967253066778762"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/ngrid-material.transformers.ts",
-        "hash": "8526806500329783905"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-container/markdown-page-container.component.scss",
-        "hash": "7403540116769086376"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/example-asset-file-view/example-asset-file-view.component.html",
-        "hash": "8283857203290968431"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/content-chunk-view/content-chunk-view.component.html",
-        "hash": "9796735306718437295"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/base.ts",
-        "hash": "111837106536241303"
-      },
-      {
-        "file": "dev_docs/DEPRECATE.md",
-        "hash": "2384274485623837381"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/home-page/home-page.component.html",
-        "hash": "9303266502077436756"
-      },
-      {
-        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.component.ts.template",
-        "hash": "12709031087992256055"
-      },
-      {
-        "file": "libs-internal/webpack-ssr-and-seo/plugin.ts",
-        "hash": "9576461314146014619"
-      },
-      {
-        "file": "tools/tasks/release/.package-config.ts",
-        "hash": "5682472794914830323"
-      },
-      {
-        "file": "tools/ngx-build-plus.server/builders.json",
-        "hash": "10905939531633897821"
-      },
-      {
-        "file": "dev_docs/migrations/migrations.v14.8.2.log",
-        "hash": "4751784864121159413"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/client-api/lib/client-adapters/worker.ts",
-        "hash": "13961403501591479952"
-      },
-      {
-        "file": "apps/libs/client-api/rest/index.ts",
-        "hash": "3510269715815850271"
-      },
-      {
-        "file": "tools/tasks/release/prompt/prerelease-labels.ts",
-        "hash": "10485668718946501830"
-      },
-      {
-        "file": "dev_docs/migrations/migrations.v13.0.0.json",
-        "hash": "12683162206132480037"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/markdown-code-examples.service.ts",
-        "hash": "4557522630809839225"
-      },
-      {
-        "file": "tools/tasks/release/prompt/upstream-remote-prompt.ts",
-        "hash": "1726116791825307857"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/models.ts",
-        "hash": "11373953472040390866"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/lazy-module-preloader.ts",
-        "hash": "16631264558729246241"
-      },
-      {
-        "file": "tools/generators/create-docs-app-module/files/__name@dasherize__.component.html.template",
-        "hash": "9812448913191337785"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/example-asset-file-view/example-asset-file-view.component.scss",
-        "hash": "1948550626020997840"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc-head.directive.ts",
-        "hash": "15587733695264403519"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/material-module.ts",
-        "hash": "14524909475341374441"
-      },
-      {
-        "file": "replace_pebula.sh",
-        "hash": "9132018089726267685"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/app-content-chunks-module.ts",
-        "hash": "17256758765187108305"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/markdown-pages.service.ts",
-        "hash": "4505075574487880293"
-      },
-      {
-        "file": "package.json",
-        "hash": "17291005082023742846"
-      },
-      {
-        "file": "tools/tasks/release/git/git-client.ts",
-        "hash": "1852831885371364973"
-      },
-      {
-        "file": "apps/libs/client-api/index.ts",
-        "hash": "16683886839899900601"
-      },
-      {
-        "file": "tools/tasks/release/stage-release.ts",
-        "hash": "11932531812383037585"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc.component.scss",
-        "hash": "9471608679557276065"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-app-search/index.ts",
-        "hash": "8685766590785281402"
-      },
-      {
-        "file": "dev_docs/migrations/migrations.v13.10.6.json",
-        "hash": "6815246080326469715"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/ng-custom-logo/ng-custom-logo.component.ts",
-        "hash": "8757387405405596695"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/write-package-json/write-package-json.schema.json",
-        "hash": "5637560706702066283"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/markdown-page-viewer/markdown-page-viewer.component.scss",
-        "hash": "13132673154865091297"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "13861030216370761219"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/toc.module/lib/toc.module.ts",
-        "hash": "92511835709334110"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/markdown-dynamic-component-portal.ts",
-        "hash": "7872218994525445083"
-      },
-      {
-        "file": "libs-internal/webpack-ssr-and-seo/index.ts",
-        "hash": "13123352317469092992"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/schematics/compile.schema.json",
-        "hash": "17861139667205188965"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/app-content-chunks.module/grid/layout-1/layout-1.component.scss",
-        "hash": "2157055483606676275"
-      },
-      {
-        "file": "libs-internal/webpack-markdown-app-search/plugin.ts",
-        "hash": "12266074836336146428"
+        "file": "dev_docs/migrations/migrations.v14.8.2.json",
+        "hash": "15412495605189245826"
       },
       {
         "file": "tools/ngx-build-plus.server/package.json",
         "hash": "15506677897334835722"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/client-api/lib/client-adapters/window.ts",
-        "hash": "9549103763857328589"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/example-common.module/index.ts",
-        "hash": "12634770356524493181"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/sass/index.ts",
-        "hash": "11531806413163104613"
-      },
-      {
-        "file": "tools/generators/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "tools/ng-packagr.transformers/tasks/analyse-sources-workaround/analyse-sources-workaround.ts",
-        "hash": "7676077807955828029"
-      },
-      {
-        "file": "tools/tasks/release/release-output/output-validations.ts",
-        "hash": "5426376094867212578"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/components/index.ts",
-        "hash": "10972208570949150150"
-      },
-      {
-        "file": "libs-internal/webpack-dynamic-dictionary/index.ts",
-        "hash": "10451359879606611938"
-      },
-      {
-        "file": "tools/ngx-build-plus.server/server/schema.json",
-        "hash": "6207880648187597768"
-      },
-      {
-        "file": "apps/libs/docs-app-lib/lib/services/search/search.service.ts",
-        "hash": "16927863204615455762"
-      },
-      {
-        "file": "libs-internal/webpack-no-clean-if-any/plugin.ts",
-        "hash": "3652114391108298559"
       }
     ],
     "projectFileMap": {
-      "ngrid-dev-app": [
+      "libs-internal-nx-repo-plugins": [
         {
-          "file": "apps/ngrid-dev-app/.browserslistrc",
-          "hash": "17600754102500844387"
+          "file": "libs-internal/nx-repo-plugins/.eslintrc.json",
+          "hash": "12949005618342739038"
         },
         {
-          "file": "apps/ngrid-dev-app/.eslintrc.json",
-          "hash": "11168946325940091885"
+          "file": "libs-internal/nx-repo-plugins/README.md",
+          "hash": "2408103327397489630"
         },
         {
-          "file": "apps/ngrid-dev-app/karma.conf.js",
-          "hash": "6524475589985518502"
+          "file": "libs-internal/nx-repo-plugins/executors.json",
+          "hash": "9275076484365515372"
         },
         {
-          "file": "apps/ngrid-dev-app/project.json",
-          "hash": "6921067421958358299"
+          "file": "libs-internal/nx-repo-plugins/generators.json",
+          "hash": "4042556004226870813"
         },
         {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-host.module.ts",
-          "hash": "14574516208052206692"
+          "file": "libs-internal/nx-repo-plugins/package.json",
+          "hash": "14104793057708242683"
         },
         {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.html",
-          "hash": "7287712619826297064"
+          "file": "libs-internal/nx-repo-plugins/project.json",
+          "hash": "2884920998157934305"
         },
         {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.scss",
-          "hash": "16462495969962877767"
+          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/executor.ts",
+          "hash": "11715565515008527615"
         },
         {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.ts",
-          "hash": "4197847631420460504"
+          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.d.ts",
+          "hash": "3478508728939328856"
         },
         {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.component.ts",
-          "hash": "5971931771522245139"
+          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.json",
+          "hash": "6851305329239506893"
         },
         {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.module.ts",
-          "hash": "9145749438095430086"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.routes.ts",
-          "hash": "15314878937096503259"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/environment.prod.ts",
-          "hash": "10220522844224226756"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/environment.ts",
-          "hash": "4256018448305775564"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/index.html",
-          "hash": "14943815133352632577"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/main.ts",
-          "hash": "17744026861403465323"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.html",
-          "hash": "3622549574145560110"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.scss",
+          "file": "libs-internal/nx-repo-plugins/src/index.ts",
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.spec.ts",
-          "hash": "5307472065810181985",
-          "deps": [
-            "ngrid"
-          ]
+          "file": "libs-internal/nx-repo-plugins/tsconfig.json",
+          "hash": "14490782888307098276"
         },
         {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.ts",
-          "hash": "6631249951665736263",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.module.ts",
-          "hash": "3126187899926000310",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/polyfills.ts",
-          "hash": "1265948147204620756"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/routes.ts",
-          "hash": "10442982203054449464"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.html",
-          "hash": "7104794129428092244"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.scss",
-          "hash": "14216482866114887670"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.ts",
-          "hash": "11346075529792630645"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.module.ts",
-          "hash": "4827436097089935897",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/index.ts",
-          "hash": "13010538465262050582"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.html",
-          "hash": "14085419833089808756"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.ts",
-          "hash": "11109472124601688828",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.module.ts",
-          "hash": "6641530947604286906",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/test.ts",
-          "hash": "18431003686400190017"
-        },
-        {
-          "file": "apps/ngrid-dev-app/src/theme.scss",
-          "hash": "16277412803444371502"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.app.json",
-          "hash": "12519174525844968579"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.editor.json",
-          "hash": "983320222551977675"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.json",
-          "hash": "16339988739234363096"
-        },
-        {
-          "file": "apps/ngrid-dev-app/tsconfig.spec.json",
-          "hash": "4775647149578852576"
+          "file": "libs-internal/nx-repo-plugins/tsconfig.lib.json",
+          "hash": "11146748992678458315"
         }
       ],
       "ngrid-docs-app": [
@@ -3983,159 +3865,499 @@
           "hash": "14276071961662460388"
         }
       ],
-      "ngrid-cypress": [
+      "ngrid-bootstrap": [
         {
-          "file": "libs/ngrid-cypress/.eslintrc.json",
-          "hash": "13800677001662881425"
+          "file": "libs/ngrid-bootstrap/.eslintrc.json",
+          "hash": "11168946325940091885"
         },
         {
-          "file": "libs/ngrid-cypress/jest.config.js",
-          "hash": "3427166275704733651"
+          "file": "libs/ngrid-bootstrap/README.md",
+          "hash": "7601744508826759766"
         },
         {
-          "file": "libs/ngrid-cypress/ng-package.json",
-          "hash": "5359078781386186729"
+          "file": "libs/ngrid-bootstrap/_index.scss",
+          "hash": "17035558745324313796"
         },
         {
-          "file": "libs/ngrid-cypress/ng-package.prod.json",
-          "hash": "5359078781386186729"
+          "file": "libs/ngrid-bootstrap/_theming.scss",
+          "hash": "9817398543790019749"
         },
         {
-          "file": "libs/ngrid-cypress/package.json",
-          "hash": "7886866728552730204"
+          "file": "libs/ngrid-bootstrap/cell-tooltip/README.md",
+          "hash": "1815276674382988700"
         },
         {
-          "file": "libs/ngrid-cypress/project.json",
-          "hash": "13016601564405566258"
+          "file": "libs/ngrid-bootstrap/cell-tooltip/ng-package.json",
+          "hash": "15871551581530871780"
         },
         {
-          "file": "libs/ngrid-cypress/src/index.ts",
-          "hash": "15047189995100038596"
+          "file": "libs/ngrid-bootstrap/cell-tooltip/package.json",
+          "hash": "6876403764126060871"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/commands.ts",
-          "hash": "14793964258473168776"
+          "file": "libs/ngrid-bootstrap/cell-tooltip/src/index.ts",
+          "hash": "5958865020414066493"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/README.md",
-          "hash": "14425523494199691215"
+          "file": "libs/ngrid-bootstrap/cell-tooltip/src/lib/cell-tooltip.directive.ts",
+          "hash": "12112318324342185383",
+          "deps": [
+            "ngrid"
+          ]
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/fireCdpCommand.ts",
-          "hash": "6763385287600723730"
+          "file": "libs/ngrid-bootstrap/cell-tooltip/src/lib/cell-tooltip.module.ts",
+          "hash": "17367948887519716871",
+          "deps": [
+            "ngrid"
+          ]
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/getCypressElementCoordinates.ts",
-          "hash": "13562709094711219208"
+          "file": "libs/ngrid-bootstrap/jest.config.ts",
+          "hash": "16527992231253085996"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseButtonNumbers.ts",
-          "hash": "7855548806337435358"
+          "file": "libs/ngrid-bootstrap/ng-package.json",
+          "hash": "453013922587815044"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseDown.ts",
-          "hash": "14181204010783418626"
+          "file": "libs/ngrid-bootstrap/ng-package.prod.json",
+          "hash": "453013922587815044"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseMove.ts",
-          "hash": "10936840949917828076"
+          "file": "libs/ngrid-bootstrap/package.json",
+          "hash": "11471755454101752027",
+          "deps": [
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "ngrid"
+          ]
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseUp.ts",
-          "hash": "2368066484945398943"
+          "file": "libs/ngrid-bootstrap/pagination/README.md",
+          "hash": "7654861704042587694"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/extend-cypress.d.ts",
-          "hash": "1015021387478857547"
+          "file": "libs/ngrid-bootstrap/pagination/ng-package.json",
+          "hash": "15871551581530871780"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/index.ts",
-          "hash": "8260979671821175576"
+          "file": "libs/ngrid-bootstrap/pagination/package.json",
+          "hash": "6040848252786177168"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/actions.ts",
-          "hash": "15856343917038495847"
+          "file": "libs/ngrid-bootstrap/pagination/src/index.ts",
+          "hash": "461459912404501344"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/index.ts",
-          "hash": "8755425402586601302"
+          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.component.html",
+          "hash": "15634225072285550270"
         },
         {
-          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/ngrid-harness.ts",
-          "hash": "8341441923854434916"
+          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.component.scss",
+          "hash": "17950412063511097468"
         },
         {
-          "file": "libs/ngrid-cypress/src/test-setup.ts",
-          "hash": "16110123792168980195"
+          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.component.ts",
+          "hash": "11353104207459477517",
+          "deps": [
+            "ngrid"
+          ]
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.editor.json",
+          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.module.ts",
+          "hash": "7521958364779601116",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/project.json",
+          "hash": "2017253990954635561"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/README.md",
+          "hash": "12538230071791173906"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/ng-package.json",
+          "hash": "15871551581530871780"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/package.json",
+          "hash": "17827741812109883198"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/src/index.ts",
+          "hash": "432592184055820935"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection-plugin.directive.ts",
+          "hash": "13388987700372521486",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.component.html",
+          "hash": "1993862347564296752"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.component.ts",
+          "hash": "14818561755535951417",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.module.ts",
+          "hash": "359970910199913916",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/README.md",
+          "hash": "8431523196024599644"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/ng-package.json",
+          "hash": "15871551581530871780"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/package.json",
+          "hash": "1550990416558421027"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/index.ts",
+          "hash": "2807886167606930006"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable-component-extension.ts",
+          "hash": "1812949255309461793",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable-plugin.ts",
+          "hash": "6184878794786886321",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable.module.ts",
+          "hash": "3377495390933617198",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable/bs-sortable.component.html",
+          "hash": "11008337542182957142"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable/bs-sortable.component.scss",
+          "hash": "8517258301047886611"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable/bs-sortable.component.ts",
+          "hash": "17814612801227244192",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/sort-errors.ts",
+          "hash": "12401450286200308555"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/sort/src/lib/types.ts",
+          "hash": "16517017111539513909",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "libs/ngrid-bootstrap/src/index.ts",
+          "hash": "15605006524244700965"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/src/lib/ngrid-bootstrap.module.ts",
+          "hash": "446414621434238141"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/src/test-setup.ts",
+          "hash": "7608486994823320296"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/theming/_ngrid-bootstrap.scss",
+          "hash": "13147571241741446200"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/theming/prebuilt/default-dark.scss",
+          "hash": "16904184210245023676"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/theming/prebuilt/default-light.scss",
+          "hash": "9836690093939095733"
+        },
+        {
+          "file": "libs/ngrid-bootstrap/tsconfig.editor.json",
           "hash": "9906452651540460564"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.json",
-          "hash": "9317299484536014170"
+          "file": "libs/ngrid-bootstrap/tsconfig.json",
+          "hash": "6759356895592988557"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.lib.json",
-          "hash": "2237255161980640292"
+          "file": "libs/ngrid-bootstrap/tsconfig.lib.json",
+          "hash": "5587993054197354677"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.lib.prod.json",
-          "hash": "12992528324979090623"
+          "file": "libs/ngrid-bootstrap/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
         },
         {
-          "file": "libs/ngrid-cypress/tsconfig.spec.json",
-          "hash": "2368708604775059221"
+          "file": "libs/ngrid-bootstrap/tsconfig.spec.json",
+          "hash": "3130111287583436921"
         }
       ],
-      "ngrid-docs-app-e2e": [
+      "ngrid-dev-app-e2e": [
         {
-          "file": "apps/ngrid-docs-app-e2e/.eslintrc.json",
+          "file": "apps/ngrid-dev-app-e2e/.eslintrc.json",
           "hash": "15523834149352881398"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/cypress.config.ts",
-          "hash": "11079506450483153362"
+          "file": "apps/ngrid-dev-app-e2e/cypress.config.ts",
+          "hash": "3189937832590238341"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/project.json",
-          "hash": "12496675350293302951"
+          "file": "apps/ngrid-dev-app-e2e/project.json",
+          "hash": "9925323194357432557"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/app.cy.ts",
-          "hash": "14546407666088005225"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/.gitkeep",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-groups.cy.ts",
-          "hash": "12945274890988147703"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/ngrid/column-width/column-width.component.spec.ts/column-width.component.snap.png",
+          "hash": "13832627190484943741"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-reorder.cy.ts",
-          "hash": "1272305213552139967"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/smoke-tests/smoke-tests.component.spec.ts/smoke-test-1.snap.png",
+          "hash": "4591848187604426678"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/hide-column.cy.ts",
-          "hash": "12501845137655418995"
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/ngrid/column-width/column-width.component.cy.ts/column-width.component.snap.png",
+          "hash": "7055330400345779053"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/src/fixtures/example.json",
+          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/smoke-tests/smoke-tests.component.cy.ts/smoke-test-1.snap.png",
+          "hash": "14353134729127024024"
+        },
+        {
+          "file": "apps/ngrid-dev-app-e2e/src/e2e/app.cy.ts",
+          "hash": "18129466717211742227"
+        },
+        {
+          "file": "apps/ngrid-dev-app-e2e/src/e2e/ngrid/column-width/column-width.component.cy.ts",
+          "hash": "5868609276288029384"
+        },
+        {
+          "file": "apps/ngrid-dev-app-e2e/src/e2e/smoke-tests/smoke-tests.component.cy.ts",
+          "hash": "11212023374143748276"
+        },
+        {
+          "file": "apps/ngrid-dev-app-e2e/src/fixtures/example.json",
           "hash": "11614668686582597233"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/src/support/commands.ts",
-          "hash": "11896041194008128124",
+          "file": "apps/ngrid-dev-app-e2e/src/support/commands.ts",
+          "hash": "7195388851834204026",
           "deps": [
             "ngrid-cypress"
           ]
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/src/support/e2e.ts",
+          "file": "apps/ngrid-dev-app-e2e/src/support/e2e.ts",
           "hash": "3666078656922506009"
         },
         {
-          "file": "apps/ngrid-docs-app-e2e/tsconfig.json",
-          "hash": "8293994036765364863"
+          "file": "apps/ngrid-dev-app-e2e/tsconfig.json",
+          "hash": "10598468421828834777"
+        }
+      ],
+      "ngrid-dev-app": [
+        {
+          "file": "apps/ngrid-dev-app/.browserslistrc",
+          "hash": "17600754102500844387"
+        },
+        {
+          "file": "apps/ngrid-dev-app/.eslintrc.json",
+          "hash": "11168946325940091885"
+        },
+        {
+          "file": "apps/ngrid-dev-app/karma.conf.js",
+          "hash": "6524475589985518502"
+        },
+        {
+          "file": "apps/ngrid-dev-app/project.json",
+          "hash": "6921067421958358299"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-host.module.ts",
+          "hash": "14574516208052206692"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.html",
+          "hash": "7287712619826297064"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.scss",
+          "hash": "16462495969962877767"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-host/dev-app-layout/dev-app-layout.component.ts",
+          "hash": "4197847631420460504"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.component.ts",
+          "hash": "5971931771522245139"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.module.ts",
+          "hash": "9145749438095430086"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/dev-app/dev-app-root.routes.ts",
+          "hash": "15314878937096503259"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/environment.prod.ts",
+          "hash": "10220522844224226756"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/environment.ts",
+          "hash": "4256018448305775564"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/index.html",
+          "hash": "14943815133352632577"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/main.ts",
+          "hash": "17744026861403465323"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.html",
+          "hash": "3622549574145560110"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.spec.ts",
+          "hash": "5307472065810181985",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.component.ts",
+          "hash": "6631249951665736263",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/ngrid/column-width/column-width.module.ts",
+          "hash": "3126187899926000310",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/polyfills.ts",
+          "hash": "1265948147204620756"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/routes.ts",
+          "hash": "10442982203054449464"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.html",
+          "hash": "7104794129428092244"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.scss",
+          "hash": "14216482866114887670"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.component.ts",
+          "hash": "11346075529792630645"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/common-cell-templates.module.ts",
+          "hash": "4827436097089935897",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/common-cell-templates/index.ts",
+          "hash": "13010538465262050582"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.html",
+          "hash": "14085419833089808756"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.component.ts",
+          "hash": "11109472124601688828",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/smoke-tests/smoke-tests.module.ts",
+          "hash": "6641530947604286906",
+          "deps": [
+            "ngrid"
+          ]
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/test.ts",
+          "hash": "18431003686400190017"
+        },
+        {
+          "file": "apps/ngrid-dev-app/src/theme.scss",
+          "hash": "16277412803444371502"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.app.json",
+          "hash": "12519174525844968579"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.editor.json",
+          "hash": "983320222551977675"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.json",
+          "hash": "16339988739234363096"
+        },
+        {
+          "file": "apps/ngrid-dev-app/tsconfig.spec.json",
+          "hash": "4775647149578852576"
         }
       ],
       "ngrid-material": [
@@ -4270,7 +4492,7 @@
         },
         {
           "file": "libs/ngrid-material/package.json",
-          "hash": "17303814695118462963",
+          "hash": "512204189805807514",
           "deps": [
             "npm:@angular/material",
             "ngrid"
@@ -4463,6 +4685,161 @@
         {
           "file": "libs/ngrid-material/tsconfig.spec.json",
           "hash": "3130111287583436921"
+        }
+      ],
+      "ngrid-docs-app-e2e": [
+        {
+          "file": "apps/ngrid-docs-app-e2e/.eslintrc.json",
+          "hash": "15523834149352881398"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/cypress.config.ts",
+          "hash": "11079506450483153362"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/project.json",
+          "hash": "12496675350293302951"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/app.cy.ts",
+          "hash": "14546407666088005225"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-groups.cy.ts",
+          "hash": "12945274890988147703"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/column-reorder.cy.ts",
+          "hash": "1272305213552139967"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/e2e/features/columns/hide-column.cy.ts",
+          "hash": "12501845137655418995"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/support/commands.ts",
+          "hash": "11896041194008128124",
+          "deps": [
+            "ngrid-cypress"
+          ]
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/ngrid-docs-app-e2e/tsconfig.json",
+          "hash": "8293994036765364863"
+        }
+      ],
+      "ngrid-cypress": [
+        {
+          "file": "libs/ngrid-cypress/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "libs/ngrid-cypress/jest.config.js",
+          "hash": "3427166275704733651"
+        },
+        {
+          "file": "libs/ngrid-cypress/ng-package.json",
+          "hash": "5359078781386186729"
+        },
+        {
+          "file": "libs/ngrid-cypress/ng-package.prod.json",
+          "hash": "5359078781386186729"
+        },
+        {
+          "file": "libs/ngrid-cypress/package.json",
+          "hash": "7886866728552730204"
+        },
+        {
+          "file": "libs/ngrid-cypress/project.json",
+          "hash": "13016601564405566258"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/index.ts",
+          "hash": "15047189995100038596"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/commands.ts",
+          "hash": "14793964258473168776"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/README.md",
+          "hash": "14425523494199691215"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/fireCdpCommand.ts",
+          "hash": "6763385287600723730"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/getCypressElementCoordinates.ts",
+          "hash": "13562709094711219208"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseButtonNumbers.ts",
+          "hash": "7855548806337435358"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseDown.ts",
+          "hash": "14181204010783418626"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseMove.ts",
+          "hash": "10936840949917828076"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/cypress-real-events/mouseUp.ts",
+          "hash": "2368066484945398943"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/extend-cypress.d.ts",
+          "hash": "1015021387478857547"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/index.ts",
+          "hash": "8260979671821175576"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/actions.ts",
+          "hash": "15856343917038495847"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/index.ts",
+          "hash": "8755425402586601302"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/lib/ngrid-harness/ngrid-harness.ts",
+          "hash": "8341441923854434916"
+        },
+        {
+          "file": "libs/ngrid-cypress/src/test-setup.ts",
+          "hash": "16110123792168980195"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.editor.json",
+          "hash": "9906452651540460564"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.json",
+          "hash": "9317299484536014170"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.lib.json",
+          "hash": "2237255161980640292"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.lib.prod.json",
+          "hash": "12992528324979090623"
+        },
+        {
+          "file": "libs/ngrid-cypress/tsconfig.spec.json",
+          "hash": "2368708604775059221"
         }
       ],
       "ngrid": [
@@ -4708,7 +5085,10 @@
         },
         {
           "file": "libs/ngrid/detail-row/src/lib/detail-row/detail-row-controller.ts",
-          "hash": "6282906521550743433"
+          "hash": "2558400845008215898",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "libs/ngrid/detail-row/src/lib/detail-row/detail-row-plugin.ts",
@@ -4724,7 +5104,7 @@
         },
         {
           "file": "libs/ngrid/detail-row/src/lib/detail-row/row.ts",
-          "hash": "11755070943542950101",
+          "hash": "15603588654041395282",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/cdk"
@@ -5085,7 +5465,7 @@
         },
         {
           "file": "libs/ngrid/package.json",
-          "hash": "9440769615202206055",
+          "hash": "16208199244981270742",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/cdk"
@@ -6019,383 +6399,6 @@
         {
           "file": "libs/ngrid/tsconfig.spec.json",
           "hash": "1905284285349723543"
-        }
-      ],
-      "libs-internal-nx-repo-plugins": [
-        {
-          "file": "libs-internal/nx-repo-plugins/.eslintrc.json",
-          "hash": "12949005618342739038"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/README.md",
-          "hash": "2408103327397489630"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/executors.json",
-          "hash": "9275076484365515372"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/generators.json",
-          "hash": "4042556004226870813"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/package.json",
-          "hash": "14104793057708242683"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/project.json",
-          "hash": "2884920998157934305"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/executor.ts",
-          "hash": "11715565515008527615"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.d.ts",
-          "hash": "3478508728939328856"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/executors/gh-pages/schema.json",
-          "hash": "6851305329239506893"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/src/index.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/tsconfig.json",
-          "hash": "14490782888307098276"
-        },
-        {
-          "file": "libs-internal/nx-repo-plugins/tsconfig.lib.json",
-          "hash": "11146748992678458315"
-        }
-      ],
-      "ngrid-dev-app-e2e": [
-        {
-          "file": "apps/ngrid-dev-app-e2e/.eslintrc.json",
-          "hash": "15523834149352881398"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/cypress.config.ts",
-          "hash": "3189937832590238341"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/project.json",
-          "hash": "9925323194357432557"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/ngrid/column-width/column-width.component.spec.ts/column-width.component.snap.png",
-          "hash": "13832627190484943741"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/smoke-tests/smoke-tests.component.spec.ts/smoke-test-1.snap.png",
-          "hash": "4591848187604426678"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/ngrid/column-width/column-width.component.cy.ts/column-width.component.snap.png",
-          "hash": "7055330400345779053"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/__snapshots__/src/e2e/smoke-tests/smoke-tests.component.cy.ts/smoke-test-1.snap.png",
-          "hash": "14353134729127024024"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/e2e/app.cy.ts",
-          "hash": "18129466717211742227"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/e2e/ngrid/column-width/column-width.component.cy.ts",
-          "hash": "5868609276288029384"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/e2e/smoke-tests/smoke-tests.component.cy.ts",
-          "hash": "11212023374143748276"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/support/commands.ts",
-          "hash": "7195388851834204026",
-          "deps": [
-            "ngrid-cypress"
-          ]
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "apps/ngrid-dev-app-e2e/tsconfig.json",
-          "hash": "10598468421828834777"
-        }
-      ],
-      "ngrid-bootstrap": [
-        {
-          "file": "libs/ngrid-bootstrap/.eslintrc.json",
-          "hash": "11168946325940091885"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/README.md",
-          "hash": "7601744508826759766"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/_index.scss",
-          "hash": "17035558745324313796"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/_theming.scss",
-          "hash": "9817398543790019749"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/cell-tooltip/README.md",
-          "hash": "1815276674382988700"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/cell-tooltip/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/cell-tooltip/package.json",
-          "hash": "6876403764126060871"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/cell-tooltip/src/index.ts",
-          "hash": "5958865020414066493"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/cell-tooltip/src/lib/cell-tooltip.directive.ts",
-          "hash": "12112318324342185383",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/cell-tooltip/src/lib/cell-tooltip.module.ts",
-          "hash": "17367948887519716871",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/jest.config.ts",
-          "hash": "16527992231253085996"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/ng-package.json",
-          "hash": "453013922587815044"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/ng-package.prod.json",
-          "hash": "453013922587815044"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/package.json",
-          "hash": "8719951586659892488",
-          "deps": [
-            "npm:@ng-bootstrap/ng-bootstrap",
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/README.md",
-          "hash": "7654861704042587694"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/package.json",
-          "hash": "6040848252786177168"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/src/index.ts",
-          "hash": "461459912404501344"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.component.html",
-          "hash": "15634225072285550270"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.component.scss",
-          "hash": "17950412063511097468"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.component.ts",
-          "hash": "11353104207459477517",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/pagination/src/lib/bs-pagination.module.ts",
-          "hash": "7521958364779601116",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/project.json",
-          "hash": "2017253990954635561"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/README.md",
-          "hash": "12538230071791173906"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/package.json",
-          "hash": "17827741812109883198"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/src/index.ts",
-          "hash": "432592184055820935"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection-plugin.directive.ts",
-          "hash": "13388987700372521486",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.component.html",
-          "hash": "1993862347564296752"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.component.ts",
-          "hash": "14818561755535951417",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/selection-column/src/lib/bs-selection.module.ts",
-          "hash": "359970910199913916",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/README.md",
-          "hash": "8431523196024599644"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/ng-package.json",
-          "hash": "15871551581530871780"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/package.json",
-          "hash": "1550990416558421027"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/index.ts",
-          "hash": "2807886167606930006"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable-component-extension.ts",
-          "hash": "1812949255309461793",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable-plugin.ts",
-          "hash": "6184878794786886321",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable.module.ts",
-          "hash": "3377495390933617198",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable/bs-sortable.component.html",
-          "hash": "11008337542182957142"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable/bs-sortable.component.scss",
-          "hash": "8517258301047886611"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/bs-sortable/bs-sortable.component.ts",
-          "hash": "17814612801227244192",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/sort-errors.ts",
-          "hash": "12401450286200308555"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/sort/src/lib/types.ts",
-          "hash": "16517017111539513909",
-          "deps": [
-            "ngrid"
-          ]
-        },
-        {
-          "file": "libs/ngrid-bootstrap/src/index.ts",
-          "hash": "15605006524244700965"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/src/lib/ngrid-bootstrap.module.ts",
-          "hash": "446414621434238141"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/src/test-setup.ts",
-          "hash": "7608486994823320296"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/theming/_ngrid-bootstrap.scss",
-          "hash": "13147571241741446200"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/theming/prebuilt/default-dark.scss",
-          "hash": "16904184210245023676"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/theming/prebuilt/default-light.scss",
-          "hash": "9836690093939095733"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/tsconfig.editor.json",
-          "hash": "9906452651540460564"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/tsconfig.json",
-          "hash": "6759356895592988557"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/tsconfig.lib.json",
-          "hash": "5587993054197354677"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/tsconfig.lib.prod.json",
-          "hash": "174503844014784742"
-        },
-        {
-          "file": "libs/ngrid-bootstrap/tsconfig.spec.json",
-          "hash": "3130111287583436921"
         }
       ]
     }

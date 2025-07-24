@@ -1,6 +1,6 @@
 {
   "name": "@perbula/ngrid",
-  "version": "6.5.3",
+  "version": "6.5.6",
   "description": "Angular Grid",
   "license": "MIT",
   "scripts": {
@@ -36,11 +36,11 @@
   "private": false,
   "dependencies": {
     "@angular/animations": "^19.2.0",
-    "@angular/cdk": "^19.2.1",
+    "@angular/cdk": "^19.2.19",
     "@angular/cdk-experimental": "^19.2.1",
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
-    "@angular/core": "^19.2.0",
+    "@angular/core": "^19.2.14",
     "@angular/elements": "^19.2.0",
     "@angular/flex-layout": "^15.0.0-beta.42",
     "@angular/forms": "^19.2.0",

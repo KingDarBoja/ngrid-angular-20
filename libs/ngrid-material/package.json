@@ -1,9 +1,9 @@
 {
   "name": "@perbula/ngrid-material",
-  "version": "6.8.3",
+  "version": "6.8.6",
   "peerDependencies": {
     "@angular/material": "^19.0.0",
-    "@perbula/ngrid": "6.5.3"
+    "@perbula/ngrid": "6.5.6"
   },
   "exports": {
     ".": {

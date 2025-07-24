@@ -30,67 +30,86 @@ interface PendingOperation {
  * > In the future, this is where we can support detail row caching
  */
 export class DetailRowController {
-
   private viewMap = new Map<PblNgridDetailRowComponent, DetailRowViewState>();
   private pendingOps = new Map<PblNgridDetailRowComponent, PendingOperation>();
   private deferOps = false;
   private detailRowDef: PblNgridDetailRowDefDirective;
 
-  private runMeasure = () => this.extApi.grid.viewport.reMeasureCurrentRenderedContent();
+  // private runMeasure = () => this.extApi.grid.viewport.reMeasureCurrentRenderedContent();
+  private runMeasure = () => {}; // No-op, disables virtual scroll re-measure
 
-  constructor(private readonly vcRef: ViewContainerRef,
-              private readonly extApi: PblNgridExtensionApi) {
+  constructor(
+    private readonly vcRef: ViewContainerRef,
+    private readonly extApi: PblNgridExtensionApi,
+  ) {
     extApi.onInit(() => {
       this.detailRowDef = extApi.grid.registry.getSingle('detailRow');
-      extApi.cdkTable.beforeRenderRows.subscribe(() => this.deferOps = true );
-      extApi.cdkTable.onRenderRows.subscribe(() => this.flushPendingOps());
+      // extApi.cdkTable.beforeRenderRows.subscribe(() => (this.deferOps = true));
+      // extApi.cdkTable.onRenderRows.subscribe(() => this.flushPendingOps());
     });
 
-    extApi.grid.registry.changes
-      .subscribe( changes => {
-        for (const c of changes) {
-          switch (c.type) {
-            case 'detailRow':
-              if (c.op === 'remove') {
-                this.detailRowDef = undefined;
-              } else {
-                this.detailRowDef = c.value;
-              }
-              break;
-          }
+    extApi.grid.registry.changes.subscribe((changes) => {
+      for (const c of changes) {
+        switch (c.type) {
+          case 'detailRow':
+            if (c.op === 'remove') {
+              this.detailRowDef = undefined;
+            } else {
+              this.detailRowDef = c.value;
+            }
+            break;
         }
-      });
+      }
+    });
   }
 
+  // render(parent: PblNgridDetailRowComponent, fromRender: boolean): boolean {
+  //   if (this.viewMap.has(parent)) {
+  //     this.pendingOps.delete(parent); // if clear, then render we don't want to clear it later
+  //     this.updateDetailRow(parent);
+  //     return true;
+  //   } else if (!this.deferOps) {
+  //     return this._render(parent, fromRender);
+  //   } else if (parent.context.$implicit && this.detailRowDef) {
+  //     this.pendingOps.set(parent, { type: 'render', fromRender });
+  //     return true;
+  //   }
+  //   return false;
+  // }
+
+  // clearDetailRow(parent: PblNgridDetailRowComponent, fromRender: boolean) {
+  //   const state = this.viewMap.get(parent);
+  //   if (state) {
+  //     if (this.deferOps) {
+  //       this.pendingOps.set(parent, { type: 'clear', fromRender });
+  //     } else {
+  //       this._clearDetailRow(parent, fromRender);
+  //     }
+  //   }
+  // }
   render(parent: PblNgridDetailRowComponent, fromRender: boolean): boolean {
     if (this.viewMap.has(parent)) {
-      this.pendingOps.delete(parent); // if clear, then render we don't want to clear it later
       this.updateDetailRow(parent);
       return true;
-    } else if (!this.deferOps) {
+    } else {
       return this._render(parent, fromRender);
-    } else if (parent.context.$implicit && this.detailRowDef) {
-      this.pendingOps.set(parent, { type: 'render', fromRender });
-      return true;
     }
-    return false;
   }
 
   clearDetailRow(parent: PblNgridDetailRowComponent, fromRender: boolean) {
     const state = this.viewMap.get(parent);
     if (state) {
-      if (this.deferOps) {
-        this.pendingOps.set(parent, { type: 'clear', fromRender });
-      } else {
-        this._clearDetailRow(parent, fromRender);
-      }
+      this._clearDetailRow(parent, fromRender);
     }
   }
 
   updateDetailRow(parent: PblNgridDetailRowComponent) {
     const state = this.viewMap.get(parent);
     if (state) {
-      Object.assign(state.viewRef.context, this.createDetailRowContext(parent, true));
+      Object.assign(
+        state.viewRef.context,
+        this.createDetailRowContext(parent, true),
+      );
       state.viewRef.detectChanges();
     }
   }
@@ -113,19 +132,27 @@ export class DetailRowController {
     }
   }
 
-  private createDetailRowContext(parent: PblNgridDetailRowComponent, fromRender: boolean): PblNgridDetailRowContext {
+  private createDetailRowContext(
+    parent: PblNgridDetailRowComponent,
+    fromRender: boolean,
+  ): PblNgridDetailRowContext {
     return {
       $implicit: parent.context.$implicit,
       rowContext: parent.context,
-      animation: { fromRender, end: () => this.checkHasAnimation(fromRender) ? this.runMeasure() : undefined, },
-    }
+      animation: {
+        fromRender,
+        end: () =>
+          this.checkHasAnimation(fromRender) ? this.runMeasure() : undefined,
+      },
+    };
   }
 
   private flushPendingOps() {
     if (this.deferOps) {
       this.deferOps = false;
 
-      const toRender: Array<[PblNgridDetailRowComponent, PendingOperation]> = [];
+      const toRender: Array<[PblNgridDetailRowComponent, PendingOperation]> =
+        [];
       const toClear: Array<[PblNgridDetailRowComponent, PendingOperation]> = [];
       for (const entry of this.pendingOps.entries()) {
         const col = entry[1].type === 'clear' ? toClear : toRender;
@@ -165,11 +192,16 @@ export class DetailRowController {
     }
   }
 
-  private _render(parent: PblNgridDetailRowComponent, fromRender: boolean): boolean {
+  private _render(
+    parent: PblNgridDetailRowComponent,
+    fromRender: boolean,
+  ): boolean {
     if (parent.context.$implicit && this.detailRowDef) {
       const context = this.createDetailRowContext(parent, fromRender);
 
-      this.viewMap.set(parent, { viewRef: this.vcRef.createEmbeddedView(this.detailRowDef.tRef, context) })
+      this.viewMap.set(parent, {
+        viewRef: this.vcRef.createEmbeddedView(this.detailRowDef.tRef, context),
+      });
       this.insertElementsToRow(parent, true);
 
       // notify about size changes
@@ -181,7 +213,10 @@ export class DetailRowController {
     return false;
   }
 
-  private _clearDetailRow(parent: PblNgridDetailRowComponent, fromRender: boolean) {
+  private _clearDetailRow(
+    parent: PblNgridDetailRowComponent,
+    fromRender: boolean,
+  ) {
     const state = this.viewMap.get(parent);
     if (state) {
       const { viewRef } = state;
@@ -201,7 +236,10 @@ export class DetailRowController {
     }
   }
 
-  private insertElementsToRow(parent: PblNgridDetailRowComponent, detectChanges?: boolean) {
+  private insertElementsToRow(
+    parent: PblNgridDetailRowComponent,
+    detectChanges?: boolean,
+  ) {
     const { viewRef } = this.viewMap.get(parent);
     const beforeNode = parent.element.nextSibling;
     for (const e of viewRef.rootNodes) {
@@ -213,6 +251,9 @@ export class DetailRowController {
   }
 
   private checkHasAnimation(fromRender: boolean) {
-    return this.detailRowDef.hasAnimation === 'always' || (this.detailRowDef.hasAnimation === 'interaction' && !fromRender);
+    return (
+      this.detailRowDef.hasAnimation === 'always' ||
+      (this.detailRowDef.hasAnimation === 'interaction' && !fromRender)
+    );
   }
 }

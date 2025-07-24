@@ -143,22 +143,39 @@ export class PblNgridDetailRowComponent
 
   updateRow() {
     if (super.updateRow()) {
-      // only if row has changed (TODO: use identity based change detection?)
+      // Always destroy and recreate the detail row view when the context changes (row is recycled)
+      if (this.opened) {
+        this.controller.clearDetailRow(this, true);
+        this.opened = false;
+        this.element.classList.remove('pbl-row-detail-opened');
+        this.context.setExternal('detailRow', false, true);
+      }
       if (this.plugin) {
         switch (this.plugin.whenContextChange) {
           case 'context':
             const isContextOpened = !!this.context.getExternal('detailRow');
-            isContextOpened && this.opened
-              ? this.controller.updateDetailRow(this) // if already opened, just update the context
-              : this.toggle(isContextOpened, true); // if not opened, force to the context state
-            break;
-          case 'render':
-            if (this.opened) {
-              this.controller.updateDetailRow(this);
+            if (isContextOpened) {
+              // Always re-render the detail row for the new context
+              this.controller.render(this, true);
+              this.opened = true;
+              this.element.classList.add('pbl-row-detail-opened');
+              this.context.setExternal('detailRow', true, true);
+              this.plugin.detailRowToggled(this);
+              // Force re-measure of the viewport to fix layout
+              if (
+                this.grid &&
+                this.grid.viewport &&
+                this.grid.viewport.reMeasureCurrentRenderedContent
+              ) {
+                this.grid.viewport.reMeasureCurrentRenderedContent();
+              }
             }
             break;
+          case 'render':
+            // Optionally re-open if needed (if you want to preserve open state across context changes)
+            break;
           case 'close':
-            this.toggle(false, true);
+            // Already closed above
             break;
         }
         this.plugin.markForCheck();
