@@ -1,6 +1,6 @@
 import { Observable, of, Subject } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
-import { InjectFlags, Injector } from '@angular/core';
+import { Injector } from '@angular/core';
 
 import { PblNgridEvents, ON_INIT, PblNgridEventEmitter } from '@perbula/ngrid/core';
 import { _PblNgridComponent } from '../tokens';
@@ -163,7 +163,7 @@ export class PblNgridPluginController<T = any> {
    * we will use `hasAncestor(MyParentModule)`
    */
   hasAncestor(token: any) {
-    return !!this.injector.get(token, null, InjectFlags.Optional);
+    return !!this.injector.get(token, null, { optional: true });
   }
 
   createPlugin<P extends keyof PblNgridPluginExtensionFactories>(name: P): PblNgridPluginExtension[P];
