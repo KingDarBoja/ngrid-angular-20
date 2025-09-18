@@ -1,9 +1,5 @@
-const { getJestProjects } = require('@nx/jest');
+import { getJestProjectsAsync } from '@nx/jest';
 
-export default {
-  projects: [
-    ...getJestProjects(),
-    '<rootDir>/apps/ngrid-docs-app/',
-    '<rootDir>/libs/ngrid-cypress',
-  ],
-};
+export default async () => ({
+  projects: await getJestProjectsAsync(),
+});

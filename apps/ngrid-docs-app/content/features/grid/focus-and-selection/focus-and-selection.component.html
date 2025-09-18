@@ -3,27 +3,31 @@
 <div fxLayout="column" fxLayoutGap="16px">
   <div fxLayout="row" fxLayoutGap="16px">
     <button mat-flat-button color="primary"
-            (click)="grid.contextApi.focusCell({ rowIdent: fRow.value, colIndex: fCol.value })">Set Focus:</button>
+    (click)="grid.contextApi.focusCell({ rowIdent: fRow.value, colIndex: fCol.value })">Set Focus:</button>
     <mat-form-field>
       <mat-label>Row To Focus</mat-label>
       <mat-select #fRow>
-        <mat-option *ngFor="let item of ds.source; index as index" [value]="index">
-          {{ item.id + ' - ' + item.name}}
-        </mat-option>
+        @for (item of ds.source; track item; let index = $index) {
+          <mat-option [value]="index">
+            {{ item.id + ' - ' + item.name}}
+          </mat-option>
+        }
       </mat-select>
     </mat-form-field>
     <mat-form-field>
       <mat-label>Column To Focus</mat-label>
       <mat-select #fCol>
-        <mat-option *ngFor="let item of columns.table.cols; index as index" [value]="index">
-          {{ item.label }}
-        </mat-option>
+        @for (item of columns.table.cols; track item; let index = $index) {
+          <mat-option [value]="index">
+            {{ item.label }}
+          </mat-option>
+        }
       </mat-select>
     </mat-form-field>
   </div>
   <div fxLayout="row" fxLayoutGap="16px">
     <button mat-flat-button color="primary"
-            (click)="applyRange(grid, fRange.value)">Set Range:</button>
+    (click)="applyRange(grid, fRange.value)">Set Range:</button>
     <mat-form-field>
       <mat-label>Range Size</mat-label>
       <mat-select #fRange>

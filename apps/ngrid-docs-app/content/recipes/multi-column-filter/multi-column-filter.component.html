@@ -8,7 +8,9 @@
     <mat-label>Gender</mat-label>
     <mat-select (selectionChange)="doFilter(selectValue = $event.value)">
       <mat-option>None</mat-option>
-      <mat-option *ngFor="let g of ['Male', 'Female']" [value]="g">{{g}}</mat-option>
+      @for (g of ['Male', 'Female']; track g) {
+        <mat-option [value]="g">{{g}}</mat-option>
+      }
     </mat-select>
   </mat-form-field>
 </div>

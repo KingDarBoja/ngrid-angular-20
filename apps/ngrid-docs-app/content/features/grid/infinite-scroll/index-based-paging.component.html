@@ -1,5 +1,7 @@
 <pbl-ngrid [dataSource]="ds" [columns]="columns">
-  <mat-progress-bar *ngIf="ds.adapter.virtualRowsLoading | async" mode="indeterminate"></mat-progress-bar>
+  @if (ds.adapter.virtualRowsLoading | async) {
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  }
 
   <pbl-ngrid-row in *pblNgridInfiniteVirtualRowDef="let row;" class="pbl-ngrid-infinite-virtual-row" row>
   </pbl-ngrid-row>

@@ -9,8 +9,9 @@ import {
   Renderer2,
   ChangeDetectorRef,
   ApplicationRef,
+  DOCUMENT
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+
 
 import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion';
 import { NgbTooltip, NgbTooltipConfig } from '@ng-bootstrap/ng-bootstrap';

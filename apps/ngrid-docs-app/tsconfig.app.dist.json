@@ -2,7 +2,10 @@
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
     "paths": {
-      "@perbula-internal/*": ["libs-internal/*/src/index.ts", "libs-internal/*"],
+      "@perbula-internal/*": [
+        "libs-internal/*/src/index.ts",
+        "libs-internal/*"
+      ],
       "@perbula/apps/*": ["apps/libs/*", "apps/libs/*/src/index.ts"],
       "@perbula/ngrid/core/lib/*": ["dist/@perbula/ngrid/core/lib/*"],
       "@perbula/ngrid/lib/*": ["dist/@perbula/ngrid/lib/*"],
@@ -10,6 +13,7 @@
       "@perbula/ngrid-bootstrap/lib/*": ["dist/@perbula/ngrid-bootstrap/lib/*"],
       "@perbula/ngrid-cypress/lib/*": ["dist/@perbula/ngrid-cypress/lib/*"],
       "@perbula/*": ["dist/@perbula/*"]
-    }
+    },
+    "moduleResolution": "bundler"
   }
 }

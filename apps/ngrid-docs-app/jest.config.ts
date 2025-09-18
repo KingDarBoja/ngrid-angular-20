@@ -1,13 +1,12 @@
-/* eslint-disable */
-export default {
-  preset: './jest.preset.js',
-  coverageDirectory: '../../coverage/apps/ngrid-docs-app',
+import type { JestConfigWithTsJest } from 'ts-jest';
 
+const config: JestConfigWithTsJest = {
+  preset: '../../jest.preset.js',
+  coverageDirectory: '../../coverage/apps/ngrid-docs-app',
   setupFilesAfterEnv: ['<rootDir>/src/__test-runners/jest-test-setup.ts'],
   globals: {
     'ts-jest': {
       stringifyContentPathRegex: '\\.(html|svg)$',
-
       tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
@@ -19,3 +18,5 @@ export default {
   ],
   transform: { '^.+\\.(ts|js|html)$': 'jest-preset-angular' },
 };
+
+export default config;

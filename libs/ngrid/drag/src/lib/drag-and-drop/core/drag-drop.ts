@@ -1,5 +1,5 @@
-import { Injectable, Inject, NgZone, ElementRef, Renderer2, RendererFactory2 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Injectable, Inject, NgZone, ElementRef, Renderer2, RendererFactory2, DOCUMENT } from '@angular/core';
+
 import { ViewportRuler} from '@angular/cdk/scrolling';
 import { DragRef, DragRefConfig, DropListRef, DragDropRegistry } from '@angular/cdk/drag-drop';
 

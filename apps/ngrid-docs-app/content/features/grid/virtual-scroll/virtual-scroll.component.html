@@ -1,13 +1,23 @@
 <mat-radio-group #rdGroup="matRadioGroup" value="auto" (change)="removeDatasource()">
-    <mat-radio-button value="auto">Auto Size</mat-radio-button>
-    <mat-radio-button value="fixed">Fixed Size</mat-radio-button>
-    <mat-radio-button value="dynamic">Dynamic Size</mat-radio-button>
-    <mat-radio-button value="none">No Virtual Scroll</mat-radio-button>
-  </mat-radio-group>
-  <ng-container *ngIf="ds" [ngSwitch]="rdGroup.value">
-    <pbl-ngrid *ngSwitchCase="'auto'" blockUi [dataSource]="ds" [columns]="columns" vScrollAuto></pbl-ngrid>
-    <pbl-ngrid *ngSwitchCase="'fixed'" blockUi [dataSource]="ds" [columns]="columns" vScrollFixed="48"></pbl-ngrid>
-    <pbl-ngrid *ngSwitchCase="'dynamic'" blockUi [dataSource]="ds" [columns]="columns" vScrollDynamic></pbl-ngrid>
-    <pbl-ngrid *ngSwitchCase="'none'" blockUi [dataSource]="ds" [columns]="columns" vScrollNone></pbl-ngrid>
-  </ng-container>
+  <mat-radio-button value="auto">Auto Size</mat-radio-button>
+  <mat-radio-button value="fixed">Fixed Size</mat-radio-button>
+  <mat-radio-button value="dynamic">Dynamic Size</mat-radio-button>
+  <mat-radio-button value="none">No Virtual Scroll</mat-radio-button>
+</mat-radio-group>
+@if (ds) {
+  @switch (rdGroup.value) {
+    @case ('auto') {
+      <pbl-ngrid blockUi [dataSource]="ds" [columns]="columns" vScrollAuto></pbl-ngrid>
+    }
+    @case ('fixed') {
+      <pbl-ngrid blockUi [dataSource]="ds" [columns]="columns" vScrollFixed="48"></pbl-ngrid>
+    }
+    @case ('dynamic') {
+      <pbl-ngrid blockUi [dataSource]="ds" [columns]="columns" vScrollDynamic></pbl-ngrid>
+    }
+    @case ('none') {
+      <pbl-ngrid blockUi [dataSource]="ds" [columns]="columns" vScrollNone></pbl-ngrid>
+    }
+  }
+}
 <button mat-button [disabled]="ds" (click)="ds = createDatasource()">Load Data</button>

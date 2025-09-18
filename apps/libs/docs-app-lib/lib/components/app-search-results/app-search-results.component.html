@@ -1,6 +1,6 @@
 <div class="search-results">
 
-  <ng-container *ngIf="viewLayout.isMobile$ | async">
+  @if (viewLayout.isMobile$ | async) {
     <div fxLayoutAlign="start center" style="margin-bottom: 16px;">
       <app-search-input (onSearch)="doSearch($event)"></app-search-input>
       <div style="flex:1 0 auto"></div>
@@ -8,34 +8,47 @@
         <mat-icon>close</mat-icon>
       </button>
     </div>
-
-  </ng-container>
+  }
 
 
   <h2 class="visually-hidden">Search Results</h2>
 
-  <div @enterLeave *ngIf="searchAreas.length" fxLayoutAlign="space-around">
-    <div class="search-area" *ngFor="let area of searchAreas">
-      <h3 class="search-section-header">{{area.name}} ({{area.pages.length + area.priorityPages.length}})</h3>
-      <ul class="priority-pages" >
-        <li class="search-page" *ngFor="let page of area.priorityPages">
-          <a class="search-result-item" [routerLink]=[page.path] (click)="onResultSelected(page, $event)">
-            <span class="symbol {{page.type}}" *ngIf="area.name === 'api'"></span>
-            <span [class.deprecated-api-item]="page.deprecated">{{ page.title }}</span>
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li class="search-page" *ngFor="let page of area.pages">
-          <a class="search-result-item" [routerLink]=[page.path] (click)="onResultSelected(page, $event)">
-            <span class="symbol {{page.type}}" *ngIf="area.name === 'api'"></span>
-            <span [class.deprecated-api-item]="page.deprecated">{{ page.title }}</span>
-          </a>
-        </li>
-      </ul>
+  @if (searchAreas.length) {
+    <div @enterLeave fxLayoutAlign="space-around">
+      @for (area of searchAreas; track area) {
+        <div class="search-area">
+          <h3 class="search-section-header">{{area.name}} ({{area.pages.length + area.priorityPages.length}})</h3>
+          <ul class="priority-pages" >
+            @for (page of area.priorityPages; track page) {
+              <li class="search-page">
+                <a class="search-result-item" [routerLink]=[page.path] (click)="onResultSelected(page, $event)">
+                  @if (area.name === 'api') {
+                    <span class="symbol {{page.type}}"></span>
+                  }
+                  <span [class.deprecated-api-item]="page.deprecated">{{ page.title }}</span>
+                </a>
+              </li>
+            }
+          </ul>
+          <ul>
+            @for (page of area.pages; track page) {
+              <li class="search-page">
+                <a class="search-result-item" [routerLink]=[page.path] (click)="onResultSelected(page, $event)">
+                  @if (area.name === 'api') {
+                    <span class="symbol {{page.type}}"></span>
+                  }
+                  <span [class.deprecated-api-item]="page.deprecated">{{ page.title }}</span>
+                </a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
     </div>
-  </div>
-  <div *ngIf="!searchAreas.length" fxLayoutAlign="space-around">
-    <p class="not-found">{{notFoundMessage}}</p>
-  </div>
+  }
+  @if (!searchAreas.length) {
+    <div fxLayoutAlign="space-around">
+      <p class="not-found">{{notFoundMessage}}</p>
+    </div>
+  }
 </div>

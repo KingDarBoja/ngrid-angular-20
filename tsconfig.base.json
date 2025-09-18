@@ -17,15 +17,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@perbula-internal/nx-repo-plugins": ["libs-internal/nx-repo-plugins/src/index.ts"],
-      "@perbula-internal/*": ["libs-internal/*/src/index.ts", "libs-internal/*"],
+      "@perbula-internal/*": [
+        "libs-internal/*/src/index.ts",
+        "libs-internal/*"
+      ],
+      "@perbula-internal/nx-repo-plugins": [
+        "libs-internal/nx-repo-plugins/src/index.ts"
+      ],
+      "@perbula/*": ["libs/*/src/index.ts", "libs/*"],
       "@perbula/apps/*": ["apps/libs/*", "apps/libs/*/src/index.ts"],
-      "@perbula/ngrid/core/lib/*": ["libs/ngrid/core/src/lib/*"],
-      "@perbula/ngrid/lib/*": ["libs/ngrid/src/lib/*"],
-      "@perbula/ngrid-material/lib/*": ["libs/ngrid-material/src/lib/*"],
       "@perbula/ngrid-bootstrap/lib/*": ["libs/ngrid-bootstrap/src/lib/*"],
       "@perbula/ngrid-cypress/lib/*": ["libs/ngrid-cypress/src/lib/*"],
-      "@perbula/*": ["libs/*/src/index.ts", "libs/*"]
+      "@perbula/ngrid-material/lib/*": ["libs/ngrid-material/src/lib/*"],
+      "@perbula/ngrid/core/lib/*": ["libs/ngrid/core/src/lib/*"],
+      "@perbula/ngrid/lib/*": ["libs/ngrid/src/lib/*"]
     }
   },
   "exclude": ["dist", "node_modules", "tmp"]

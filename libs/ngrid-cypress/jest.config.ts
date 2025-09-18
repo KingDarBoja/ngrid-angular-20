@@ -1,22 +1,21 @@
 import type { JestConfigWithTsJest } from 'ts-jest';
 
 const config: JestConfigWithTsJest = {
+  displayName: 'ngrid-cypress',
   preset: '../../jest.preset.js',
-  coverageDirectory: '../../coverage/libs/ngrid',
-  setupFilesAfterEnv: ['<rootDir>/src/__test-runners/jest-test-setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
+      tsConfig: '<rootDir>/tsconfig.spec.json',
       stringifyContentPathRegex: '\\.(html|svg)$',
-      tsconfig: '<rootDir>/tsconfig.spec.jest.json',
     },
   },
-  displayName: 'ngrid',
+  coverageDirectory: '../../coverage/libs/ngrid-cypress',
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
-  transform: { '^.+\\.(ts|js|html)$': 'jest-preset-angular' },
 };
 
 export default config;

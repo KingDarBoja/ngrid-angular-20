@@ -1,8 +1,8 @@
 // LICENCE:
 // Taken from https://github.com/angular/angular/blob/887faffa256dd6bdc708fb853db4a7a47a5e4af1/aio/src/app/shared/location.service.ts#L1-L150
-import { Inject, Injectable } from '@angular/core';
+import { Inject, Injectable, DOCUMENT } from '@angular/core';
 import { Router } from '@angular/router';
-import { Location, PlatformLocation, DOCUMENT } from '@angular/common';
+import { Location, PlatformLocation } from '@angular/common';
 
 import { ReplaySubject } from 'rxjs';
 import { map, tap } from 'rxjs/operators';

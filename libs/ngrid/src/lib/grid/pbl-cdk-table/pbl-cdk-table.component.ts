@@ -12,8 +12,9 @@ import {
   ViewEncapsulation,
   Injector,
   SkipSelf,
+  DOCUMENT
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+
 import { Platform } from '@angular/cdk/platform';
 import { _DisposeViewRepeaterStrategy, _ViewRepeater, _VIEW_REPEATER_STRATEGY } from '@angular/cdk/collections';
 import { ViewportRuler } from '@angular/cdk/scrolling';

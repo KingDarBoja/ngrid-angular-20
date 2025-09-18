@@ -1,19 +1,14 @@
 {
   "name": "ngrid-docs-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "tags": [
-    "type:app",
-    "ngrid-docs-app"
-  ],
   "sourceRoot": "apps/ngrid-docs-app/src",
   "projectType": "application",
   "prefix": "pbl",
+  "tags": ["type:app", "ngrid-docs-app"],
   "targets": {
     "build": {
       "executor": "ngx-build-plus:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "plugin": "~apps/ngrid-docs-app/build",
         "outputPath": "dist/browser",
@@ -26,9 +21,7 @@
           "apps/ngrid-docs-app/src/google1a0455c97ead32c8.html",
           "apps/ngrid-docs-app/src/assets"
         ],
-        "styles": [
-          "apps/ngrid-docs-app/src/styles/main.scss"
-        ],
+        "styles": ["apps/ngrid-docs-app/src/styles/main.scss"],
         "scripts": [],
         "webWorkerTsConfig": "apps/ngrid-docs-app/tsconfig.worker.json",
         "allowedCommonJsDependencies": [
@@ -121,9 +114,7 @@
             "with": "apps/libs/docs-app-lib/lib/services/search/search-adapters/noop.ts"
           }
         ],
-        "styles": [
-          "apps/ngrid-docs-app/src/__test-runners/main-test.scss"
-        ],
+        "styles": ["apps/ngrid-docs-app/src/__test-runners/main-test.scss"],
         "scripts": [],
         "assets": []
       },
@@ -135,19 +126,16 @@
           "browsers": "ChromeHeadlessCI"
         }
       },
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/ngrid-docs-app/"
-      ]
+      "outputs": ["{workspaceRoot}/coverage/apps/ngrid-docs-app/"]
     },
     "testJest": {
       "executor": "@nx/jest:jest",
       "options": {
         "jestConfig": "apps/ngrid-docs-app/jest.config.ts",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "tsConfig": "apps/ngrid-docs-app/tsconfig.spec.json"
       },
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/ngrid-docs-app/"
-      ]
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"]
     },
     "server": {
       "executor": "./tools/ngx-build-plus.server:server",

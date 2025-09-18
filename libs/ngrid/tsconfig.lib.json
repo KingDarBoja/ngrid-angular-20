@@ -9,8 +9,10 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": ["dev-mode-types"]
+    "types": ["dev-mode-types"],
+    "moduleResolution": "bundler"
   },
+  "include": ["**/*.ts"],
   "exclude": [
     "src/__test-runners/*.ts",
     "**/*.spec.ts",

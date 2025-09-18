@@ -21,6 +21,8 @@
   <div fxFlex="*"></div>
   <button fxFlex="noshrink" mat-flat-button (click)="redraw()">Redraw</button>
 </div>
-<div *ngIf="settings">
-  <pbl-ngrid [dataSource]="ds" [columns]="columns" [minDataViewHeight]="settings.minDataViewHeight" [style.height]="settings.explicitGridHeight" vScrollAuto></pbl-ngrid>
-</div>
+@if (settings) {
+  <div>
+    <pbl-ngrid [dataSource]="ds" [columns]="columns" [minDataViewHeight]="settings.minDataViewHeight" [style.height]="settings.explicitGridHeight" vScrollAuto></pbl-ngrid>
+  </div>
+}

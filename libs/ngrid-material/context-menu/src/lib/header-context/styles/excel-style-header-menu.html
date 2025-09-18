@@ -1,8 +1,10 @@
 <mat-menu #columnMenu="matMenu" class="pbl-mat-menu-panel">
 
-  <button *ngIf="column.sort" mat-menu-item [matMenuTriggerFor]="sortMenu">
-    <mat-icon>sort</mat-icon>Sort
-  </button>
+  @if (column.sort) {
+    <button mat-menu-item [matMenuTriggerFor]="sortMenu">
+      <mat-icon>sort</mat-icon>Sort
+    </button>
+  }
   <button mat-menu-item [matMenuTriggerFor]="pinMenu">
     <mat-icon>place</mat-icon>Pin
   </button>
@@ -39,7 +41,7 @@
       <input #input matInput (keyup)="filterColumn(input.value)" [value]="currentFilter">
       <mat-icon matPrefix>search</mat-icon>
       <button mat-button [style.visibility]="currentFilter ? 'visible' : 'hidden'" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filterColumn('')">
+        (click)="filterColumn('')">
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
